@@ -11,6 +11,9 @@ Modeled on "What If Elon Musk Took the AI Race to Space?" (Afterhour Theory, 1.7
 - **Subjects that work:** whatever is hottest THIS WEEK in the top trending niche (right now that is gaming: e.g. "You're Rockstar Games" in GTA 6 launch week), plus tech, AI, space, cars, sport, esports, movies and creators. The owner finds history topics boring: never pick a historical subject unless it is directly tied to a huge trend happening now. A good test: would a 16-25 year old already have seen this topic on their feed this week? The chain must be built from real, verifiable steps. Speculative steps go last and are framed as "what if".
 - **Real people:** shown only as the stick man with a name tag (`role`). Stick to public, documented actions. No mocking, no claims about private life, no politicians or elections.
 
+## Before anything: one Short per day
+If `log/posts.csv` already has a row for today's date (IST), a Short was already made or scheduled today. Don't make another. Instead, wait until it is published (step 5), fill in its YouTube URL in `log/posts.csv`, and send its post email. Then stop.
+
 ## 0. Research what's working (every run, before picking a topic)
 Learn patterns from other channels and our own stats. Never copy another channel's script, title wording, characters or footage. Copy the pattern (topic type, hook style, length, structure), not the content.
 
@@ -100,9 +103,9 @@ Text must not overflow or cover the stick man's face. Fix the script (shorter `s
 4. Metricool `createScheduledPost`: blogId `7796937`, ~10 minutes ahead, timezone `Asia/Calcutta`, provider `youtube`, autoPublish true. `youtubeData`: type `short`, privacy `public`, madeForKids false, isAiGeneratedContent false, category to fit (`ENTERTAINMENT`, `SCIENCE_TECHNOLOGY`, `COMEDY`, `GAMING`, `SPORTS`), 6-8 tags including the keyword. Title under 70 characters with the keyword near the start, ending `#shorts`. Description: one curiosity line with the keyword, then "Did you spot the hidden item? Comment what it was 👀", then 4-5 hashtags.
 
 ## 5. Confirm and email
-1. Schedule the post only ~5 minutes ahead. Then run `sleep 480` in the background (Bash `run_in_background`) and continue when it finishes.
+1. **Post at peak time.** Call Metricool `getBestTimeToPostByNetwork` (brandId `7796937`, network `youtube`, timezone `Asia/Calcutta`, today 00:00 to 23:59). Schedule for today's highest-value hour (usually 15:00-17:00 IST) if it is at least 15 minutes away; otherwise schedule 10 minutes ahead. Then wait in the background (Bash `sleep` with `run_in_background`, max ~25 minutes per sleep, repeat as needed) until 5 minutes after the publish time.
 2. Check Metricool `getScheduledPosts` (brandId `7796937`, today's date range, timezone `Asia/Calcutta`). When the YouTube provider status is `PUBLISHED`, take its `publicUrl`. If still pending, wait another 5 minutes, check again (max 3 checks). If it shows an error, say so in the email.
-3. Append a row to `log/posts.csv`: `date,title,youtube_url,topic,keyword,duration_s,hook_score,file` (duration from `ffprobe`). Commit and push.
+3. Append (or update) the row in `log/posts.csv`: `date,title,youtube_url,topic,keyword,duration_s,hook_score,file` (duration from `ffprobe`). Commit and push.
 4. Send the email with Gmail `send_message` to `feliximmman05@gmail.com`, `htmlBody`, subject `✅ New Short posted: <title>` (or `⚠️ Short failed: <reason>`). Contents:
    - Title, YouTube link, publish time (IST), status
    - Trend picked and why it's trending (1-2 lines + source links)
