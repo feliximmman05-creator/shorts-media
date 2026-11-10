@@ -8,7 +8,7 @@ Modeled on "What If Elon Musk Took the AI Race to Space?" (Afterhour Theory, 1.7
 - **A chain of bottlenecks:** each beat = new problem → the real move they made (a verified fact with a number, name or date) → which creates the next problem. "First, you need X, so you build Y." "Now Y needs Z..." The steps must connect logically, like a game being played.
 - **Escalate:** each step bigger than the last. Use turn phrases: "Still not enough?", "And you're not even halfway", "Then you hit the wall", "Now you've won. But one day...".
 - **Twist ending** that reframes everything (funny, ironic or mind-blowing), then loop into the hook.
-- **Subjects that work:** trending founders and companies and their real moves (tech, AI, space, gaming, cars, sport, entertainment), or a historical figure or empire whose plan connects to something trending ("You're Pharaoh Khufu..."). The chain must be built from real, verifiable steps. Speculative steps go last and are framed as "what if".
+- **Subjects that work:** whatever is hottest THIS WEEK in the top trending niche (right now that is gaming: e.g. "You're Rockstar Games" in GTA 6 launch week), plus tech, AI, space, cars, sport, esports, movies and creators. The owner finds history topics boring: never pick a historical subject unless it is directly tied to a huge trend happening now. A good test: would a 16-25 year old already have seen this topic on their feed this week? The chain must be built from real, verifiable steps. Speculative steps go last and are framed as "what if".
 - **Real people:** shown only as the stick man with a name tag (`role`). Stick to public, documented actions. No mocking, no claims about private life, no politicians or elections.
 
 ## 0. Research what's working (every run, before picking a topic)
@@ -26,6 +26,7 @@ Use today's research to choose the topic and shape the script. The post email mu
 
 ## 1. Find today's trend
 Search the web for what is blowing up in the last 24-72 hours. Run several searches in one go, for example:
+- `https://trendreport.com/charts/` (today's US YouTube trending chart, fetch it) and `https://viralmint.net/trends/youtube-shorts-tracker/` (this week's breakout Shorts and niches, fetch it)
 - `Google Trends trending now` / `trending searches today`
 - `trending on YouTube today` / `viral TikTok trend this week`
 - `Know Your Meme trending` / `viral video this week`
@@ -61,7 +62,7 @@ Verify every fact with at least one reliable source. Hedge anything unconfirmed 
  "youtube": {"title": "...", "description": "...", "tags": ["..."], "category": "ENTERTAINMENT"}
 }
 ```
-The complete working example is `log/example-script.json` (loop: "...when really" → "You're Pharaoh Khufu...").
+The complete working example is `log/example-script.json` (GTA 6 week; loop: "...Probably another" → "Thirteen years for GTA Six...").
 
 ### Triple hook (first 3 seconds; the renderer handles timing)
 - **Visual (0-1s):** the stick man slams `hook.prop` (impact, shake, flash). Pick a prop that is the topic's object.
@@ -80,7 +81,8 @@ The complete working example is `log/example-script.json` (loop: "...when really
 - `prop`: one Twemoji codepoint per beat (lowercase hex, e.g. `1f4f1` phone, `1f916` robot, `1f4b8` money, `1f3ae` game controller, `1f525` fire). Flags look like `1f1fa-1f1f8`.
 - `pop` (optional, most beats): 1-3 word sticker label, e.g. a number or "BUT WAIT".
 - `role`: the name tag above the stick man's head (who "you" are), max ~12 characters.
-- `scene` (hook and every beat; change it whenever the plan moves somewhere new, like the reference does): `desert, ocean, city, night, grass, lab, factory, stadium, space, moon, earth, paper`.
+- `scene` (hook and every beat; change it whenever the plan moves somewhere new, like the reference does): `vice` (neon sunset city), `city, night, lab, factory, stadium, space, moon, earth, ocean, desert, grass, paper`.
+- `style`: `cartoon` (big-head cartoon person) or `stick`. `look` (cartoon only): `skin, hair, shirt, pants` hex colours, `hair_style` (`short, long, spiky, bald`), `hat` (an emoji code, e.g. `1f9e2` cap, `1f451` crown, `1fa96` helmet). Pick a bright shirt that stands out from the scene.
 - `set` (hook and every beat): 1-2 big Twemoji set pieces behind the stick man that show where we are or what is being built (e.g. `1f3ed` factory, `1f680` rocket, `1f6f0` satellite, `1f697` car, `1f916` robot, `1f3e2` office, `2600` sun, `1f319` moon).
 
 ## 3. Build and check

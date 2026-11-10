@@ -154,6 +154,7 @@ SCENES = {  # sky top, sky bottom, ground, stars, ground style
     "earth": ((10, 20, 60), (40, 90, 170), None, True, "planet"),
     "city": ((110, 170, 250), (205, 230, 255), (70, 72, 82), False, "skyline"),
     "night": ((8, 12, 36), (40, 48, 92), (24, 30, 44), True, "skyline"),
+    "vice": ((120, 40, 140), (255, 140, 110), (46, 38, 62), False, "skyline"),
     "desert": ((250, 170, 100), (255, 228, 170), (226, 186, 118), False, "dunes"),
     "grass": ((110, 180, 250), (200, 232, 255), (92, 168, 82), False, None),
     "ocean": ((120, 190, 250), (210, 238, 255), (36, 108, 190), False, "waves"),
@@ -187,12 +188,15 @@ def scene_bg(name):
         x = 0
         while x < WD:
             w = rnd.randint(70, 150); h = rnd.randint(180, 520)
-            col = (40, 48, 70, 255) if name == "night" else (150, 165, 190, 255)
+            col = {"night": (40, 48, 70, 255), "vice": (70, 30, 90, 255)}.get(name, (150, 165, 190, 255))
             d.rectangle([x, GROUND_Y - h, x + w - 8, GROUND_Y], fill=col)
             for wy in range(GROUND_Y - h + 20, GROUND_Y - 20, 40):
                 for wx in range(x + 12, x + w - 20, 28):
-                    if rnd.random() < .5: d.rectangle([wx, wy, wx + 12, wy + 18], fill=(255, 220, 120, 200) if name == "night" else (220, 230, 245, 255))
+                    if rnd.random() < .5: d.rectangle([wx, wy, wx + 12, wy + 18], fill=(255, 220, 120, 200) if name in ("night", "vice") else (220, 230, 245, 255))
             x += w
+    if name == "vice":
+        d.ellipse([WD / 2 - 260, 620, WD / 2 + 260, 1140], fill=(255, 200, 90, 230))
+        for k in range(6): d.rectangle([WD / 2 - 270, 900 + k * 40, WD / 2 + 270, 912 + k * 40], fill=(255, 120, 120, 255))
     if style == "planet":
         d.ellipse([-300, 1250, WD + 300, 2900], fill=(40, 120, 220))
         for _ in range(9):
@@ -219,7 +223,7 @@ def scene_bg(name):
     _scene[name] = im
     return im
 def is_dark(name):
-    t = SCENES.get(name, SCENES["paper"])[0]; return sum(t) < 300
+    t = SCENES.get(name, SCENES["paper"])[0]; return sum(t) < 330
 
 _blob = {}
 def blob(col):
@@ -510,8 +514,8 @@ def frame(tt):
         L = seg["label"]
         if lk < .98:
             L = L.resize((max(2, int(L.width * lk)), max(2, int(L.height * lk))))
-        im.paste(L, (int((WD - L.width) / 2), int(470 - L.height / 2)), L)
-    if BAIT and seg is segs[-1] and tt < END_T and tt - seg["win0"] > .3:
+        im.paste(L, (int((WD - L.width) / 2), int(415 - L.height / 2)), L)
+    if BAIT and seg is segs[-1] and tt < END_T and tt - seg["win0"] > 1.6:
         center_text(d, 335, BAIT, font(56), (255, 255, 255), 6, maxw=760)
     # captions: 3-word chunks, current word yellow, keyword green
     ws = seg["words"]
