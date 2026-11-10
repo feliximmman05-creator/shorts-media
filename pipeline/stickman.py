@@ -162,6 +162,10 @@ SCENES = {  # sky top, sky bottom, ground, stars, ground style
     "stadium": ((110, 170, 250), (205, 230, 255), (192, 86, 62), False, "track"),
 }
 GROUND_Y = 1372
+_yy, _xx = np.mgrid[0:HT, 0:WD]
+_r = np.sqrt(((_xx - WD / 2) / (WD * .75)) ** 2 + ((_yy - HT / 2) / (HT * .7)) ** 2)
+VIGNETTE = Image.fromarray(np.dstack([np.zeros((HT, WD, 3), np.uint8), (np.clip(_r - .55, 0, 1) * 200).astype(np.uint8)]), "RGBA")
+del _yy, _xx, _r
 _scene = {}
 def scene_bg(name):
     name = name if name in SCENES else "paper"
@@ -253,6 +257,96 @@ SS = 2
 def to_px(pt, hipy):
     return (HIPX + pt[0] * S, HIPY + (pt[1] + hipy) * S)
 
+STYLE = spec.get("style", "stick")
+LOOK = dict(skin="#f2c79b", hair="#2b211c", shirt="#2f6fd6", pants="#2d3142", hair_style="short", hat=None)
+LOOK.update(spec.get("look") or {})
+def _rgb(h): h = h.lstrip("#"); return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+HEAD_R = (.16 if STYLE == "cartoon" else .115) * S
+_hat = None
+if STYLE == "cartoon" and LOOK.get("hat"):
+    _hp = f"{WORK}/emoji/{LOOK['hat']}.png"
+    if os.path.exists(_hp): _hat = Image.open(_hp).convert("RGBA")
+
+def draw_cartoon(layer, layer_draw, pose, tt, face, mouth):
+    ox, oy = BOX[0], BOX[1]
+    hy = pose["hipy"][1]
+    pts = {j: to_px(pose[j], hy) for j in pose if j != "hipy"}
+    hip = (HIPX, HIPY + hy * S)
+    OL = (34, 26, 30); skin, hair, shirt, pants = (_rgb(LOOK[k]) for k in ("skin", "hair", "shirt", "pants"))
+    c = lambda p: ((p[0] - ox) * SS, (p[1] - oy) * SS)
+    def seg(a, b, w, col, outline=10):
+        for ww, cc in ((w + outline, OL), (w, col)):
+            layer_draw.line([c(a), c(b)], fill=cc, width=int(ww * SS))
+            for q in (a, b):
+                r = ww * SS / 2; x, y = c(q); layer_draw.ellipse([x - r, y - r, x + r, y + r], fill=cc)
+    def dot(q, r, col, outline=6):
+        x, y = c(q)
+        layer_draw.ellipse([x - (r + outline) * SS, y - (r + outline) * SS, x + (r + outline) * SS, y + (r + outline) * SS], fill=OL)
+        layer_draw.ellipse([x - r * SS, y - r * SS, x + r * SS, y + r * SS], fill=col)
+    # legs + shoes
+    for k, f in (("lk", "lf"), ("rk", "rf")):
+        seg(hip, pts[k], 40, pants); seg(pts[k], pts[f], 36, pants)
+        fx, fy = c(pts[f]); w, h = 46 * SS, 22 * SS
+        layer_draw.ellipse([fx - w - 6 * SS, fy - h - 6 * SS, fx + w + 6 * SS, fy + h + 6 * SS], fill=OL)
+        layer_draw.ellipse([fx - w, fy - h, fx + w, fy + h], fill=(52, 50, 60))
+    # body (capsule)
+    sh = (pts["neck"][0], pts["neck"][1] + .06 * S)
+    seg(sh, (hip[0], hip[1] - .02 * S), .25 * S, shirt, 12)
+    # arms: sleeve to elbow, skin forearm, round hand
+    for side, e, h in ((-1, "le", "lh"), (1, "re", "rh")):
+        shoulder = (pts["neck"][0] + side * .085 * S, pts["neck"][1] + .07 * S)
+        seg(shoulder, pts[e], 34, shirt); seg(pts[e], pts[h], 28, skin); dot(pts[h], 20, skin)
+    # neck + head
+    seg(pts["neck"], (pts["neck"][0], pts["neck"][1] + .04 * S), 34, skin)
+    hx, hyy = pts["head"]; R = HEAD_R
+    for dx in (-1, 1): dot((hx + dx * R * .98, hyy + R * .05), 18, skin)
+    dot((hx, hyy), R, skin, 7)
+    hs = LOOK.get("hair_style", "short")
+    x0, y0 = c((hx - R - 4, hyy - R - 8)); x1, y1 = c((hx + R + 4, hyy + R * .9))
+    if hs in ("short", "long", "spiky"):
+        layer_draw.chord([x0, y0, x1, y1], 180, 360, fill=hair)
+        layer_draw.ellipse([*c((hx - R * .2, hyy - R * 1.02)), *c((hx + R * .95, hyy - R * .35))], fill=hair)
+        if hs == "long":
+            for dx in (-1, 1):
+                a = (hx + dx * R * .92, hyy - R * .1); b = (hx + dx * R * .98, hyy + R * 1.1)
+                layer_draw.line([c(a), c(b)], fill=hair, width=int(R * .38 * SS))
+        if hs == "spiky":
+            for i in range(5):
+                bx = hx - R * .8 + i * R * .4
+                layer_draw.polygon([c((bx - R * .2, hyy - R * .7)), c((bx, hyy - R * 1.35)), c((bx + R * .2, hyy - R * .7))], fill=hair)
+    # face
+    blink = (tt % 3.3) < 0.1 and face != "shock"
+    for sx in (-1, 1):
+        ex, ey = hx + sx * R * .36 + R * .05, hyy + R * .05
+        rx, ry = R * .2, R * (.26 if face == "shock" else .22)
+        if blink:
+            layer_draw.line([c((ex - rx, ey)), c((ex + rx, ey))], fill=OL, width=6 * SS)
+        else:
+            layer_draw.ellipse([*c((ex - rx, ey - ry)), *c((ex + rx, ey + ry))], fill=(255, 255, 255), outline=OL, width=4 * SS)
+            pr = R * (.08 if face == "shock" else .11)
+            px, py = ex + R * .05, ey + R * .03
+            layer_draw.ellipse([*c((px - pr, py - pr)), *c((px + pr, py + pr))], fill=(25, 22, 30))
+            layer_draw.ellipse([*c((px - pr * .2, py - pr * .7)), *c((px + pr * .25, py - pr * .25))], fill=(255, 255, 255))
+        by = ey - ry - R * (.16 if face == "shock" else .1)
+        tilt = -.06 * R * sx if face == "sad" else (.05 * R * sx if face == "shock" else 0)
+        layer_draw.line([c((ex - rx, by + tilt)), c((ex + rx, by - tilt))], fill=hair if hs != "bald" else OL, width=7 * SS)
+        layer_draw.ellipse([*c((ex - R * .14, ey + R * .3)), *c((ex + R * .14, ey + R * .42))], fill=(255, 140, 140))
+    mx, my = hx + R * .05, hyy + R * .58
+    if face == "shock":
+        layer_draw.ellipse([*c((mx - R * .12, my - R * .1)), *c((mx + R * .12, my + R * .18))], fill=(110, 30, 40), outline=OL, width=4 * SS)
+    elif face == "sad":
+        layer_draw.arc([*c((mx - R * .2, my)), *c((mx + R * .2, my + R * .25))], 200, 340, fill=OL, width=6 * SS)
+    else:
+        h = R * (.04 + mouth * .26); w = R * (.22 if face == "happy" else .18)
+        if h < R * .07:
+            layer_draw.arc([*c((mx - w, my - R * .16)), *c((mx + w, my + R * .06))], 20, 160, fill=OL, width=6 * SS)
+        else:
+            layer_draw.chord([*c((mx - w, my - h * .5)), *c((mx + w, my + h))], 0, 180, fill=(110, 30, 40), outline=OL, width=4 * SS)
+    if _hat is not None:
+        hw = int(R * 1.7 * SS); hat = _hat.resize((hw, hw), Image.LANCZOS)
+        layer.paste(hat, (int((hx - ox) * SS - hw / 2), int((hyy - R * 1.55 - oy) * SS - hw / 2 + hw * .25)), hat)
+    return pts
+
 def draw_stickman(layer_draw, pose, tt, face, mouth):
     ox, oy = BOX[0], BOX[1]
     hy = pose["hipy"][1]
@@ -316,6 +410,7 @@ def frame(tt):
     pose = lerp_pose(POSES[prev[1]], POSES[pname], k)
     z = prev[2] + (zoom - prev[2]) * k
     z += 0.07 * math.exp(-(tt - kt) * 10)  # punch-in on every cut
+    z += min(.04, .02 * (tt - kt))  # slow push-in within each shot
     # life: breathing, gesture wiggle, running legs
     br = .008 * math.sin(tt * 2 * math.pi * .8)
     for j in ("neck", "head"): pose[j] = (pose[j][0], pose[j][1] + br)
@@ -333,6 +428,11 @@ def frame(tt):
     im = bg.copy()
     sseg = segs[0] if tt >= END_T else seg
     im = scene_bg(sseg["scene"]).copy()
+    si = segs.index(sseg)
+    if si > 0 and segs[si - 1]["scene"] != sseg["scene"] and tt - sseg["win0"] < .35:
+        kk = ease((tt - sseg["win0"]) / .35)
+        old = scene_bg(segs[si - 1]["scene"])
+        mix = Image.new("RGB", (WD, HT)); mix.paste(old, (int(-kk * WD), 0)); mix.paste(im, (int((1 - kk) * WD), 0)); im = mix
     if sseg["scene"] == "paper":
         b = blob(sseg["col"]); im.paste(b, (0, 0), b)
     for j, sp in enumerate(sseg["set_im"]):
@@ -346,12 +446,13 @@ def frame(tt):
         d.line([(150, 1372), (930, 1372)], fill=(60, 55, 50), width=6)
     d.ellipse([HIPX - 150, 1360, HIPX + 150, 1386], fill=(0, 0, 0, 60))
     layer = Image.new("RGBA", ((BOX[2] - BOX[0]) * SS, (BOX[3] - BOX[1]) * SS), (0, 0, 0, 0))
-    pts = draw_stickman(ImageDraw.Draw(layer), pose, tt, face, mouth)
+    if STYLE == "cartoon": pts = draw_cartoon(layer, ImageDraw.Draw(layer), pose, tt, face, mouth)
+    else: pts = draw_stickman(ImageDraw.Draw(layer), pose, tt, face, mouth)
     layer = layer.resize((BOX[2] - BOX[0], BOX[3] - BOX[1]), Image.LANCZOS)
     im.paste(layer, (BOX[0], BOX[1]), layer)
     if ROLE:
         hx, hyy = pts["head"]; f = font(46); tw = d.textlength(ROLE, font=f)
-        x0, y0 = hx - tw / 2 - 20, hyy - .115 * S - 92
+        x0, y0 = hx - tw / 2 - 20, hyy - HEAD_R - (150 if _hat is not None else 92)
         d.rounded_rectangle([x0, y0, x0 + tw + 40, y0 + 66], 16, fill=(15, 15, 15, 235), outline=(255, 255, 255), width=4)
         d.text((x0 + 20, y0 + 4), ROLE, font=f, fill=(255, 222, 40))
     # props
@@ -389,6 +490,7 @@ def frame(tt):
         cw, ch = WD / z, HT / z
         x0 = min(max(focus[0] - cw / 2 + shx, 0), WD - cw); y0 = min(max(focus[1] - ch / 2 + shy, 0), HT - ch)
         im = im.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize((WD, HT), Image.BILINEAR)
+    im.paste(VIGNETTE, (0, 0), VIGNETTE)
     d = ImageDraw.Draw(im, "RGBA")
 
     # ---------------- UI layer (not zoomed)

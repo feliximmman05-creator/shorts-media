@@ -12,6 +12,10 @@ REL=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1
 # emoji art (Twemoji, CC-BY 4.0); unknown codes fall back to a star
 for c in $(python3 "$HERE/emoji_codes.py" "$WORK/script.json") 2b50; do
   [ -s "$WORK/emoji/$c.png" ] && continue
+  FP=$(python3 -c "import json,sys,urllib.parse;p=json.load(open(sys.argv[1])).get(sys.argv[2]);print(urllib.parse.quote(p) if p else '')" "$HERE/fluent_index.json" "$c")
+  if [ -n "$FP" ] && curl -sSLf -o "$WORK/emoji/$c.png" "https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/$FP"; then
+    continue  # glossy 3D art (Microsoft Fluent Emoji, MIT)
+  fi
   if curl -sSLf -o "$WORK/emoji/$c.svg" "https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/$c.svg"; then
     python3 -c "import cairosvg,sys;cairosvg.svg2png(url=sys.argv[1],write_to=sys.argv[2],output_width=520,output_height=520)" "$WORK/emoji/$c.svg" "$WORK/emoji/$c.png"
   else echo "missing emoji $c, using star"; fi
