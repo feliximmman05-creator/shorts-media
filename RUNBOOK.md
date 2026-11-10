@@ -15,6 +15,8 @@ Pick ONE topic that:
 - can be explained in 30-45 seconds with a "wait, what?" angle;
 - is NOT in `log/topics.md` in the last 30 days.
 
+Also read `log/learnings.md` (written by the Sunday report) and apply its lessons to topic choice and script.
+
 Never pick: tragedies, deaths, crimes, disasters, war, elections or party politics, medical or health claims, financial "buy this" advice, real private individuals, anything involving minors, or rumors you can't confirm. Use real people only for public, factual, neutral things they did.
 
 Verify every fact with at least one reliable source. Hedge anything unconfirmed ("reportedly"). Keep the source URLs for the log.
@@ -68,3 +70,16 @@ Text must not overflow or cover the stick man's face. Fix the script (shorter `s
 2. Commit and push to `main`.
 3. Video URL: `https://raw.githubusercontent.com/feliximmman05-creator/shorts-media/main/videos/<file>.mp4` (check it returns HTTP 200).
 4. Metricool `createScheduledPost`: blogId `7796937`, ~10 minutes ahead, timezone `Asia/Calcutta`, provider `youtube`, autoPublish true. `youtubeData`: type `short`, privacy `public`, madeForKids false, isAiGeneratedContent false, category to fit (`ENTERTAINMENT`, `SCIENCE_TECHNOLOGY`, `COMEDY`, `GAMING`, `SPORTS`), 6-8 tags including the keyword. Title under 70 characters with the keyword near the start, ending `#shorts`. Description: one curiosity line with the keyword, then "Did you spot the hidden item? Comment what it was 👀", then 4-5 hashtags.
+
+## 5. Confirm and email
+1. Schedule the post only ~5 minutes ahead. Then run `sleep 480` in the background (Bash `run_in_background`) and continue when it finishes.
+2. Check Metricool `getScheduledPosts` (brandId `7796937`, today's date range, timezone `Asia/Calcutta`). When the YouTube provider status is `PUBLISHED`, take its `publicUrl`. If still pending, wait another 5 minutes, check again (max 3 checks). If it shows an error, say so in the email.
+3. Append a row to `log/posts.csv`: `date,title,youtube_url,topic,keyword,duration_s,hook_score,file` (duration from `ffprobe`). Commit and push.
+4. Send the email with Gmail `send_message` to `feliximmman05@gmail.com`, `htmlBody`, subject `✅ New Short posted: <title>` (or `⚠️ Short failed: <reason>`). Contents:
+   - Title, YouTube link, publish time (IST), status
+   - Trend picked and why it's trending (1-2 lines + source links)
+   - Hook: on-screen text, spoken line, hook score
+   - Keyword, length, hidden item
+   - Description and tags used
+   - Metricool planner link
+   Keep it short and clean: one heading, a small table, no images.
