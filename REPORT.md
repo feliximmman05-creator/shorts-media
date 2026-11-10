@@ -5,6 +5,7 @@ Runs every Sunday evening. Emails `feliximmman05@gmail.com` a summary of the wee
 ## 1. Gather data
 - `log/posts.csv`: every Short posted (this week = last 7 days, plus all-time).
 - `log/topics.md`, `log/*-script.json`: topics, hooks, keywords, beats.
+- `log/research/*.md`, `log/playbook.md`, `log/competitors.md`: what other channels did this week.
 - Metricool `getAnalyticsDataByMetrics`, brandId `7796937`. **Call each connector separately** (mixing connectors returns only one):
   - Channel trend, this week and the week before: `YTEV01` subscribers, `YTEV05` gained, `YTEV06` lost, `YTEV02` views, `YTEV13` views on videos published in range, `YTEV19` shares.
   - Per video, all time: `YTVV17` title, `YTVV05` url, `YTVV01` date, `YTVV06` views, `YTVV08` avg view duration (seconds), `YTVV09` likes, `YTVV11` comments, `YTVV12` shares.
@@ -18,12 +19,14 @@ Compute for each video and for the week:
 - Week-over-week change in views, subscribers, avg APV.
 - Best and worst video, and **why**: compare their topic type, hook text, hook score, length, keyword, posting day.
 - Patterns across all videos once there are 5+ (e.g. tech trends beat movie trends, shorter beats longer, which hook styles work).
+- **Us vs competitors:** our median views vs tracked competitors' median Shorts views; which of their patterns we used and whether they worked for us.
 - Progress toward YouTube Partner Program: 1,000 subscribers and 10 million Shorts views in 90 days (or 4,000 watch hours on long videos). Show current numbers and the pace needed.
 
 Be honest. Small numbers early on are normal; say what is and isn't meaningful yet. Never invent figures.
 
 ## 3. Improvements
 Give 3-5 concrete, specific changes ranked by expected impact (e.g. "hooks phrased as a question got 2x APV, so use question hooks", "cut to 30s", "avoid celebrity topics"). Then:
+- Clean up `log/playbook.md`: drop patterns that didn't work for us after 3+ tries, keep the proven ones.
 - Overwrite `log/learnings.md` with the current top lessons (max 8 bullets, each with the evidence). The daily run reads this file.
 - Do NOT change the pipeline code yourself. If a code change is needed (voice, animation, timing), list it in the email under "Changes that need your OK".
 - Commit and push.
@@ -36,6 +39,7 @@ Sections:
 3. **Best and worst** and why.
 4. **What's working / what isn't**.
 5. **Improvements** (ranked), plus "Changes that need your OK" if any.
-6. **Monetization progress** with pace needed.
-7. **Next week's plan** in 2-3 lines.
+6. **Competitors**: what worked for them this week; channels in `log/competitors.md` not yet tracked in Metricool, listed so the owner can add them (Metricool → Analytics → YouTube → Competitors).
+7. **Monetization progress** with pace needed.
+8. **Next week's plan** in 2-3 lines.
 Clean HTML, inline CSS only, no images, mobile friendly.

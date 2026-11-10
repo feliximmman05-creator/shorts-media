@@ -2,6 +2,19 @@
 
 One Short per day. Animated stick man explainer on whatever is trending **right now**, 30-45 seconds, built to loop.
 
+## 0. Research what's working (every run, before picking a topic)
+Learn patterns from other channels and our own stats. Never copy another channel's script, title wording, characters or footage. Copy the pattern (topic type, hook style, length, structure), not the content.
+
+1. **Our own Shorts** (Metricool, brandId `7796937`, last 14 days, connector "all videos"): `YTVV17` title, `YTVV01` date, `YTVV06` views, `YTVV08` avg view duration, `YTVV09` likes, `YTVV11` comments, `YTVV12` shares. Join with `log/posts.csv` (duration, hook score, topic). Note what our best ones have in common. Stats lag 1-2 days.
+2. **Competitors** (Metricool, connector "competitor videos", last 7 days, one connector per call): `YTCV03` channel, `YTCV06` title, `YTCV04` url, `YTCV01` date, `YTCV07` views, `YTCV08` comments, `YTCV09` likes. Rank by views. If it returns nothing, no competitors are tracked yet: skip it.
+3. **vidIQ, max ONE call per day** (free plan: 150 credits/month, 5 per call). First call `vidiq_balance` (free). If total credits ≥ 5, call `vidiq_trending_videos` with videoFormat `short`, sortBy `vph`, videoPublishedAfter = 3 days ago, videoTitleLanguage `en`, limit 25. Otherwise skip.
+4. **Web**: 2-3 searches for Shorts/TikTok formats and topics going viral this week.
+5. Write `log/research/YYYY-MM-DD.md` (max 40 lines): top 10 videos found (channel, title, views, views/hour if known, length if known), the patterns behind them (topic type, hook phrasing, format), and what we'll borrow today.
+6. Add any channel that appears repeatedly with fast-growing Shorts in a similar style (animated, explainer, trending topics, faceless) to `log/competitors.md` with its @handle and why.
+7. Update `log/playbook.md`: keep it as max 15 bullets of proven patterns ("question hooks on tech trends", "under 35s", "number in the first line"), each with the evidence and date. Merge, don't just append.
+
+Use today's research to choose the topic and shape the script. The post email must say which pattern(s) today's Short borrowed and from where.
+
 ## 1. Find today's trend
 Search the web for what is blowing up in the last 24-72 hours. Run several searches in one go, for example:
 - `Google Trends trending now` / `trending searches today`
@@ -15,7 +28,7 @@ Pick ONE topic that:
 - can be explained in 30-45 seconds with a "wait, what?" angle;
 - is NOT in `log/topics.md` in the last 30 days.
 
-Also read `log/learnings.md` (written by the Sunday report) and apply its lessons to topic choice and script.
+Also read `log/learnings.md` (Sunday report) and `log/playbook.md` (daily research) and apply them to topic choice and script. If research shows a trending topic already getting big views on similar channels, prefer it.
 
 Never pick: tragedies, deaths, crimes, disasters, war, elections or party politics, medical or health claims, financial "buy this" advice, real private individuals, anything involving minors, or rumors you can't confirm. Use real people only for public, factual, neutral things they did.
 
@@ -78,6 +91,7 @@ Text must not overflow or cover the stick man's face. Fix the script (shorter `s
 4. Send the email with Gmail `send_message` to `feliximmman05@gmail.com`, `htmlBody`, subject `✅ New Short posted: <title>` (or `⚠️ Short failed: <reason>`). Contents:
    - Title, YouTube link, publish time (IST), status
    - Trend picked and why it's trending (1-2 lines + source links)
+   - What today's research found (top 3 videos from other channels with views) and which pattern this Short borrowed
    - Hook: on-screen text, spoken line, hook score
    - Keyword, length, hidden item
    - Description and tags used
