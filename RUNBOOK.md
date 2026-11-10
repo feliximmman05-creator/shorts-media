@@ -15,6 +15,14 @@ Learn patterns from other channels and our own stats. Never copy another channel
 
 Use today's research to choose the topic and shape the script. The post email must say which pattern(s) today's Short borrowed and from where.
 
+## Content style: facts and stories that stop the scroll
+Every Short is ONE jaw-dropping fact or true story, told so the viewer must hear the end. Trending topics are the entry point; the payload is the surprising fact inside them.
+- **Pick the angle, not just the topic:** find the one detail about today's trend that most people don't know and would repeat to a friend ("The real reason...", "Nobody noticed that...", "This was never supposed to happen..."). If a trend has no such fact, pick a different trend or a timeless mind-blowing fact/story that connects to it.
+- **Best performing types:** hidden secrets behind famous things, "how is this even real" facts, bizarre true stories, crazy coincidences, dark-but-safe history (spooky, mysterious, unexplained), insane numbers, things that change how you see everyday objects. These fit the "Into the Dark Web" brand.
+- **Story shape:** open a question in the hook → escalate with each beat (every beat reveals something stranger) → hold the biggest reveal for the last beat → loop. Each beat must add a new surprise; cut any sentence that only explains.
+- **Make it concrete:** real names, dates, places and numbers ("in 1962", "forty million dollars") beat vague claims. Every claim must be verified.
+- **Mystery over gore:** dark and eerie is fine; graphic violence, real victims, self-harm, conspiracy theories presented as fact, and medical claims are not.
+
 ## 1. Find today's trend
 Search the web for what is blowing up in the last 24-72 hours. Run several searches in one go, for example:
 - `Google Trends trending now` / `trending searches today`
