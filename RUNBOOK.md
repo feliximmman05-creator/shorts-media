@@ -1,39 +1,70 @@
 # Daily Short runbook (Into the Dark Web, @ShadowMan0011)
 
-One Short per day. Format: "Top 5 [funniest / dumbest] moments in [category]", countdown #5 to #1, 45-60 seconds.
+One Short per day. Animated stick man explainer on whatever is trending **right now**, 30-45 seconds, built to loop.
 
-## 1. Pick the topic
-- Read `log/topics.md`. Never repeat a category or any single moment already listed there.
-- Rotate categories, evergreen only (history, science, sports, animals, inventions, military, space, business, food, royalty, police chases, airports, weddings, etc.). No current-news or trend topics.
-- Every moment must be real and verifiable. Web-search each one and keep 1 source per moment. Drop any moment you can't verify. No real private individuals; no deaths, injuries or tragedies played for laughs; nothing about minors.
-- Hedge contested stories ("legend says", "reportedly").
+## 1. Find today's trend
+Search the web for what is blowing up in the last 24-72 hours. Run several searches in one go, for example:
+- `Google Trends trending now` / `trending searches today`
+- `trending on YouTube today` / `viral TikTok trend this week`
+- `Know Your Meme trending` / `viral video this week`
+- `biggest tech news today`, `new movie / game / gadget everyone is talking about`
+Use today's real date in queries.
 
-## 2. Write `script.json`
-Work folder: `work/` (gitignored). Format, 7 segments in this order, ids exactly as shown:
+Pick ONE topic that:
+- has clearly rising interest right now (several sources mention it), and broad appeal (tech, AI, gadgets, games, movies, internet culture, viral moments, weird science, money/business, sports moments);
+- can be explained in 30-45 seconds with a "wait, what?" angle;
+- is NOT in `log/topics.md` in the last 30 days.
+
+Never pick: tragedies, deaths, crimes, disasters, war, elections or party politics, medical or health claims, financial "buy this" advice, real private individuals, anything involving minors, or rumors you can't confirm. Use real people only for public, factual, neutral things they did.
+
+Verify every fact with at least one reliable source. Hedge anything unconfirmed ("reportedly"). Keep the source URLs for the log.
+
+## 2. Write `work/script.json`
 
 ```json
-[
- {"id":"hook","rank":"","title":"5 FUNNIEST MOMENTS IN SPORTS","emoji":["1f92f"],"text":"..."},
- {"id":"r5","rank":"#5","title":"SHORT CAPS TITLE","emoji":["26bd","1f926"],"text":"Number five. ..."},
- {"id":"r4", ...}, {"id":"r3", ...}, {"id":"r2", ...}, {"id":"r1", ...},
- {"id":"outro","rank":"","title":"FOLLOW FOR MORE","emoji":["1f449"],"text":"Follow for more ... so dumb, it's actually real."}
-]
+{
+ "keyword": "emu war",
+ "hook": {"screen": "Birds beat an army", "text": "The emu war is the only war humans ever lost to birds, and",
+          "prop": "1f426", "pose": "point"},
+ "beats": [
+  {"text": "...", "poses": ["explain", "shock"], "prop": "1f33e", "pop": "20,000 EMUS"},
+  {"text": "...", "poses": ["hold", "facepalm"], "prop": "1f52b", "pop": "MACHINE GUNS"},
+  {"text": "...", "poses": ["run", "shock"], "prop": "1f4a8"},
+  {"text": "... The emu war is real, and it proves", "poses": ["sad", "shrug"], "prop": "1f3f3"}
+ ],
+ "hidden": {"emoji": "1f95a", "beat": 1},
+ "youtube": {"title": "...", "description": "...", "tags": ["..."], "category": "ENTERTAINMENT"}
+}
 ```
+A complete working example is in `log/example-script.json`.
 
-- `emoji`: 1-2 lowercase Twemoji codepoints (e.g. `1f407` rabbit, `1f680` rocket). Flags use `1f1e6-1f1fa` style.
-- `title`: max ~28 characters, caps.
-- `text`: spoken words. Each ranked segment 20-30 words. Write numbers as words when spoken ("twenty thousand"). Total target 50-60 seconds.
-- Hook: write 3 options, score with `python3 -I pipeline/hooks/hookscore.py hooks.txt`, use the top one (must score 60+). The "You won't believe number one" pattern scored 79.
-- Remove em dashes and filler words.
+### Triple hook (first 3 seconds; the renderer handles timing)
+- **Visual (0-1s):** the stick man slams `hook.prop` (impact, shake, flash). Pick a prop that is the topic's object.
+- **Written (0-1.5s):** `hook.screen` = 3-5 words, curiosity or a bold promise ("Stop doing this", "This changes everything", "Birds beat an army"). Big and centered.
+- **Verbal (starts ~0.7s):** `hook.text` = one punchy line that confirms the topic and opens a curiosity gap. No greetings, no "hey guys". Write 3 options, score them with `python3 -I pipeline/hooks/hookscore.py hooks.txt`, and use the best (60+).
 
-## 3. Build
+### Retention rules
+- **Seamless loop:** `hook.text` starts mid-thought, and the LAST beat ends mid-sentence so its last words run straight into the hook's first words ("...and it proves" → "The emu war is the only war..."). Read last + first aloud together: it must sound like one sentence. No outro, no "follow for more", no "thanks for watching".
+- **Micro-hooks:** 3-5 beats, each 5-7 seconds (about 14-22 words). Every beat after the first opens or ends with a curiosity line: "But that's where things went completely wrong", "And then it got worse", "Here's the part nobody talks about", "But wait, it gets weirder".
+- **Keyword 5-7 times:** put the exact `keyword` phrase in the spoken text 5-7 times in total (hook + beats). It is highlighted green in the captions.
+- **Comment bait:** set `hidden` to a small unrelated emoji shown for about 1 second during that beat. The video shows "Spot the hidden item? Comment what it was" at the end, and the description asks the same. Never add deliberate factual mistakes.
+- Total spoken length 30-45 seconds. Write numbers as words. No em dashes.
+
+### Visual fields
+- `poses` (1-2 per beat, alternated about every 1.8s with camera cuts): `talk, explain, point, shock, shrug, facepalm, celebrate, think, sad, hold, run, idle`. Match the emotion of the words.
+- `prop`: one Twemoji codepoint per beat (lowercase hex, e.g. `1f4f1` phone, `1f916` robot, `1f4b8` money, `1f3ae` game controller, `1f525` fire). Flags look like `1f1fa-1f1f8`.
+- `pop` (optional, most beats): 1-3 word sticker label, e.g. a number or "BUT WAIT".
+
+## 3. Build and check
 ```bash
 bash pipeline/make_short.sh work videos/YYYY-MM-DD-<slug>.mp4
 ```
-Then check it: extract 4 frames with ffmpeg (`select='eq(n\,200)+...',scale=360:-1,tile=4x1`) and look at them. Text must not overlap or overflow. Fix and rebuild if it does.
+Extract frames and look at them:
+`ffmpeg -i <video> -vf "select='eq(n\,0)+eq(n\,40)+eq(n\,300)+eq(n\,600)',scale=270:-1,tile=4x1" -frames:v 1 check.png`
+Text must not overflow or cover the stick man's face. Fix the script (shorter `screen`/`pop` text) and rebuild if needed.
 
 ## 4. Publish
-1. Copy `work/script.json` to `log/YYYY-MM-DD-script.json`, append one line to `log/topics.md`: `- YYYY-MM-DD | category | moment1; moment2; moment3; moment4; moment5`.
+1. Copy `work/script.json` to `log/YYYY-MM-DD-script.json`. Append to `log/topics.md`: `- YYYY-MM-DD | <topic> | <keyword> | <source urls>`.
 2. Commit and push to `main`.
 3. Video URL: `https://raw.githubusercontent.com/feliximmman05-creator/shorts-media/main/videos/<file>.mp4` (check it returns HTTP 200).
-4. Metricool `createScheduledPost`, blogId `7796937`, ~10 minutes ahead, timezone `Asia/Calcutta`, provider `youtube`, autoPublish true, `youtubeData`: type `short`, privacy `public`, madeForKids false, category `EDUCATION` (or `COMEDY`/`SPORTS` to fit), 6-8 tags, title under 70 chars ending `#shorts`. Description: one curiosity line + question to drive comments + "Follow for more!" + 4-5 hashtags.
+4. Metricool `createScheduledPost`: blogId `7796937`, ~10 minutes ahead, timezone `Asia/Calcutta`, provider `youtube`, autoPublish true. `youtubeData`: type `short`, privacy `public`, madeForKids false, isAiGeneratedContent false, category to fit (`ENTERTAINMENT`, `SCIENCE_TECHNOLOGY`, `COMEDY`, `GAMING`, `SPORTS`), 6-8 tags including the keyword. Title under 70 characters with the keyword near the start, ending `#shorts`. Description: one curiosity line with the keyword, then "Did you spot the hidden item? Comment what it was 👀", then 4-5 hashtags.

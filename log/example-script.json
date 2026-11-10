@@ -1,0 +1,12 @@
+{
+ "keyword": "emu war",
+ "hook": {"screen": "Birds beat an army", "text": "The emu war is the only war humans ever lost to birds, and", "prop": "1f426", "pose": "point"},
+ "beats": [
+  {"text": "it started in 1932, when twenty thousand emus invaded farms in Western Australia. But the army had a plan.", "poses": ["explain", "shock"], "prop": "1f33e", "pop": "20,000 EMUS"},
+  {"text": "They sent soldiers with machine guns to win the emu war. Easy, right? That's where things went completely wrong.", "poses": ["hold", "facepalm"], "prop": "1f52b", "pop": "MACHINE GUNS"},
+  {"text": "The emus split into tiny groups, ran at thirty miles an hour, and dodged almost everything. And then it got worse.", "poses": ["run", "shock"], "prop": "1f4a8"},
+  {"text": "Nearly ten thousand bullets later, the army pulled out. The emu war is real, and it proves", "poses": ["sad", "shrug"], "prop": "1f3f3", "pop": "ARMY RETREATS"}
+ ],
+ "hidden": {"emoji": "1f95a", "beat": 1},
+ "youtube": {"title": "Birds Beat an Army?! The Emu War Explained #shorts"}
+}
