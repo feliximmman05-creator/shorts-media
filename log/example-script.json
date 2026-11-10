@@ -1,12 +1,16 @@
 {
- "keyword": "emu war",
- "hook": {"screen": "Birds beat an army", "text": "The emu war is the only war humans ever lost to birds, and", "prop": "1f426", "pose": "point"},
+ "format": "master-plan",
+ "role": "Khufu",
+ "keyword": "Great Pyramid",
+ "hook": {"screen": "Build the impossible tomb", "text": "You're Pharaoh Khufu, and you want the Great Pyramid, the biggest tomb ever built. But there's a problem.",
+          "prop": "1f451", "pose": "point", "scene": "desert", "set": ["1f3dc"]},
  "beats": [
-  {"text": "it started in 1932, when twenty thousand emus invaded farms in Western Australia. But the army had a plan.", "poses": ["explain", "shock"], "prop": "1f33e", "pop": "20,000 EMUS"},
-  {"text": "They sent soldiers with machine guns to win the emu war. Easy, right? That's where things went completely wrong.", "poses": ["hold", "facepalm"], "prop": "1f52b", "pop": "MACHINE GUNS"},
-  {"text": "The emus split into tiny groups, ran at thirty miles an hour, and dodged almost everything. And then it got worse.", "poses": ["run", "shock"], "prop": "1f4a8"},
-  {"text": "Nearly ten thousand bullets later, the army pulled out. The emu war is real, and it proves", "poses": ["sad", "shrug"], "prop": "1f3f3", "pop": "ARMY RETREATS"}
+  {"text": "First, you need stone. About two point three million blocks, most heavier than a car. So you open a quarry right next to the Great Pyramid.", "poses": ["explain", "shock"], "prop": "1f697", "pop": "2.3 MILLION BLOCKS", "scene": "desert", "set": ["1faa8"]},
+  {"text": "But the best white limestone is across the river. So you load it on boats and ride the Nile flood almost to the door. Your inspector Merer even wrote it down in a diary.", "poses": ["point", "hold"], "prop": "1f4dc", "pop": "NILE FLOOD", "scene": "ocean", "set": ["26f5"]},
+  {"text": "Still not enough? The blocks are too heavy to drag across sand. So your workers pour water in front of the sledges. Wet sand cuts the pulling force in half.", "poses": ["think", "celebrate"], "prop": "1f4a7", "pop": "WET SAND", "scene": "desert", "set": ["1faa8"]},
+  {"text": "Then you hit the wall. You need thousands of workers for twenty years. So you build them a whole town, with bakeries and doctors. Paid workers, not slaves, built the Great Pyramid.", "poses": ["facepalm", "explain"], "prop": "1f35e", "pop": "PAID WORKERS", "scene": "desert", "set": ["1f3d8"]},
+  {"text": "Twenty years later, it's the tallest building on Earth, for almost four thousand years. And people still say aliens built the Great Pyramid, when really", "poses": ["celebrate", "shrug"], "prop": "1f47d", "pop": "#1 FOR 3,800 YEARS", "scene": "night", "set": ["1f6f8"]}
  ],
- "hidden": {"emoji": "1f95a", "beat": 1},
- "youtube": {"title": "Birds Beat an Army?! The Emu War Explained #shorts"}
+ "hidden": {"emoji": "1f36a", "beat": 2},
+ "youtube": {"title": "What If You Had to Build the Great Pyramid? #shorts"}
 }

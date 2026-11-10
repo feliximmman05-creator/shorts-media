@@ -131,6 +131,13 @@ def emoji(code, size):
 hook_prop = emoji(spec["hook"].get("prop", "1f4a5"), 230)
 for s in segs[1:]:
     s["prop_im"] = emoji(s["prop"], 250) if s.get("prop") else None
+default_scene = spec.get("scene", "paper")
+for i, s in enumerate(segs):
+    if i == 0: s["scene"] = spec["hook"].get("scene") or (spec["beats"][0].get("scene") if spec["beats"] else None) or default_scene
+    else: s["scene"] = s.get("scene") or segs[i - 1]["scene"]
+    src = spec["hook"] if i == 0 else s
+    s["set_im"] = [emoji(c, 460 if j == 0 else 340) for j, c in enumerate((src.get("set") or [])[:2])]
+ROLE = (spec.get("role") or "").upper()
 hidden = spec.get("hidden")
 hidden_im = emoji(hidden["emoji"], 105) if hidden else None
 
@@ -140,6 +147,76 @@ d = ImageDraw.Draw(bg)
 for y in range(40, HT, 60):
     for x in range(40, WD, 60):
         d.ellipse([x - 3, y - 3, x + 3, y + 3], fill=(226, 219, 205))
+SCENES = {  # sky top, sky bottom, ground, stars, ground style
+    "paper": ((246, 241, 231), (246, 241, 231), None, False, None),
+    "space": ((4, 6, 22), (30, 22, 70), None, True, None),
+    "moon": ((2, 2, 10), (20, 20, 40), (150, 150, 160), True, "craters"),
+    "earth": ((10, 20, 60), (40, 90, 170), None, True, "planet"),
+    "city": ((110, 170, 250), (205, 230, 255), (70, 72, 82), False, "skyline"),
+    "night": ((8, 12, 36), (40, 48, 92), (24, 30, 44), True, "skyline"),
+    "desert": ((250, 170, 100), (255, 228, 170), (226, 186, 118), False, "dunes"),
+    "grass": ((110, 180, 250), (200, 232, 255), (92, 168, 82), False, None),
+    "ocean": ((120, 190, 250), (210, 238, 255), (36, 108, 190), False, "waves"),
+    "lab": ((52, 62, 84), (88, 98, 122), (38, 42, 54), False, "grid"),
+    "factory": ((70, 66, 64), (120, 110, 100), (50, 48, 46), False, "grid"),
+    "stadium": ((110, 170, 250), (205, 230, 255), (192, 86, 62), False, "track"),
+}
+GROUND_Y = 1372
+_scene = {}
+def scene_bg(name):
+    name = name if name in SCENES else "paper"
+    if name in _scene: return _scene[name]
+    top, bot, gnd, stars, style = SCENES[name]
+    if name == "paper":
+        im = bg.copy()
+    else:
+        k = np.linspace(0, 1, HT)[:, None, None]
+        arr = (np.array(top)[None, None, :] * (1 - k) + np.array(bot)[None, None, :] * k).repeat(WD, axis=1)
+        im = Image.fromarray(arr.astype(np.uint8), "RGB")
+    d = ImageDraw.Draw(im, "RGBA")
+    rnd = random.Random(name)
+    if stars:
+        for _ in range(160):
+            x, y, r = rnd.uniform(0, WD), rnd.uniform(0, GROUND_Y if gnd else HT), rnd.choice([1.5, 2, 2.5, 3.5])
+            d.ellipse([x - r, y - r, x + r, y + r], fill=(255, 255, 255, rnd.randint(120, 255)))
+    if style == "skyline":
+        x = 0
+        while x < WD:
+            w = rnd.randint(70, 150); h = rnd.randint(180, 520)
+            col = (40, 48, 70, 255) if name == "night" else (150, 165, 190, 255)
+            d.rectangle([x, GROUND_Y - h, x + w - 8, GROUND_Y], fill=col)
+            for wy in range(GROUND_Y - h + 20, GROUND_Y - 20, 40):
+                for wx in range(x + 12, x + w - 20, 28):
+                    if rnd.random() < .5: d.rectangle([wx, wy, wx + 12, wy + 18], fill=(255, 220, 120, 200) if name == "night" else (220, 230, 245, 255))
+            x += w
+    if style == "planet":
+        d.ellipse([-300, 1250, WD + 300, 2900], fill=(40, 120, 220))
+        for _ in range(9):
+            cx, cy = rnd.uniform(0, WD), rnd.uniform(1330, 1800)
+            d.ellipse([cx - 150, cy - 50, cx + 150, cy + 50], fill=(80, 170, 90))
+    if gnd:
+        d.rectangle([0, GROUND_Y, WD, HT], fill=gnd)
+        if style == "craters":
+            for _ in range(14):
+                cx, cy, r = rnd.uniform(0, WD), rnd.uniform(GROUND_Y + 40, HT - 80), rnd.uniform(20, 70)
+                d.ellipse([cx - r, cy - r * .35, cx + r, cy + r * .35], fill=(120, 120, 132))
+        if style == "grid":
+            for gx in range(-WD, 2 * WD, 120):
+                d.line([(WD / 2 + (gx - WD / 2) * .25, GROUND_Y), (gx, HT)], fill=(255, 255, 255, 30), width=3)
+            for gy in (1420, 1500, 1620, 1780): d.line([(0, gy), (WD, gy)], fill=(255, 255, 255, 30), width=3)
+        if style == "track":
+            for gy in (1440, 1540, 1660): d.line([(0, gy), (WD, gy)], fill=(255, 255, 255, 140), width=6)
+        if style == "waves":
+            for gy in range(GROUND_Y + 40, HT, 70):
+                for gx in range(0, WD, 120): d.arc([gx, gy, gx + 120, gy + 40], 200, 340, fill=(200, 230, 255, 160), width=5)
+        if style == "dunes":
+            d.ellipse([-200, GROUND_Y - 120, 600, GROUND_Y + 200], fill=gnd); d.ellipse([400, GROUND_Y - 80, 1300, GROUND_Y + 200], fill=gnd)
+        d.line([(0, GROUND_Y), (WD, GROUND_Y)], fill=(0, 0, 0, 90), width=5)
+    _scene[name] = im
+    return im
+def is_dark(name):
+    t = SCENES.get(name, SCENES["paper"])[0]; return sum(t) < 300
+
 _blob = {}
 def blob(col):
     if col not in _blob:
@@ -181,17 +258,16 @@ def draw_stickman(layer_draw, pose, tt, face, mouth):
     hy = pose["hipy"][1]
     pts = {j: to_px(pose[j], hy) for j in pose if j != "hipy"}
     hip = (HIPX, HIPY + hy * S)
-    def L(a, b, w=22):
-        layer_draw.line([((a[0] - ox) * SS, (a[1] - oy) * SS), ((b[0] - ox) * SS, (b[1] - oy) * SS)], fill=(20, 20, 20), width=w * SS)
+    def L(a, b, w=22, col=(20, 20, 20)):
+        layer_draw.line([((a[0] - ox) * SS, (a[1] - oy) * SS), ((b[0] - ox) * SS, (b[1] - oy) * SS)], fill=col, width=int(w * SS))
         for p in (a, b):
             r = w * SS / 2
-            layer_draw.ellipse([(p[0] - ox) * SS - r, (p[1] - oy) * SS - r, (p[0] - ox) * SS + r, (p[1] - oy) * SS + r], fill=(20, 20, 20))
-    L(pts["neck"], hip)
-    for a, b in (("neck", "le"), ("le", "lh"), ("neck", "re"), ("re", "rh")):
-        L(pts[a], pts[b])
-    for a, b in (("lk", "lf"), ("rk", "rf")):
-        L(pts[a], pts[b])
-    L(hip, pts["lk"]); L(hip, pts["rk"])
+            layer_draw.ellipse([(p[0] - ox) * SS - r, (p[1] - oy) * SS - r, (p[0] - ox) * SS + r, (p[1] - oy) * SS + r], fill=col)
+    bones = [(pts["neck"], hip)] + [(pts[a], pts[b]) for a, b in (("neck", "le"), ("le", "lh"), ("neck", "re"), ("re", "rh"), ("lk", "lf"), ("rk", "rf"))] + [(hip, pts["lk"]), (hip, pts["rk"])]
+    for a, b in bones: L(a, b, 34, (255, 255, 255))
+    hx0, hy0 = pts["head"]; R0 = .115 * S + 7
+    layer_draw.ellipse([(hx0 - R0 - ox) * SS, (hy0 - R0 - oy) * SS, (hx0 + R0 - ox) * SS, (hy0 + R0 - oy) * SS], fill=(255, 255, 255))
+    for a, b in bones: L(a, b)
     hx, hyy = pts["head"]; R = .115 * S
     c = lambda x, y: ((x - ox) * SS, (y - oy) * SS)
     x0, y0 = c(hx - R, hyy - R); x1, y1 = c(hx + R, hyy + R)
@@ -255,14 +331,29 @@ def frame(tt):
     i = int(tt * SR); mouth = min(1, float(voice_env[min(i, len(voice_env) - 1)]) / peak) if speaking else 0
 
     im = bg.copy()
-    b = blob(segs[0]["col"] if tt >= END_T else seg["col"]); im.paste(b, (0, 0), b)
+    sseg = segs[0] if tt >= END_T else seg
+    im = scene_bg(sseg["scene"]).copy()
+    if sseg["scene"] == "paper":
+        b = blob(sseg["col"]); im.paste(b, (0, 0), b)
+    for j, sp in enumerate(sseg["set_im"]):
+        drift = math.sin(tt * .6 + j) * 14
+        k_in = ease((tt - sseg["win0"]) / .4) if sseg is not segs[0] else 1
+        x = (255 if j == 0 else 845) + drift; y = (GROUND_Y - sp.height / 2 + 30 if j == 0 else 700)
+        y += (1 - k_in) * 120
+        im.paste(sp, (int(x - sp.width / 2), int(y - sp.height / 2)), sp)
     d = ImageDraw.Draw(im, "RGBA")
-    d.line([(150, 1372), (930, 1372)], fill=(60, 55, 50), width=6)
-    d.ellipse([HIPX - 150, 1360, HIPX + 150, 1386], fill=(0, 0, 0, 40))
+    if sseg["scene"] == "paper":
+        d.line([(150, 1372), (930, 1372)], fill=(60, 55, 50), width=6)
+    d.ellipse([HIPX - 150, 1360, HIPX + 150, 1386], fill=(0, 0, 0, 60))
     layer = Image.new("RGBA", ((BOX[2] - BOX[0]) * SS, (BOX[3] - BOX[1]) * SS), (0, 0, 0, 0))
     pts = draw_stickman(ImageDraw.Draw(layer), pose, tt, face, mouth)
     layer = layer.resize((BOX[2] - BOX[0], BOX[3] - BOX[1]), Image.LANCZOS)
     im.paste(layer, (BOX[0], BOX[1]), layer)
+    if ROLE:
+        hx, hyy = pts["head"]; f = font(46); tw = d.textlength(ROLE, font=f)
+        x0, y0 = hx - tw / 2 - 20, hyy - .115 * S - 92
+        d.rounded_rectangle([x0, y0, x0 + tw + 40, y0 + 66], 16, fill=(15, 15, 15, 235), outline=(255, 255, 255), width=4)
+        d.text((x0 + 20, y0 + 4), ROLE, font=f, fill=(255, 222, 40))
     # props
     hold = HOLD_AT.get(pname) if k > .5 else HOLD_AT.get(prev[1])
     prop = hook_prop if (tt < segs[0]["win1"] or tt >= END_T) else seg.get("prop_im")
@@ -336,7 +427,7 @@ def frame(tt):
         colr = (255, 222, 40) if cs + n == cur and a <= tt < b2 + .15 else ((120, 230, 120) if clean in KW else (255, 255, 255))
         d.text((x, y), w.upper(), font=f, fill=colr, stroke_width=10, stroke_fill=(15, 15, 15))
         x += d.textlength(w.upper() + " ", font=f)
-    center_text(d, HT - 110, BRAND, font(38), (40, 40, 40, 150), 0)
+    center_text(d, HT - 110, BRAND, font(38), (235, 235, 235, 170) if is_dark(seg["scene"]) else (40, 40, 40, 150), 0)
     # white flash on impact
     if SLAM_T <= tt < SLAM_T + .08:
         im = Image.blend(im, Image.new("RGB", (WD, HT), (255, 255, 255)), .55 * (1 - (tt - SLAM_T) / .08))
