@@ -1,0 +1,20 @@
+{
+ "format": "master-plan",
+ "style": "cartoon",
+ "role": "Rockstar",
+ "look": {"skin": "#e8b48a", "hair": "#1d1a1a", "shirt": "#f5c518", "pants": "#3a3550", "hair_style": "short", "hat": "1f9e2"},
+ "keyword": "GTA Six",
+ "scene": "vice",
+ "hook": {"screen": "13 years for ONE game", "text": "Thirteen years for GTA Six was never your mistake. It was your plan, because you're Rockstar Games.",
+          "prop": "1f3ae", "pose": "point", "scene": "vice", "set": ["1f334"]},
+ "beats": [
+  {"text": "First, you release GTA Five, and it sells over two hundred million copies. Then GTA Online keeps the money coming for years, so you never have to rush GTA Six.", "poses": ["explain", "celebrate"], "prop": "1f4b0", "pop": "200M+ COPIES", "scene": "city", "set": ["1f3d9"]},
+  {"text": "Now you need hype. So in December 2023 you drop one trailer, and it gets ninety million views in twenty four hours, beating MrBeast's record.", "poses": ["hold", "shock"], "prop": "1f3ac", "pop": "90M IN 24 HOURS", "scene": "night", "set": ["1f4fa"]},
+  {"text": "Still not enough? Trailer two pulls four hundred seventy five million views in one day across every platform. Nothing in entertainment had ever done that.", "poses": ["celebrate", "point"], "prop": "1f525", "pop": "475 MILLION", "scene": "night", "set": ["1f4f1"]},
+  {"text": "Then you hit the wall. The game isn't ready. So you delay GTA Six to May, then again to November nineteenth, and the internet loses its mind.", "poses": ["facepalm", "shrug"], "prop": "23f3", "pop": "DELAYED TWICE", "scene": "lab", "set": ["1f4c5"]},
+  {"text": "But the wait only made it bigger. Eighty dollars, and preorders still beat expectations. And starting today, the preload needs up to two hundred twelve gigabytes.", "poses": ["explain", "shock"], "prop": "1f4be", "pop": "212 GB", "scene": "lab", "set": ["1f4bb"]},
+  {"text": "Now you've won. In nine days, millions of players vanish into Vice City at the same time. And GTA Seven? Probably another", "poses": ["celebrate", "shrug"], "prop": "1f3c6", "pop": "NOV 19", "scene": "vice", "set": ["1f334"]}
+ ],
+ "hidden": {"emoji": "1f366", "beat": 3},
+ "youtube": {"title": "You're Rockstar: The 13-Year GTA 6 Master Plan #shorts"}
+}
