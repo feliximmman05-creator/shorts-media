@@ -1,6 +1,6 @@
 # Daily Short runbook (Into the Dark Web, @ShadowMan0011)
 
-One Short per day in the **"You're X: the master plan"** format (see below), about whatever is trending **right now**, 50-90 seconds, animated stick man in a new scene every step, built to loop.
+One Short per day in the **"You're X: the master plan"** format (see below), about whatever is trending **right now**, 25-40 seconds (owner goal 2026-11-12: 1M views + 1,000 subs; viral Shorts this week were mostly under 35s), animated stick man in a new scene every step, built to loop.
 
 ## The format: "You're X" master plan (every Short)
 Modeled on "What If Elon Musk Took the AI Race to Space?" (Afterhour Theory, 1.7M views). Learn the structure, never reuse its script, characters or artwork.
@@ -70,14 +70,14 @@ The complete working example is `log/example-script.json` (GTA 6 week; loop: "..
 ### Triple hook (first 3 seconds; the renderer handles timing)
 - **Visual (0-1s):** the stick man slams `hook.prop` (impact, shake, flash). Pick a prop that is the topic's object.
 - **Written (0-1.5s):** `hook.screen` = 3-5 words, curiosity or a bold promise ("Stop doing this", "This changes everything", "Birds beat an army"). Big and centered.
-- **Verbal (starts ~0.7s):** `hook.text` = one punchy line that confirms the topic and opens a curiosity gap. No greetings, no "hey guys". Write 3 options, score them with `python3 -I pipeline/hooks/hookscore.py hooks.txt`, and use the best (60+).
+- **Verbal (starts ~0.7s):** `hook.text` = one punchy line that confirms the topic and opens a curiosity gap. No greetings, no "hey guys". Write 3 options, score them with `python3 -I pipeline/hooks/hookscore.py hooks.txt`, and use the best (75+; say "you" and keep it under ~15 words).
 
 ### Retention rules
 - **Seamless loop:** `hook.text` starts mid-thought, and the LAST beat ends mid-sentence so its last words run straight into the hook's first words ("...and it proves" → "The emu war is the only war..."). Read last + first aloud together: it must sound like one sentence. No outro, no "follow for more", no "thanks for watching".
-- **Micro-hooks:** 5-9 beats (one per step of the plan), each 6-10 seconds (about 18-30 words). Every beat after the first opens or ends with a curiosity line: "But that's where things went completely wrong", "And then it got worse", "Here's the part nobody talks about", "But wait, it gets weirder".
-- **Keyword 5-7 times:** put the exact `keyword` phrase in the spoken text 5-7 times in total (hook + beats). It is highlighted green in the captions.
+- **Micro-hooks:** 3-5 beats (one per step of the plan), each 5-8 seconds (about 15-25 words). Open on the most surprising number, not on setup. Every beat after the first opens or ends with a curiosity line: "But that's where things went completely wrong", "And then it got worse", "Here's the part nobody talks about", "But wait, it gets weirder".
+- **Keyword 3-4 times:** put the exact `keyword` phrase in the spoken text 3-4 times in total (hook + beats). It is highlighted green in the captions.
 - **Comment bait:** set `hidden` to a small unrelated emoji shown for about 1 second during that beat. The video shows "Spot the hidden item? Comment what it was" at the end, and the description asks the same. Never add deliberate factual mistakes.
-- Total spoken length 50-90 seconds. Write numbers as words. No em dashes.
+- Total spoken length 25-40 seconds (about 75-110 words). End the last beat as a question to the viewer so it loops and drives comments. Write numbers as words. No em dashes.
 
 ### Visual fields
 - `poses` (1-2 per beat, alternated about every 1.8s with camera cuts): `talk, explain, point, shock, shrug, facepalm, celebrate, think, sad, hold, run, idle`. Match the emotion of the words.
