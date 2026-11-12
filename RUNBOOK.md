@@ -1,32 +1,32 @@
 # Daily Shorts runbook (Peak Dumb, @peakdumbtv)
 
-Two Shorts per day (morning run + evening run), every one a **"Peak Dumb" story** told in the **"You're X"** second-person format (see below), 20-30 seconds, cartoon character in a new scene every step, built to loop.
+Two Shorts per day (morning run + evening run), every one a **"What If" scenario** (see the format below), 20-35 seconds, cartoon character in a new scene every step, built to loop.
 
-## Channel strategy (set 2026-11-12 by the owner's request; overrides anything below that conflicts)
+## Channel strategy (lane changed from "dumbest decisions" to "What If" on 2026-11-12 by the owner's request; overrides anything below that conflicts)
 **Goal:** YouTube Partner Program: 1,000 subscribers + 10 million Shorts views inside a 90-day window. No guarantee exists; the job is to maximise the odds every day.
 
-**Where we are (2026-11-12):** 6 subs, 4,149 lifetime views, 9 Shorts. 96% of views come from the Shorts feed. Only ~53% of feed views become engaged views (target 70%+). 2 subs per ~2,500 views (0.08%).
+**Where we are (2026-11-12):** 6 subs, 4,149 lifetime views, 9 Shorts before the change. 96% of views come from the Shorts feed. Only ~53% of feed views become engaged views (target 70%+). 2 subs per ~2,500 views (0.08%).
 
-**Diagnosis:** topics were all over the place (history list, maths, GTA 6, Red Bull stunt), so a viewer who likes one Short has no reason to subscribe. Our best Short by far is "Top 5 Dumbest Moments Ever (Ranked)": 1,297 views, 94% average viewed. The channel is called Peak Dumb. So:
+**Why one lane:** topics were all over the place, so a viewer who likes one Short has no reason to subscribe. The owner chose "What If" as the single lane. First What If Short: "What If Earth Stopped Spinning for 5 Seconds?" (2026-11-12); no stats for the lane yet, so the Sunday report must judge it on real numbers.
 
-1. **One lane, every Short:** a real, documented, spectacularly dumb decision, fail or blunder by a company, brand, studio, team or public project. Prefer one tied to what is trending this week (gaming, tech/AI, internet, sport, movies, cars). If the week's trend has no good blunder, use a famous modern one from those fields. No old-history topics.
-2. **Hook formula:** "You're [X], and you're about to make the dumbest move in [field] history." Then the chain: each beat = the decision → the real consequence (number, name or date) → the next worse decision. Twist ending, loop.
-3. **Rotate the structure** so uploads are never near-identical (YouTube demonetises templated, mass-produced channels): (a) single-story "You're X", (b) ranked "Top 3 dumbest ... this week", (c) "Which was dumber: A or B?" Never the same structure three runs in a row. Every script is original research and original wording.
-4. **Titles:** the word "Dumbest" or "Dumb" plus the subject, under 60 characters, a question when natural ("The Dumbest Decision in Gaming History?"). End `#shorts`.
-5. **Subscribe reason:** one `pop` sticker on the second-to-last beat: "DAILY DUMB → SUB". Description line 1 ends with "New dumb every day."
-6. **Per-Short targets:** engaged views ÷ views ≥ 70%, average viewed ≥ 85%. First 2 seconds decide it: start on the consequence or the number, never on setup. If three Shorts in a row miss both targets, change the hook style, not the niche.
-7. **Punch at the decision, not the person.** Companies, brands and public figures' documented professional decisions only. No private individuals, no ridicule of looks, identity or private life.
+1. **One lane, every Short:** a "What If" question about something impossible, extreme or huge (space, Earth, physics, animals, tech/AI, games, cars, the internet, money at absurd scale), answered step by step with real science and real numbers. Prefer a question tied to what is trending this week (a launch, a game, a movie, a viral clip, a science story). If the week's trend gives no good question, use an evergreen one that has not been used in 30 days. No old-history topics.
+2. **Hook formula:** "What if [impossible thing] for just [short time / one change]?" The question is on screen and spoken in the first 2 seconds. Then the chain: each beat = what happens next -> the real number behind it -> something worse or stranger. Twist or survival answer at the end, loop.
+3. **Rotate the structure** so uploads are never near-identical (YouTube demonetises templated, mass-produced channels): (a) countdown timeline ("Second 1... Second 3... Second 5", or minute/day/year), (b) second-person survival ("You're standing in [place] when [it happens]"), (c) "Which would be worse: A or B?" Never the same structure three runs in a row. Every script is original research and original wording.
+4. **Titles:** start with "What If", then the subject, under 60 characters, always a question ("What If the Moon Vanished Tonight?"). End `#shorts`.
+5. **Subscribe reason:** one `pop` sticker on the second-to-last beat: "DAILY WHAT IF → SUB". Description line 1 ends with "New What If every day."
+6. **Per-Short targets:** engaged views ÷ views ≥ 70%, average viewed ≥ 85%. First 2 seconds decide it: start on the question and the most extreme consequence, never on setup. If three Shorts in a row miss both targets, change the hook style, not the niche.
+7. **Real science, clearly hypothetical.** Every number comes from a reliable source; estimates are said as estimates. Nothing a viewer could copy and get hurt by (no "what if you stopped eating/sleeping/breathing" body challenges, no drugs, no stunts). No real person shown being harmed.
 8. **Two per day, never more.** More than that reads as spam and adds no reach.
 9. **Checkpoints** (the Sunday report grades these): day 14: one Short over 10K views and engaged ratio ≥ 65%. Day 30: 100K total views, 100 subs. Day 60: 1M views, 500 subs. If a checkpoint is missed, the Sunday report must propose one concrete change to hook, length or structure and list it under "Changes that need your OK".
 
-## The format: "You're X" told as a Peak Dumb story (base structure; see strategy point 3 for the rotation)
+## The format: a "What If" scenario (base structure; see strategy point 3 for the rotation)
 Modeled on "What If Elon Musk Took the AI Race to Space?" (Afterhour Theory, 1.7M views). Learn the structure, never reuse its script, characters or artwork.
-- **Second person:** put the viewer in someone's shoes. Hook = "You're [famous person / company / historical figure], and [you have a huge goal or problem]." Then: "But they don't know your secret plan" / "But there's a problem."
-- **A chain of bottlenecks:** each beat = new problem → the real move they made (a verified fact with a number, name or date) → which creates the next problem. "First, you need X, so you build Y." "Now Y needs Z..." The steps must connect logically, like a game being played.
-- **Escalate:** each step bigger than the last. Use turn phrases: "Still not enough?", "And you're not even halfway", "Then you hit the wall", "Now you've won. But one day...".
-- **Twist ending** that reframes everything (funny, ironic or mind-blowing), then loop into the hook.
-- **Subjects that work:** the dumbest real decision or fail connected to whatever is hottest THIS WEEK (gaming, tech, AI, internet, cars, sport, esports, movies, creators), e.g. in a big game's launch week, the worst launch blunder a studio ever made. The owner finds history topics boring: never pick a historical subject unless it is directly tied to a huge trend happening now. A good test: would a 16-25 year old already have seen this topic on their feed this week? The chain must be built from real, verifiable steps. Speculative steps go last and are framed as "what if".
-- **Real people:** shown only as the stick man with a name tag (`role`). Stick to public, documented actions. No mocking, no claims about private life, no politicians or elections.
+- **Put the viewer inside it:** second person wherever it fits. Hook = the What If question. Then "Right now, you're..." or "You're standing in..." so the viewer is the one it happens to.
+- **A chain of consequences:** each beat = the next thing that happens -> the real number that explains it (speed, distance, temperature, time, size, with a source) -> which causes the next thing. The steps must connect logically, like dominoes.
+- **Escalate:** each step bigger than the last. Use turn phrases: "But second three is worse", "And that's the good news", "Then it gets strange", "You survived. But...".
+- **Twist ending** that reframes everything (the one safe place, the thing nobody expects, the reason it can't happen), then loop into the hook.
+- **Subjects that work:** a What If connected to whatever is hottest THIS WEEK (space news, a game or movie launch, AI, cars, sport, a viral clip), or a big evergreen one (Earth, Moon, Sun, oceans, gravity, speed of light, animals at giant scale). The owner finds history topics boring: never pick a historical subject unless it is directly tied to a huge trend happening now. A good test: would a 16-25 year old stop scrolling for this question?
+- **Real people:** only when the trend needs it, shown as the cartoon character with a name tag (`role`), doing public, documented things. No mocking, no claims about private life, no politicians or elections, never shown being hurt.
 
 ## Before anything: back-fill, then at most two Shorts per day
 1. **Back-fill:** for every row in `log/posts.csv` whose `youtube_url` is `PENDING`, call Metricool `getScheduledPosts` for that date; if PUBLISHED, write the `publicUrl` into the row. If it shows an error, note it for the email.
@@ -57,12 +57,12 @@ Use today's real date in queries.
 
 Pick ONE topic that:
 - has clearly rising interest right now (several sources mention it), and broad appeal (tech, AI, gadgets, games, movies, internet culture, viral moments, weird science, money/business, sports moments);
-- has a company, brand, studio, team or public project at its centre whose real, documented blunder can be told in 3-4 escalating beats;
+- can be turned into one clear What If question whose answer runs 3-4 escalating beats, each backed by a real number;
 - is NOT in `log/topics.md` in the last 30 days.
 
 Also read `log/learnings.md` (Sunday report) and `log/playbook.md` (daily research) and apply them to topic choice and script. If research shows a trending topic already getting big views on similar channels, prefer it.
 
-Never pick: tragedies, deaths, crimes, disasters, war, elections or party politics, medical or health claims, financial "buy this" advice, real private individuals, anything involving minors, or rumors you can't confirm. Use real people only for public, factual, neutral things they did.
+Never pick: real tragedies, real deaths, crimes, real disasters or war (hypothetical science scenarios about Earth, space or physics are fine), elections or party politics, medical or health claims, body challenges a viewer could copy, financial "buy this" advice, real private individuals, anything involving minors, or rumors you can't confirm. Use real people only for public, factual, neutral things they did.
 
 Verify every fact with at least one reliable source. Hedge anything unconfirmed ("reportedly"). Keep the source URLs for the log.
 
