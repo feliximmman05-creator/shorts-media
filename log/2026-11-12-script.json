@@ -1,0 +1,125 @@
+{
+ "format": "master-plan",
+ "style": "cartoon",
+ "role": "Red Bull",
+ "look": {
+  "skin": "#e8b48a",
+  "hair": "#3b2a1a",
+  "shirt": "#e2231a",
+  "pants": "#1c2a5a",
+  "hair_style": "short",
+  "hat": "1fa96"
+ },
+ "keyword": "human catapult",
+ "scene": "city",
+ "hook": {
+  "screen": "Fired out of a chimney",
+  "text": "Human catapult, three hundred sixty meter chimney. You're Red Bull, and you have a problem.",
+  "prop": "1f680",
+  "pose": "point",
+  "scene": "city",
+  "set": [
+   "1f3ed"
+  ]
+ },
+ "beats": [
+  {
+   "text": "First, you need height. So you pick a chimney in Trbovlje, Slovenia. Three hundred sixty meters, the tallest in Europe. The perfect launch pad for a human catapult.",
+   "poses": [
+    "explain",
+    "point"
+   ],
+   "prop": "1f3ed",
+   "pop": "360 METERS",
+   "scene": "city",
+   "set": [
+    "1f3ed"
+   ]
+  },
+  {
+   "text": "But nobody has ever built a human catapult this big. So DD Squad tests it for two and a half years. First over water, then six meters, then twelve.",
+   "poses": [
+    "think",
+    "explain"
+   ],
+   "prop": "1f4d0",
+   "pop": "2.5 YEARS",
+   "scene": "ocean",
+   "set": [
+    "1f30a"
+   ]
+  },
+  {
+   "text": "And then it got serious. The final version is sixty meters long, built inside the chimney in about two months, with the crew working fourteen hour days.",
+   "poses": [
+    "hold",
+    "shock"
+   ],
+   "prop": "1f6e0",
+   "pop": "60M LONG",
+   "scene": "factory",
+   "set": [
+    "1f3d7"
+   ]
+  },
+  {
+   "text": "Now you need riders crazy enough to try it. Dani Roman and Fred Fugen, with over thirty two thousand parachute jumps between them. But here's the scary part.",
+   "poses": [
+    "point",
+    "celebrate"
+   ],
+   "prop": "1fa82",
+   "pop": "32,000 JUMPS",
+   "scene": "grass",
+   "set": [
+    "1fa82"
+   ]
+  },
+  {
+   "text": "On November fifth, the human catapult fires them from zero to one hundred eighty kilometers per hour in two point one five seconds. Up to four point two G.",
+   "poses": [
+    "shock",
+    "run"
+   ],
+   "prop": "1f4a5",
+   "pop": "0-180 IN 2.15s",
+   "scene": "night",
+   "set": [
+    "1f3ed"
+   ]
+  },
+  {
+   "text": "Still not enough? Dani flies over one hundred meters straight up. Two Guinness World Records for a human catapult. Then a second of zero gravity, and both parachutes open.",
+   "poses": [
+    "celebrate",
+    "point"
+   ],
+   "prop": "1f3c6",
+   "pop": "2 WORLD RECORDS",
+   "scene": "space",
+   "set": [
+    "2601"
+   ]
+  },
+  {
+   "text": "Now you've won. Over thirty million views in three days, for two guys fired out of a chimney. And it all started with one giant",
+   "poses": [
+    "celebrate",
+    "shrug"
+   ],
+   "prop": "1f4f1",
+   "pop": "30M VIEWS",
+   "scene": "city",
+   "set": [
+    "1f3d9"
+   ]
+  }
+ ],
+ "hidden": {
+  "emoji": "1f369",
+  "beat": 4
+ },
+ "youtube": {
+  "title": "You're Red Bull: The Human Catapult Master Plan #shorts"
+ }
+}
