@@ -1,0 +1,18 @@
+{
+ "format": "master-plan",
+ "style": "cartoon",
+ "role": "Dani Roman",
+ "look": {"skin": "#e8b48a", "hair": "#3b2a1a", "shirt": "#e2231a", "pants": "#1c2a5a", "hair_style": "short", "hat": "1fa96"},
+ "keyword": "human catapult",
+ "scene": "night",
+ "hook": {"screen": "0 to 180 in 2 seconds", "text": "Human catapult, one hundred eighty kilometers per hour. You'd never ride this, but two people did.",
+          "prop": "1f680", "pose": "point", "scene": "night", "set": ["1f3ed"]},
+ "beats": [
+  {"text": "It's hidden inside a three hundred sixty meter chimney in Slovenia, the tallest in Europe. Sixty meters of springs, built in about two months.", "poses": ["explain", "point"], "prop": "1f3ed", "pop": "360 METERS", "scene": "city", "set": ["1f3ed"]},
+  {"text": "Then it fires. Zero to one hundred eighty in two point one five seconds, up to four point two G. And you're still going up.", "poses": ["shock", "run"], "prop": "1f4a5", "pop": "4.2 G", "scene": "night", "set": ["1f3ed"]},
+  {"text": "Dani Roman flies over one hundred meters straight up. Two Guinness World Records for a human catapult. Then zero gravity, and the parachute opens.", "poses": ["celebrate", "point"], "prop": "1f3c6", "pop": "2 WORLD RECORDS", "scene": "space", "set": ["2601"]},
+  {"text": "Two and a half years of testing for a few seconds of flight. So be honest, would you ride a", "poses": ["think", "shrug"], "prop": "1fa82", "pop": "WOULD YOU?", "scene": "grass", "set": ["1fa82"]}
+ ],
+ "hidden": {"emoji": "1f36a", "beat": 2},
+ "youtube": {"title": "Human Catapult Fires You Out of a Chimney at 180 km/h #shorts"}
+}
