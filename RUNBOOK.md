@@ -1,23 +1,42 @@
-# Daily Short runbook (Into the Dark Web, @ShadowMan0011)
+# Daily Shorts runbook (Peak Dumb, @peakdumbtv)
 
-One Short per day in the **"You're X: the master plan"** format (see below), about whatever is trending **right now**, 25-40 seconds (owner goal 2026-11-12: 1M views + 1,000 subs; viral Shorts this week were mostly under 35s), animated stick man in a new scene every step, built to loop.
+Two Shorts per day (morning run + evening run), every one a **"Peak Dumb" story** told in the **"You're X"** second-person format (see below), 20-30 seconds, cartoon character in a new scene every step, built to loop.
 
-## The format: "You're X" master plan (every Short)
+## Channel strategy (set 2026-11-12 by the owner's request; overrides anything below that conflicts)
+**Goal:** YouTube Partner Program: 1,000 subscribers + 10 million Shorts views inside a 90-day window. No guarantee exists; the job is to maximise the odds every day.
+
+**Where we are (2026-11-12):** 6 subs, 4,149 lifetime views, 9 Shorts. 96% of views come from the Shorts feed. Only ~53% of feed views become engaged views (target 70%+). 2 subs per ~2,500 views (0.08%).
+
+**Diagnosis:** topics were all over the place (history list, maths, GTA 6, Red Bull stunt), so a viewer who likes one Short has no reason to subscribe. Our best Short by far is "Top 5 Dumbest Moments Ever (Ranked)": 1,297 views, 94% average viewed. The channel is called Peak Dumb. So:
+
+1. **One lane, every Short:** a real, documented, spectacularly dumb decision, fail or blunder by a company, brand, studio, team or public project. Prefer one tied to what is trending this week (gaming, tech/AI, internet, sport, movies, cars). If the week's trend has no good blunder, use a famous modern one from those fields. No old-history topics.
+2. **Hook formula:** "You're [X], and you're about to make the dumbest move in [field] history." Then the chain: each beat = the decision → the real consequence (number, name or date) → the next worse decision. Twist ending, loop.
+3. **Rotate the structure** so uploads are never near-identical (YouTube demonetises templated, mass-produced channels): (a) single-story "You're X", (b) ranked "Top 3 dumbest ... this week", (c) "Which was dumber: A or B?" Never the same structure three runs in a row. Every script is original research and original wording.
+4. **Titles:** the word "Dumbest" or "Dumb" plus the subject, under 60 characters, a question when natural ("The Dumbest Decision in Gaming History?"). End `#shorts`.
+5. **Subscribe reason:** one `pop` sticker on the second-to-last beat: "DAILY DUMB → SUB". Description line 1 ends with "New dumb every day."
+6. **Per-Short targets:** engaged views ÷ views ≥ 70%, average viewed ≥ 85%. First 2 seconds decide it: start on the consequence or the number, never on setup. If three Shorts in a row miss both targets, change the hook style, not the niche.
+7. **Punch at the decision, not the person.** Companies, brands and public figures' documented professional decisions only. No private individuals, no ridicule of looks, identity or private life.
+8. **Two per day, never more.** More than that reads as spam and adds no reach.
+9. **Checkpoints** (the Sunday report grades these): day 14: one Short over 10K views and engaged ratio ≥ 65%. Day 30: 100K total views, 100 subs. Day 60: 1M views, 500 subs. If a checkpoint is missed, the Sunday report must propose one concrete change to hook, length or structure and list it under "Changes that need your OK".
+
+## The format: "You're X" told as a Peak Dumb story (base structure; see strategy point 3 for the rotation)
 Modeled on "What If Elon Musk Took the AI Race to Space?" (Afterhour Theory, 1.7M views). Learn the structure, never reuse its script, characters or artwork.
 - **Second person:** put the viewer in someone's shoes. Hook = "You're [famous person / company / historical figure], and [you have a huge goal or problem]." Then: "But they don't know your secret plan" / "But there's a problem."
 - **A chain of bottlenecks:** each beat = new problem → the real move they made (a verified fact with a number, name or date) → which creates the next problem. "First, you need X, so you build Y." "Now Y needs Z..." The steps must connect logically, like a game being played.
 - **Escalate:** each step bigger than the last. Use turn phrases: "Still not enough?", "And you're not even halfway", "Then you hit the wall", "Now you've won. But one day...".
 - **Twist ending** that reframes everything (funny, ironic or mind-blowing), then loop into the hook.
-- **Subjects that work:** whatever is hottest THIS WEEK in the top trending niche (right now that is gaming: e.g. "You're Rockstar Games" in GTA 6 launch week), plus tech, AI, space, cars, sport, esports, movies and creators. The owner finds history topics boring: never pick a historical subject unless it is directly tied to a huge trend happening now. A good test: would a 16-25 year old already have seen this topic on their feed this week? The chain must be built from real, verifiable steps. Speculative steps go last and are framed as "what if".
+- **Subjects that work:** the dumbest real decision or fail connected to whatever is hottest THIS WEEK (gaming, tech, AI, internet, cars, sport, esports, movies, creators), e.g. in a big game's launch week, the worst launch blunder a studio ever made. The owner finds history topics boring: never pick a historical subject unless it is directly tied to a huge trend happening now. A good test: would a 16-25 year old already have seen this topic on their feed this week? The chain must be built from real, verifiable steps. Speculative steps go last and are framed as "what if".
 - **Real people:** shown only as the stick man with a name tag (`role`). Stick to public, documented actions. No mocking, no claims about private life, no politicians or elections.
 
-## Before anything: one Short per day
-If `log/posts.csv` already has a row for today's date (IST), a Short was already made or scheduled today. Don't make another. Instead, wait until it is published (step 5), fill in its YouTube URL in `log/posts.csv`, and send its post email. Then stop.
+## Before anything: back-fill, then at most two Shorts per day
+1. **Back-fill:** for every row in `log/posts.csv` whose `youtube_url` is `PENDING`, call Metricool `getScheduledPosts` for that date; if PUBLISHED, write the `publicUrl` into the row. If it shows an error, note it for the email.
+2. **Guard:** count rows with today's date (IST). Morning run (before 14:00 IST): if there is already one, stop after the back-fill. Evening run (14:00 IST or later): if there are already two, stop after the back-fill. Never make a third.
+3. The evening Short must be a different story and a different structure (see strategy point 3) from the morning one.
 
 ## 0. Research what's working (every run, before picking a topic)
 Learn patterns from other channels and our own stats. Never copy another channel's script, title wording, characters or footage. Copy the pattern (topic type, hook style, length, structure), not the content.
 
-1. **Our own Shorts** (Metricool, brandId `7796937`, last 14 days, connector "all videos"): `YTVV17` title, `YTVV01` date, `YTVV06` views, `YTVV08` avg view duration, `YTVV09` likes, `YTVV11` comments, `YTVV12` shares. Join with `log/posts.csv` (duration, hook score, topic). Note what our best ones have in common. Stats lag 1-2 days.
+1. **Our own Shorts** (Metricool, brandId `7796937`, last 14 days). "all videos" has been returning nothing, so use two calls: connector "videos published in range" (`YTVP17` title, `YTVP02` date, `YTVP06` views, `YTVP08` avg view duration, `YTVP09` likes, `YTVP11` comments) and connector "evolution" (`YTEV01` subscribers, `YTEV02` daily views, `YTEV05` subs gained). Join with `log/posts.csv` (duration, hook score, topic, structure). Note what our best ones have in common and which days gained subs. Stats lag 1-2 days.
 2. **Competitors** (Metricool, connector "competitor videos", last 7 days, one connector per call): `YTCV03` channel, `YTCV06` title, `YTCV04` url, `YTCV01` date, `YTCV07` views, `YTCV08` comments, `YTCV09` likes. Rank by views. If it returns nothing, no competitors are tracked yet: skip it.
 3. **vidIQ, max ONE call per day** (free plan: 150 credits/month, 5 per call). First call `vidiq_balance` (free). If total credits ≥ 5, call `vidiq_trending_videos` with videoFormat `short`, sortBy `vph`, videoPublishedAfter = 3 days ago, videoTitleLanguage `en`, limit 25. Otherwise skip.
 4. **Web**: 2-3 searches for Shorts/TikTok formats and topics going viral this week.
@@ -38,7 +57,7 @@ Use today's real date in queries.
 
 Pick ONE topic that:
 - has clearly rising interest right now (several sources mention it), and broad appeal (tech, AI, gadgets, games, movies, internet culture, viral moments, weird science, money/business, sports moments);
-- has a person, company or figure at its centre whose real moves can be told as a 5-9 step master plan;
+- has a company, brand, studio, team or public project at its centre whose real, documented blunder can be told in 3-4 escalating beats;
 - is NOT in `log/topics.md` in the last 30 days.
 
 Also read `log/learnings.md` (Sunday report) and `log/playbook.md` (daily research) and apply them to topic choice and script. If research shows a trending topic already getting big views on similar channels, prefer it.
@@ -74,10 +93,10 @@ The complete working example is `log/example-script.json` (GTA 6 week; loop: "..
 
 ### Retention rules
 - **Seamless loop:** `hook.text` starts mid-thought, and the LAST beat ends mid-sentence so its last words run straight into the hook's first words ("...and it proves" → "The emu war is the only war..."). Read last + first aloud together: it must sound like one sentence. No outro, no "follow for more", no "thanks for watching".
-- **Micro-hooks:** 3-5 beats (one per step of the plan), each 5-8 seconds (about 15-25 words). Open on the most surprising number, not on setup. Every beat after the first opens or ends with a curiosity line: "But that's where things went completely wrong", "And then it got worse", "Here's the part nobody talks about", "But wait, it gets weirder".
+- **Micro-hooks:** 3-4 beats, each 5-7 seconds (about 15-20 words). Open on the most surprising number, not on setup. Every beat after the first opens or ends with a curiosity line: "But that's where things went completely wrong", "And then it got worse", "Here's the part nobody talks about", "But wait, it gets weirder".
 - **Keyword 3-4 times:** put the exact `keyword` phrase in the spoken text 3-4 times in total (hook + beats). It is highlighted green in the captions.
 - **Comment bait:** set `hidden` to a small unrelated emoji shown for about 1 second during that beat. The video shows "Spot the hidden item? Comment what it was" at the end, and the description asks the same. Never add deliberate factual mistakes.
-- Total spoken length 25-40 seconds (about 75-110 words). End the last beat as a question to the viewer so it loops and drives comments. Write numbers as words. No em dashes.
+- Total spoken length 20-30 seconds (about 60-85 words). End the last beat as a question to the viewer so it loops and drives comments. Write numbers as words. No em dashes.
 
 ### Visual fields
 - `poses` (1-2 per beat, alternated about every 1.8s with camera cuts): `talk, explain, point, shock, shrug, facepalm, celebrate, think, sad, hold, run, idle`. Match the emotion of the words.
@@ -103,11 +122,11 @@ Text must not overflow or cover the stick man's face. Fix the script (shorter `s
 4. Metricool `createScheduledPost`: blogId `7796937`, ~10 minutes ahead, timezone `Asia/Calcutta`, provider `youtube`, autoPublish true. `youtubeData`: type `short`, privacy `public`, madeForKids false, isAiGeneratedContent false, category to fit (`ENTERTAINMENT`, `SCIENCE_TECHNOLOGY`, `COMEDY`, `GAMING`, `SPORTS`), 6-8 tags including the keyword. Title under 70 characters with the keyword near the start, ending `#shorts`. Description: one curiosity line with the keyword, then "Did you spot the hidden item? Comment what it was 👀", then 4-5 hashtags.
 
 ## 5. Confirm and email
-1. **Post at peak time.** Call Metricool `getBestTimeToPostByNetwork` (brandId `7796937`, network `youtube`, timezone `Asia/Calcutta`, today 00:00 to 23:59). Schedule for today's highest-value hour (usually 15:00-17:00 IST) if it is at least 15 minutes away; otherwise schedule 10 minutes ahead. Then wait in the background (Bash `sleep` with `run_in_background`, max ~25 minutes per sleep, repeat as needed) until 5 minutes after the publish time.
-2. Check Metricool `getScheduledPosts` (brandId `7796937`, today's date range, timezone `Asia/Calcutta`). When the YouTube provider status is `PUBLISHED`, take its `publicUrl`. If still pending, wait another 5 minutes, check again (max 3 checks). If it shows an error, say so in the email.
-3. Append (or update) the row in `log/posts.csv`: `date,title,youtube_url,topic,keyword,duration_s,hook_score,file` (duration from `ffprobe`). Commit and push.
-4. Send the email with Gmail `send_message` to `feliximmman05@gmail.com`, `htmlBody`, subject `✅ New Short posted: <title>` (or `⚠️ Short failed: <reason>`). Contents:
-   - Title, YouTube link, publish time (IST), status
+1. **Post at peak time, don't wait.** Call Metricool `getBestTimeToPostByNetwork` (brandId `7796937`, network `youtube`, timezone `Asia/Calcutta`, today 00:00 to 23:59). Morning run: schedule for the best hour between 14:00 and 18:00 IST. Evening run: schedule for the best hour between 19:30 and 23:30 IST. If that hour is less than 15 minutes away, schedule 10 minutes ahead. Do NOT sleep or wait for the publish (the 2026-11-12 run errored after 98 minutes, much of it spent waiting).
+2. Call `getScheduledPosts` once to confirm the post exists with status PENDING (or PUBLISHED). The next run back-fills the YouTube URL.
+3. Append the row in `log/posts.csv`: `date,title,youtube_url,topic,keyword,duration_s,hook_score,file` (duration from `ffprobe`; `youtube_url` = `PENDING` until back-filled; put the structure a/b/c in the topic field, e.g. `(a) Concord shutdown`). Commit and push.
+4. Send the email with Gmail `send_message` to `feliximmman05@gmail.com`, `htmlBody`, subject `✅ New Short scheduled: <title>` (or `⚠️ Short failed: <reason>`). Contents:
+   - Title, scheduled publish time (IST), status, plus the YouTube links back-filled this run
    - Trend picked and why it's trending (1-2 lines + source links)
    - What today's research found (top 3 videos from other channels with views) and which pattern this Short borrowed
    - Hook: on-screen text, spoken line, hook score
