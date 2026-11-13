@@ -1,0 +1,90 @@
+{
+ "format": "what-if-countdown",
+ "style": "cartoon",
+ "role": "YOU",
+ "look": {
+  "skin": "#d9a27a",
+  "hair": "#2a1d14",
+  "shirt": "#ff7a1a",
+  "pants": "#22305a",
+  "hair_style": "spiky"
+ },
+ "keyword": "solar storm",
+ "scene": "night",
+ "hook": {
+  "screen": "What if the Sun hit us?",
+  "text": "What if one solar storm cut your power for up to two years?",
+  "prop": "1f50c",
+  "pose": "shock",
+  "scene": "night",
+  "set": [
+   "1f3d9",
+   "2600"
+  ]
+ },
+ "beats": [
+  {
+   "text": "Hour zero. A billion tons of the Sun fly straight at you. The solar storm lands in just seventeen hours.",
+   "poses": [
+    "point",
+    "shock"
+   ],
+   "prop": "1f4a5",
+   "pop": "17 HOURS",
+   "scene": "space",
+   "set": [
+    "1f30d",
+    "2600"
+   ]
+  },
+  {
+   "text": "Hour seventeen. Auroras glow as far south as Cuba. But power lines start carrying currents nobody put there.",
+   "poses": [
+    "celebrate",
+    "shock"
+   ],
+   "prop": "26a1",
+   "pop": "AURORAS IN CUBA",
+   "scene": "ocean",
+   "set": [
+    "1f334",
+    "1f30c"
+   ]
+  },
+  {
+   "text": "Then satellites start falling. A tiny solar storm once took down thirty eight Starlinks. This one is far bigger.",
+   "poses": [
+    "facepalm",
+    "explain"
+   ],
+   "prop": "1f6f0",
+   "pop": "38 SATELLITES",
+   "scene": "earth",
+   "set": [
+    "1f6f0",
+    "1f4e1"
+   ]
+  },
+  {
+   "text": "By day two, transformers are cooked, and each takes about a year to replace. This week, a sunspot that doubled in size turned toward Earth. So",
+   "poses": [
+    "sad",
+    "point"
+   ],
+   "prop": "1f525",
+   "pop": "1 YEAR EACH",
+   "scene": "factory",
+   "set": [
+    "1f3ed",
+    "1f50b"
+   ]
+  }
+ ],
+ "hidden": {
+  "emoji": "1f369",
+  "beat": 1
+ },
+ "youtube": {
+  "title": "What If the Biggest Solar Storm Hit Tonight? #shorts"
+ }
+}
