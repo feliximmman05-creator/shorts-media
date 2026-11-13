@@ -46,3 +46,8 @@ Clean HTML, inline CSS only, no images, mobile friendly.
 
 ## Strategy checkpoints (added 2026-11-12)
 Read "Channel strategy" at the top of RUNBOOK.md. Every report must: (1) grade the current checkpoint (day 14 / 30 / 60) with real numbers; (2) show engaged views ÷ views and average viewed per Short, split by structure (a/b/c) where known; (3) say which structure and hook style is winning and tell the daily runs to lean into it via log/learnings.md; (4) if a checkpoint is missed, propose one concrete change under "Changes that need your OK". Channel is Peak Dumb (@peakdumbtv); its lane changed to "What If" on 2026-11-12, so compare What If Shorts against the earlier ones.
+
+## Two-per-day switch and scene format (added 2026-11-13)
+- Shorts dated 2026-11-13 evening or later use the new scene renderer (full-screen drawn scenes, cold open, no title bar, watermark or hidden item). Compare them against the older character-and-emoji Shorts as two groups and say plainly whether engaged views ÷ views and average viewed improved.
+- The first line of `log/learnings.md` must always be either `two_per_day: no` or `two_per_day: yes`. Write `yes` only when engaged views ÷ views for the week's new-format Shorts is 65% or higher (or, if engaged views are unavailable, APV estimate 85% or higher on at least 3 Shorts). Otherwise `no`. The evening run reads this line.
+- For the best and worst Short, look at `log/<date>-script.json` and name the hook shot (what frame 0 showed) as part of the "why".

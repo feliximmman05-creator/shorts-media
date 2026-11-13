@@ -24,4 +24,9 @@ for c in $(python3 "$HERE/emoji_codes.py" "$WORK/script.json"); do
   [ -s "$WORK/emoji/$c.png" ] || cp "$WORK/emoji/2b50.png" "$WORK/emoji/$c.png"
 done
 python3 "$HERE/tts.py" "$WORK" "$MODEL"
-python3 "$HERE/stickman.py" "$WORK" "$OUT"
+# scripts with "shots" use the scene renderer (full-screen drawn scenes); old scripts still use stickman.py
+if python3 -c "import json,sys;s=json.load(open(sys.argv[1]));sys.exit(0 if s['hook'].get('shots') else 1)" "$WORK/script.json"; then
+  python3 "$HERE/scenes.py" "$WORK" "$OUT"
+else
+  python3 "$HERE/stickman.py" "$WORK" "$OUT"
+fi
