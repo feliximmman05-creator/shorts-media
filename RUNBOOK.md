@@ -70,7 +70,7 @@ Verify every fact with at least one reliable source. Hedge anything unconfirmed 
 
 Why this changed: the old Shorts were one cartoon character standing in the middle with emoji stickers, the same layout every time, and about half of viewers swiped away. Now **every shot is a full-screen drawn scene that shows the thing the narration is saying**, and frame 0 is already the disaster.
 
-The complete working example is `log/example-scenes.json` (format reference only: never reuse its topic, hook or shot list).
+The complete working example is `log/example-scenes.json` (`log/example-script.json` is the same file; format reference only: never reuse its topic, hook or shot list). The old character-and-sticker format (`log/example-old-stickman.json`, fields `prop`, `poses`, `set`, `hidden`, `look`) is retired: never write it, even if a task prompt still mentions a triple hook slam, a hidden item or a stick man.
 
 ```json
 {
