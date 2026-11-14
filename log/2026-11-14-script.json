@@ -1,0 +1,504 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "Leonids",
+ "hook": {
+  "screen": "Car-sized meteors. Every second.",
+  "text": "What if Leonids were forty car-sized rocks a second you can't stop?",
+  "shots": [
+   {
+    "bg": "sky_night",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.4
+    ],
+    "actors": [
+     {
+      "art": "asteroid",
+      "at": [
+       0.95,
+       -0.05
+      ],
+      "to": [
+       0.15,
+       0.7
+      ],
+      "size": 0.16,
+      "count": 9,
+      "spread": 0.45,
+      "spin": 160,
+      "trail": "fire",
+      "ease": "in",
+      "glow": "#ffb040"
+     },
+     {
+      "art": "asteroid",
+      "at": [
+       0.7,
+       0.12
+      ],
+      "to": [
+       0.45,
+       0.36
+      ],
+      "size": 0.34,
+      "trail": "fire",
+      "ease": "in",
+      "over": 0.18,
+      "vanish": 0.19,
+      "glow": "#ff7a1a"
+     }
+    ],
+    "fx": [
+     {
+      "name": "meteors",
+      "t": -0.5
+     },
+     {
+      "name": "embers",
+      "t": -0.5
+     },
+     {
+      "name": "explosion",
+      "t": -0.05,
+      "at": [
+       0.25,
+       0.22
+      ],
+      "amount": 1.1
+     },
+     {
+      "name": "explosion",
+      "t": 0.18,
+      "at": [
+       0.45,
+       0.36
+      ],
+      "amount": 1.6
+     },
+     {
+      "name": "flash",
+      "t": 0.18
+     },
+     {
+      "name": "shockwave",
+      "t": 0.19,
+      "at": [
+       0.45,
+       0.36
+      ],
+      "color": "#ffd080"
+     },
+     {
+      "name": "shake",
+      "t": 0.18
+     },
+     {
+      "name": "explosion",
+      "t": 0.55,
+      "at": [
+       0.75,
+       0.3
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Second one. The nineteen sixty six Leonids really hit forty a second. These move seventy one kilometers a second.",
+   "shots": [
+    {
+     "bg": "space",
+     "cam": "pan_r",
+     "pop": "1966: 40 PER SECOND",
+     "actors": [
+      {
+       "art": "earth",
+       "at": [
+        0.5,
+        1.02
+       ],
+       "size": 1.5,
+       "state": "dark",
+       "rot_speed": 6
+      },
+      {
+       "art": "asteroid",
+       "at": [
+        0.05,
+        0.0
+       ],
+       "to": [
+        0.75,
+        0.7
+       ],
+       "size": 0.12,
+       "count": 10,
+       "spread": 0.4,
+       "trail": "fire",
+       "ease": "linear",
+       "spin": 90
+      }
+     ],
+     "fx": [
+      "stars_streak"
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "pan_l",
+     "counter": {
+      "from": 0,
+      "to": 71,
+      "unit": "km per second"
+     },
+     "actors": [
+      {
+       "art": "asteroid",
+       "at": [
+        1.15,
+        0.12
+       ],
+       "to": [
+        -0.2,
+        0.48
+       ],
+       "size": 0.3,
+       "spin": 300,
+       "trail": "fire",
+       "ease": "linear",
+       "glow": "#ffcf70",
+       "shake": 0.5
+      }
+     ],
+     "fx": [
+      "speedlines",
+      "heat"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Minute one. Each rock bursts in the air with nearly a kiloton of energy, by our math. Night flashes into day.",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "tilt_up",
+     "pop": "~1 KILOTON EACH",
+     "actors": [
+      {
+       "art": "asteroid",
+       "at": [
+        0.85,
+        -0.1
+       ],
+       "to": [
+        0.5,
+        0.26
+       ],
+       "size": 0.26,
+       "trail": "fire",
+       "ease": "in",
+       "over": 0.45,
+       "vanish": 0.46,
+       "glow": "#ff8a2a"
+      }
+     ],
+     "fx": [
+      {
+       "name": "explosion",
+       "t": 0.45,
+       "at": [
+        0.5,
+        0.26
+       ],
+       "amount": 1.5
+      },
+      {
+       "name": "shockwave",
+       "t": 0.46,
+       "at": [
+        0.5,
+        0.26
+       ],
+       "color": "#ffe0a0"
+      },
+      {
+       "name": "flash",
+       "t": 0.45
+      },
+      "embers"
+     ]
+    },
+    {
+     "bg": "sky_day",
+     "cam": "pan_r",
+     "pop": "NIGHT TURNS DAY",
+     "actors": [
+      {
+       "art": "asteroid",
+       "at": [
+        0.1,
+        -0.1
+       ],
+       "to": [
+        0.6,
+        0.35
+       ],
+       "size": 0.09,
+       "count": 8,
+       "spread": 0.6,
+       "trail": "fire",
+       "ease": "in",
+       "over": 0.6,
+       "vanish": 0.62
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.05
+      },
+      {
+       "name": "explosion",
+       "t": 0.2,
+       "at": [
+        0.2,
+        0.15
+       ],
+       "amount": 0.5
+      },
+      {
+       "name": "explosion",
+       "t": 0.35,
+       "at": [
+        0.7,
+        0.1
+       ],
+       "amount": 0.5
+      },
+      {
+       "name": "explosion",
+       "t": 0.5,
+       "at": [
+        0.45,
+        0.22
+       ],
+       "amount": 0.5
+      },
+      {
+       "name": "explosion",
+       "t": 0.65,
+       "at": [
+        0.85,
+        0.25
+       ],
+       "amount": 0.5
+      },
+      {
+       "name": "flash",
+       "t": 0.5,
+       "amount": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "But hour one is worse. A hundred forty four thousand blasts, and shock waves shake every city below.",
+   "shots": [
+    {
+     "bg": "space",
+     "cam": "push",
+     "counter": {
+      "from": 0,
+      "to": 144000,
+      "unit": "blasts"
+     },
+     "actors": [
+      {
+       "art": "earth",
+       "at": [
+        0.5,
+        0.48
+       ],
+       "size": 0.95,
+       "state": "dark",
+       "rot_speed": 10
+      },
+      {
+       "art": "1f4a5",
+       "at": [
+        0.5,
+        0.48
+       ],
+       "size": 0.12,
+       "count": 10,
+       "spread": 0.35,
+       "enter": "pop",
+       "appear": 0.15,
+       "size_to": 0.2
+      }
+     ],
+     "fx": [
+      "meteors",
+      {
+       "name": "flash",
+       "t": 0.6,
+       "amount": 0.5
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "static",
+     "actors": [
+      {
+       "art": "asteroid",
+       "at": [
+        0.1,
+        -0.1
+       ],
+       "to": [
+        0.4,
+        0.08
+       ],
+       "size": 0.16,
+       "trail": "fire",
+       "ease": "in",
+       "over": 0.3,
+       "vanish": 0.31
+      }
+     ],
+     "fx": [
+      {
+       "name": "explosion",
+       "t": 0.3,
+       "at": [
+        0.4,
+        0.08
+       ],
+       "amount": 0.8
+      },
+      {
+       "name": "shockwave",
+       "t": 0.31,
+       "at": [
+        0.4,
+        0.08
+       ],
+       "amount": 2.2,
+       "color": "#ffffff"
+      },
+      {
+       "name": "quake",
+       "t": 0.4
+      },
+      {
+       "name": "shake",
+       "t": 0.4
+      },
+      {
+       "name": "lights_out",
+       "t": 0.45
+      },
+      {
+       "name": "debris",
+       "t": 0.4
+      }
+     ],
+     "pop": "SHOCK WAVES"
+    }
+   ]
+  },
+  {
+   "text": "Relax. Real Leonids are specks of comet dust, peaking Tuesday night. So look up and ask",
+   "shots": [
+    {
+     "bg": "space",
+     "cam": "pan_l",
+     "pop": "COMET DUST",
+     "actors": [
+      {
+       "art": "2604",
+       "at": [
+        0.9,
+        0.2
+       ],
+       "to": [
+        0.3,
+        0.45
+       ],
+       "size": 0.4,
+       "rot": -30,
+       "glow": "#9fd8ff"
+      }
+     ],
+     "fx": [
+      {
+       "name": "dust",
+       "t": 0.0,
+       "color": "#cfe8ff"
+      },
+      "stars_streak"
+     ]
+    },
+    {
+     "bg": "sky_night",
+     "cam": "tilt_up",
+     "pop": "TUESDAY NIGHT",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.6
+       ],
+       "size": 0.18,
+       "pose": "arms_up",
+       "color": "#3a7bd5"
+      },
+      {
+       "art": "asteroid",
+       "at": [
+        0.95,
+        0.05
+       ],
+       "to": [
+        0.55,
+        0.3
+       ],
+       "size": 0.06,
+       "count": 4,
+       "spread": 0.4,
+       "trail": "fire",
+       "size_to": 0.02,
+       "vanish": 0.9
+      }
+     ],
+     "fx": [
+      "meteors"
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you watch a car-sized meteor storm?",
+ "youtube": {
+  "title": "What If the Leonids Were Car-Sized Rocks? #shorts",
+  "description": "What if this week's Leonids meteor shower was made of car-sized rocks at 71 km per second? Here is what one hour would look like. New What If every day.\n\nWould you watch a car-sized meteor storm?\n\n#whatif #leonids #meteorshower #space #shorts",
+  "tags": [
+   "Leonids",
+   "what if",
+   "meteor shower",
+   "leonid meteor shower 2026",
+   "meteor storm",
+   "space",
+   "science",
+   "shorts"
+  ],
+  "category": "SCIENCE_TECHNOLOGY"
+ }
+}
