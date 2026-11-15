@@ -1,0 +1,719 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "timer",
+ "hook": {
+  "screen": "Everyone's time left",
+  "text": "What if, for ten minutes, you saw everyone's secret timer?",
+  "shots": [
+   {
+    "bg": "city_night",
+    "cam": "pull",
+    "focus": [
+     0.55,
+     0.5
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.5,
+       0.585
+      ],
+      "size": 0.2,
+      "color": "#8a94a6",
+      "pose": "run",
+      "to": [
+       0.58,
+       0.585
+      ]
+     },
+     {
+      "art": "person",
+      "at": [
+       0.7,
+       0.59
+      ],
+      "size": 0.24,
+      "color": "#3d8bfd"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.9,
+       0.6
+      ],
+      "size": 0.3,
+      "color": "#ff6b6b",
+      "flip": true
+     },
+     {
+      "art": "23f3",
+      "at": [
+       0.5,
+       0.453
+      ],
+      "size": 0.08,
+      "glow": "#ffb347",
+      "size_to": 0.1,
+      "to": [
+       0.58,
+       0.453
+      ]
+     },
+     {
+      "art": "23f3",
+      "at": [
+       0.7,
+       0.436
+      ],
+      "size": 0.1,
+      "glow": "#ffb347",
+      "size_to": 0.13,
+      "spin": 25
+     },
+     {
+      "art": "23f3",
+      "at": [
+       0.9,
+       0.412
+      ],
+      "size": 0.11,
+      "glow": "#ffb347",
+      "size_to": 0.14
+     },
+     {
+      "art": "person",
+      "at": [
+       0.26,
+       0.62
+      ],
+      "size": 0.44,
+      "color": "#ffd21a",
+      "pose": "arms_up"
+     }
+    ],
+    "fx": [
+     {
+      "name": "lights_out",
+      "t": 0.0
+     },
+     {
+      "name": "flash",
+      "t": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "You're on a busy street when a glowing timer pops up over every head. Fifty years. Forty. Sixty one.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "pop": "every single head",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.58
+       ],
+       "size": 0.22,
+       "color": "#2ecc71",
+       "pose": "run",
+       "to": [
+        0.4,
+        0.58
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.52,
+        0.58
+       ],
+       "size": 0.22,
+       "color": "#b06cff"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.7,
+        0.58
+       ],
+       "size": 0.22,
+       "color": "#8a94a6",
+       "pose": "run",
+       "to": [
+        0.62,
+        0.58
+       ],
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.58
+       ],
+       "size": 0.22,
+       "color": "#3d8bfd"
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.52,
+        0.437
+       ],
+       "size": 0.09,
+       "glow": "#ffb347",
+       "enter": "pop",
+       "appear": 0.15
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.88,
+        0.437
+       ],
+       "size": 0.09,
+       "glow": "#ffb347",
+       "enter": "pop",
+       "appear": 0.35
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.35,
+        0.437
+       ],
+       "size": 0.09,
+       "glow": "#ffb347",
+       "enter": "pop",
+       "appear": 0.5
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.66,
+        0.437
+       ],
+       "size": 0.09,
+       "glow": "#ffb347",
+       "enter": "pop",
+       "appear": 0.65
+      },
+      {
+       "art": "person",
+       "at": [
+        0.1,
+        0.61
+       ],
+       "size": 0.36,
+       "color": "#ffd21a"
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "counter": {
+      "from": 0,
+      "to": 61,
+      "unit": "years"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.6
+       ],
+       "size": 0.32,
+       "color": "#ff6b6b"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.6
+       ],
+       "size": 0.32,
+       "color": "#2ecc71"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.6
+       ],
+       "size": 0.32,
+       "color": "#3d8bfd",
+       "flip": true
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.2,
+        0.401
+       ],
+       "size": 0.12,
+       "glow": "#ffb347",
+       "spin": 20
+      },
+      {
+       "art": "23f0",
+       "at": [
+        0.5,
+        0.401
+       ],
+       "size": 0.12,
+       "glow": "#ffb347",
+       "bob": 0.4
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.8,
+        0.401
+       ],
+       "size": 0.08,
+       "glow": "#ffb347",
+       "size_to": 0.2,
+       "ease": "out"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then it gets strange. The guy sprinting for the bus has sixty years. The old man feeding birds? His timer says thirty more.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_l",
+     "pop": "lots left",
+     "actors": [
+      {
+       "art": "1f68c",
+       "at": [
+        0.95,
+        0.52
+       ],
+       "to": [
+        0.6,
+        0.52
+       ],
+       "size": 0.34,
+       "ease": "out"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.6
+       ],
+       "size": 0.3,
+       "color": "#e67e22",
+       "pose": "run",
+       "to": [
+        0.48,
+        0.6
+       ]
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.3,
+        0.412
+       ],
+       "size": 0.11,
+       "glow": "#ffb347",
+       "to": [
+        0.48,
+        0.412
+       ]
+      },
+      {
+       "art": "1f4a8",
+       "at": [
+        0.2,
+        0.62
+       ],
+       "to": [
+        0.36,
+        0.62
+       ],
+       "size": 0.09
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.63
+       ],
+       "size": 0.34,
+       "color": "#ffd21a"
+      }
+     ]
+    },
+    {
+     "bg": "ground",
+     "cam": "push",
+     "pop": "wrong guess",
+     "w": 1.2,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.62,
+        0.6
+       ],
+       "size": 0.34,
+       "color": "#c9c9c9",
+       "flip": true
+      },
+      {
+       "art": "1f426",
+       "at": [
+        0.3,
+        0.3
+       ],
+       "to": [
+        0.66,
+        0.72
+       ],
+       "size": 0.07,
+       "count": 6,
+       "spread": 0.16,
+       "ease": "out"
+      },
+      {
+       "art": "1f35e",
+       "at": [
+        0.5,
+        0.68
+       ],
+       "size": 0.06,
+       "bob": 0.3
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.62,
+        0.39
+       ],
+       "size": 0.07,
+       "glow": "#ffb347",
+       "size_to": 0.22,
+       "ease": "out",
+       "over": 0.5
+      },
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.62
+       ],
+       "size": 0.3,
+       "color": "#ffd21a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Real number. The average person on Earth gets about seventy three years. Over two billion seconds, and every timer is running.",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "tilt_up",
+     "counter": {
+      "from": 0,
+      "to": 73,
+      "unit": "years"
+     },
+     "actors": [
+      {
+       "art": "earth",
+       "at": [
+        0.5,
+        0.3
+       ],
+       "size": 0.5,
+       "rot_speed": 0.6
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.62
+       ],
+       "size": 0.2,
+       "color": "#8a94a6"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.28,
+        0.6
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "pose": "run",
+       "to": [
+        0.33,
+        0.6
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.6
+       ],
+       "size": 0.2,
+       "color": "#2ecc71",
+       "pose": "run",
+       "to": [
+        0.67,
+        0.6
+       ],
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.62
+       ],
+       "size": 0.2,
+       "color": "#b06cff"
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.12,
+        0.488
+       ],
+       "size": 0.07,
+       "glow": "#ffb347",
+       "spin": 30
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.28,
+        0.468
+       ],
+       "size": 0.07,
+       "glow": "#ffb347",
+       "to": [
+        0.33,
+        0.468
+       ]
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.72,
+        0.468
+       ],
+       "size": 0.07,
+       "glow": "#ffb347",
+       "to": [
+        0.67,
+        0.468
+       ]
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.88,
+        0.488
+       ],
+       "size": 0.07,
+       "glow": "#ffb347",
+       "spin": 30
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.64
+       ],
+       "size": 0.3,
+       "color": "#ffd21a"
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "pull",
+     "counter": {
+      "from": 0,
+      "to": 2.3,
+      "unit": "billion sec",
+      "decimals": 1
+     },
+     "actors": [
+      {
+       "art": "23f3",
+       "at": [
+        0.5,
+        0.6
+       ],
+       "to": [
+        0.5,
+        0.3
+       ],
+       "size": 0.1,
+       "count": 9,
+       "spread": 0.4,
+       "spin": 50,
+       "glow": "#ffb347"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.64
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Minute nine. You find a mirror. Your timer says one minute. Relax. It only counts the power. And you wasted it staring at numbers. So",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "push",
+     "pop": "uh oh",
+     "actors": [
+      {
+       "art": "1fa9e",
+       "at": [
+        0.72,
+        0.5
+       ],
+       "size": 0.34,
+       "bob": 0.1
+      },
+      {
+       "art": "person",
+       "at": [
+        0.34,
+        0.6
+       ],
+       "size": 0.42,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "23f0",
+       "at": [
+        0.34,
+        0.345
+       ],
+       "size": 0.14,
+       "glow": "#ff4d4d",
+       "shake": 0.5,
+       "size_to": 0.18
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "pull",
+     "pop": "power gone",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.16,
+        0.58
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "pose": "run",
+       "to": [
+        0.3,
+        0.58
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.58
+       ],
+       "size": 0.2,
+       "color": "#2ecc71",
+       "pose": "run",
+       "to": [
+        0.7,
+        0.58
+       ],
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.62
+       ],
+       "size": 0.42,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.5,
+        0.365
+       ],
+       "size": 0.16,
+       "glow": "#ffb347",
+       "vanish": 0.45,
+       "size_to": 0.04,
+       "spin": 200
+      },
+      {
+       "art": "2728",
+       "at": [
+        0.5,
+        0.36
+       ],
+       "size": 0.05,
+       "count": 6,
+       "spread": 0.22,
+       "appear": 0.4,
+       "spin": 60
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you look at your own timer?",
+ "youtube": {
+  "title": "What If You Could See Everyone's Time Left? #shorts",
+  "category": "ENTERTAINMENT",
+  "description": "For ten minutes, a glowing timer shows over every head. New What If every day.\nWould you look at your own timer?\n#whatif #whatifyou #timer #superpower #shorts",
+  "tags": [
+   "what if",
+   "timer",
+   "what if you could",
+   "superpower",
+   "time left",
+   "what if scenario",
+   "what if you",
+   "shorts"
+  ]
+ }
+}
