@@ -2,7 +2,8 @@
 
 One Short per day (morning run; the evening run only when `log/learnings.md` starts with `two_per_day: yes`), every one a **"What If" scenario**, 20-35 seconds, full-screen drawn scenes that show what the narration says (scene format, section 2), cold open, built to loop.
 
-## Channel strategy (lane changed from "dumbest decisions" to "What If" on 2026-11-12 by the owner's request; overrides anything below that conflicts)
+## Channel strategy (lane changed to "What If You..." personal scenarios on 2026-11-14 by the owner; before that "What If" science from 2026-11-12, and "dumbest decisions" before that. The Growth rules below override anything in this section that conflicts)
+**Lane now:** "What If You..." personal scenarios: the viewer suddenly has one power or wakes up in one situation. See "Growth rules (2026-11-14)".
 **Goal:** YouTube Partner Program: 1,000 subscribers + 10 million Shorts views inside a 90-day window. No guarantee exists; the job is to maximise the odds every day.
 
 **Where we are (2026-11-12):** 6 subs, 4,149 lifetime views, 9 Shorts before the change. 96% of views come from the Shorts feed. Only ~53% of feed views become engaged views (target 70%+). 2 subs per ~2,500 views (0.08%).
@@ -18,6 +19,24 @@ One Short per day (morning run; the evening run only when `log/learnings.md` sta
 7. **Real science, clearly hypothetical.** Every number comes from a reliable source; estimates are said as estimates. Nothing a viewer could copy and get hurt by (no "what if you stopped eating/sleeping/breathing" body challenges, no drugs, no stunts). No real person shown being harmed.
 8. **One per day (the morning run) from 2026-11-14** until the Sunday report writes the line `two_per_day: yes` at the top of `log/learnings.md` (it does that when engaged views ÷ views reaches 65% over the week). Only then does the evening run make a second Short. Two weak Shorts a day add no reach.
 9. **Checkpoints** (the Sunday report grades these): day 14: one Short over 10K views and engaged ratio ≥ 65%. Day 30: 100K total views, 100 subs. Day 60: 1M views, 500 subs. If a checkpoint is missed, the Sunday report must propose one concrete change to hook, length or structure and list it under "Changes that need your OK".
+
+## Growth rules (2026-11-14)
+Set by the owner on 2026-11-14. These override anything else in this runbook wherever they conflict, including the science lane, the "real science" wording and Shot rule 5. Reason: the channel's own best Short was a plain question with a number and a timer, and the two newest science Shorts got 641 and 190 views.
+
+A. One lane. Every Short is a "What If You..." scenario: the viewer suddenly has one power or wakes up in one situation ("What if you could stop time for 10 seconds?", "What if you could see who has a crush on you?"). No space or body science explainers, no lists, no brands, no games, no history lessons, no AI tools, even if they are trending. Follow trends INSIDE this lane only. Keep the lane until log/posts.csv has 14 rows dated after 2026-11-14.
+B. Scenes, not a template. Use the scene format in RUNBOOK.md section 2 (script.json with `shots`; the renderer is pipeline/scenes.py). Every shot is a full-screen drawn scene that shows the thing the narration is saying at that moment. Do not reuse the hook composition, shot list or background order of any of the last 5 scripts in log/.
+C. Cold open for strangers. Frame 0 already shows the power working or the situation happening, and the What If question is spoken from 0.25 seconds. No setup, greeting, title card or channel intro. Open on the consequence, said as something the viewer can picture ("Everyone you walk past has a number above their head"), not on "Imagine if...".
+D. Clean ending. End the instant the payoff lands, cut so it loops. No outro, no subscribe text or voice line, no hidden item, no watermark, no thanks, no sign-off. The only end text is the `ask` question (a debatable question about the scenario).
+E. Title. One clear question starting with "What If You", under 60 characters, ending with #shorts. Never start a title with a hashtag, use no other hashtags in the title, and no episode numbers.
+F. Plain-word hook with a number. The spoken What If question is 10 words or fewer, uses only words a 12-year-old knows, and where it fits ends with a specific amount of time or a number ("for 10 seconds", "for one day", "20,000 years ago"). No jargon or event names anywhere in the hook or title.
+G. Frame 0 shows people, not a colour. The first frame must show the "you" character (rule J) and at least one other recognisable thing (other people, a street, a clock, money), with the power visibly acting on them. A flash, glow or explosion that covers the whole frame fails. `hook.screen` is 4 words or fewer. Do not open on an explosion. To satisfy the linter's hook-fx warning, use a short `flash`, `freeze`, `dark` or `lights_out` at the start that does not hide the scene.
+H. Zero-context question. A stranger must understand the question without knowing any news, event or term.
+I. Check frame 0 on its own. After building, extract the first frame (`ffmpeg -y -i <video> -frames:v 1 work/frame0.jpg`), open it with the Read tool and answer: who is in it, and what is happening to them? If the honest answer is "a blast", "a colour" or needs the caption to explain it, rebuild the hook shot.
+J. One recurring character. "You" is always the built-in `person` actor with `"color": "#ffd21a"` (yellow shirt), in the hook and in at least half of the shots, `size` 0.25-0.45 (this replaces Shot rule 5). Other people are `person` actors in other colours, smaller or in a `count` group. If the linter warns that the hook person should be small, keep the size at 0.45 or below and that warning will not appear.
+K. Text on screen. `pop` labels and `hook.screen` are 2-4 words ("10 SECONDS", "SAFE ZONE"). Never put a full sentence in a label, and never a label that repeats the words being spoken at that moment.
+L. Pace. At least one new shot every 4-5 seconds; 25-35 seconds spoken in total.
+
+**Topic queue** (use in order, skipping any already in log/topics.md): (1) What if you could see who has a crush on you? (2) What if you could see how long everyone has left? (3) What if you could stop time for 10 seconds? (4) What if you could see everyone's future wealth? (5) What if you woke up 20,000 years ago? When the queue is used up, choose a new "What If You..." question in the same style from the research, not used in the last 30 days.
 
 ## The format: a "What If" scenario (base structure; see strategy point 3 for the rotation)
 Modeled on "What If Elon Musk Took the AI Race to Space?" (Afterhour Theory, 1.7M views). Learn the structure, never reuse its script, characters or artwork.

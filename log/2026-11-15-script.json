@@ -1,0 +1,682 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "crush",
+ "hook": {
+  "screen": "Hearts mean crushes",
+  "text": "What if, for ten seconds, you saw every secret crush?",
+  "shots": [
+   {
+    "bg": "city_day",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.34,
+       0.57
+      ],
+      "size": 0.18,
+      "color": "#b06cff",
+      "pose": "run",
+      "to": [
+       0.42,
+       0.57
+      ]
+     },
+     {
+      "art": "person",
+      "at": [
+       0.7,
+       0.57
+      ],
+      "size": 0.18,
+      "color": "#ff6b6b"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.15,
+       0.616
+      ],
+      "size": 0.3,
+      "color": "#3d8bfd"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.85,
+       0.616
+      ],
+      "size": 0.3,
+      "color": "#2ecc71"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.5,
+       0.602
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "arms_up"
+     },
+     {
+      "art": "2764",
+      "at": [
+       0.15,
+       0.45399999999999996
+      ],
+      "size": 0.14,
+      "glow": "#ff4d6d",
+      "bob": 0.4,
+      "size_to": 0.17
+     },
+     {
+      "art": "2764",
+      "at": [
+       0.7,
+       0.45899999999999996
+      ],
+      "size": 0.09,
+      "glow": "#ff4d6d",
+      "bob": 0.4,
+      "size_to": 0.11
+     },
+     {
+      "art": "2728",
+      "at": [
+       0.5,
+       0.4
+      ],
+      "size": 0.05,
+      "count": 5,
+      "spread": 0.3,
+      "spin": 40
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Second one. A red heart pops up over anyone with a crush on you. Most heads stay empty.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "pop": "heart = crush",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.599
+       ],
+       "size": 0.36,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.36,
+        0.578
+       ],
+       "size": 0.22,
+       "color": "#8a94a6",
+       "pose": "run",
+       "to": [
+        0.42,
+        0.578
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.54,
+        0.578
+       ],
+       "size": 0.22,
+       "color": "#3d8bfd"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.7,
+        0.578
+       ],
+       "size": 0.22,
+       "color": "#2ecc71"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.86,
+        0.578
+       ],
+       "size": 0.22,
+       "color": "#8a94a6"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.54,
+        0.45299999999999996
+       ],
+       "size": 0.11,
+       "glow": "#ff4d6d",
+       "enter": "pop",
+       "appear": 0.25,
+       "size_to": 0.13
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.86,
+        0.45299999999999996
+       ],
+       "size": 0.11,
+       "glow": "#ff4d6d",
+       "enter": "pop",
+       "appear": 0.5,
+       "size_to": 0.13
+      }
+     ]
+    },
+    {
+     "bg": "ground",
+     "cam": "pull",
+     "counter": {
+      "from": 0,
+      "to": 1,
+      "unit": "heart"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.14,
+        0.584
+       ],
+       "size": 0.2,
+       "color": "#8a94a6",
+       "pose": "run",
+       "to": [
+        0.22,
+        0.584
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.34,
+        0.584
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.52,
+        0.584
+       ],
+       "size": 0.2,
+       "color": "#2ecc71",
+       "pose": "run",
+       "to": [
+        0.46,
+        0.584
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.7,
+        0.584
+       ],
+       "size": 0.2,
+       "color": "#b06cff"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.34,
+        0.46599999999999997
+       ],
+       "size": 0.1,
+       "glow": "#ff4d6d",
+       "enter": "pop",
+       "appear": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.628
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "flip": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Second three, it gets strange. The barista? Big heart. The guy from the gym? Heart. The one you have a crush on? Nothing.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "push",
+     "w": 1.3,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.596
+       ],
+       "size": 0.3,
+       "color": "#8b5a2b"
+      },
+      {
+       "art": "2615",
+       "at": [
+        0.3,
+        0.56
+       ],
+       "size": 0.1,
+       "bob": 0.3
+      },
+      {
+       "art": "1f496",
+       "at": [
+        0.2,
+        0.42400000000000004
+       ],
+       "size": 0.06,
+       "glow": "#ff4d6d",
+       "size_to": 0.2,
+       "ease": "out",
+       "over": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.596
+       ],
+       "size": 0.3,
+       "color": "#e74c3c",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1f4aa",
+       "at": [
+        0.66,
+        0.5
+       ],
+       "size": 0.1,
+       "spin": 30
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.8,
+        0.42400000000000004
+       ],
+       "size": 0.03,
+       "glow": "#ff4d6d",
+       "size_to": 0.14,
+       "enter": "pop",
+       "appear": 0.55
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.634
+       ],
+       "size": 0.38,
+       "color": "#ffd21a"
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "pop": "zero",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.68,
+        0.599
+       ],
+       "size": 0.36,
+       "color": "#ff8fc8",
+       "pose": "run",
+       "to": [
+        0.86,
+        0.599
+       ],
+       "delay": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.608
+       ],
+       "size": 0.4,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "1f494",
+       "at": [
+        0.3,
+        0.402
+       ],
+       "size": 0.12,
+       "enter": "pop",
+       "appear": 0.35,
+       "shake": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Second six. But scientists found people like us more than we think after a first chat. It's called the liking gap.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pan_l",
+     "pop": "real study",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.594
+       ],
+       "size": 0.38,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.594
+       ],
+       "size": 0.38,
+       "color": "#3d8bfd",
+       "flip": true
+      },
+      {
+       "art": "1f4ac",
+       "at": [
+        0.42,
+        0.4
+       ],
+       "size": 0.12,
+       "bob": 0.5
+      },
+      {
+       "art": "1f4ac",
+       "at": [
+        0.62,
+        0.36
+       ],
+       "size": 0.12,
+       "bob": 0.5,
+       "flip": true
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.72,
+        0.5
+       ],
+       "size": 0.05,
+       "count": 4,
+       "spread": 0.08,
+       "to": [
+        0.72,
+        0.2
+       ],
+       "glow": "#ff4d6d"
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "tilt_up",
+     "pop": "you guess low",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.28,
+        0.619
+       ],
+       "size": 0.36,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "1f4ad",
+       "at": [
+        0.36,
+        0.42
+       ],
+       "size": 0.2
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.36,
+        0.42
+       ],
+       "size": 0.05
+      },
+      {
+       "art": "person",
+       "at": [
+        0.74,
+        0.619
+       ],
+       "size": 0.36,
+       "color": "#3d8bfd"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.74,
+        0.40700000000000003
+       ],
+       "size": 0.06,
+       "glow": "#ff4d6d",
+       "size_to": 0.24,
+       "ease": "out"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Second eight. You say hi, and a tiny heart grows over your crush. Second ten. You see your reflection. Everyone can see your heart too. So",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "pull",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.614
+       ],
+       "size": 0.38,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "1f44b",
+       "at": [
+        0.45,
+        0.5
+       ],
+       "size": 0.1,
+       "spin": 60
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.614
+       ],
+       "size": 0.38,
+       "color": "#ff8fc8",
+       "flip": true
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.72,
+        0.405
+       ],
+       "size": 0.03,
+       "glow": "#ff4d6d",
+       "size_to": 0.18,
+       "ease": "out",
+       "delay": 0.2
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "push",
+     "pop": "busted",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.604
+       ],
+       "size": 0.2,
+       "color": "#8a94a6"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.575
+       ],
+       "size": 0.16,
+       "color": "#2ecc71"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.575
+       ],
+       "size": 0.16,
+       "color": "#b06cff"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.9,
+        0.604
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.617
+       ],
+       "size": 0.44,
+       "color": "#ffd21a"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.5,
+        0.347
+       ],
+       "size": 0.1,
+       "glow": "#ff4d6d",
+       "size_to": 0.36,
+       "ease": "out",
+       "over": 0.6
+      },
+      {
+       "art": "1f440",
+       "at": [
+        0.12,
+        0.47
+       ],
+       "size": 0.08,
+       "enter": "pop",
+       "appear": 0.35
+      },
+      {
+       "art": "1f440",
+       "at": [
+        0.3,
+        0.49
+       ],
+       "size": 0.07,
+       "enter": "pop",
+       "appear": 0.45
+      },
+      {
+       "art": "1f440",
+       "at": [
+        0.72,
+        0.49
+       ],
+       "size": 0.07,
+       "enter": "pop",
+       "appear": 0.5
+      },
+      {
+       "art": "1f440",
+       "at": [
+        0.9,
+        0.47
+       ],
+       "size": 0.08,
+       "enter": "pop",
+       "appear": 0.4
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you want to see the hearts?",
+ "youtube": {
+  "title": "What If You Could See Who Has a Crush on You? #shorts",
+  "category": "ENTERTAINMENT"
+ }
+}
