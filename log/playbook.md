@@ -8,3 +8,4 @@
 - Hook scorer: "What if you could see who has a crush on you?" scores ~38 (no number, no stakes); front-loading "for ten seconds" + "secret" lifts it to 81 (hook tests, 2026-11-15).
 - A What If You question that other channels turn into a multi-part series ("how long everyone has left", Part 3/4 seen 2026-11-15) signals demand; view counts for it could not be verified. Hook scorer: adding "secret" + "for ten minutes" up front lifts a plain question from 55 to 81 (2026-11-15).
 - Off-lane patterns (stunt superlatives, space-weather and sky-event What Ifs) removed 2026-11-15: lane is now What If You; owner noted the two newest science Shorts got 641 and 190 views (2026-11-14).
+- Stop-time Shorts from other channels lean on a twist cost (physics: "you'd go blind"); views not verifiable (2026-11-16). Hook scorer: "What if you could stop time for ten seconds?" 77.8; adding "for everyone" lifts to 81 but breaks the 10-word rule.
