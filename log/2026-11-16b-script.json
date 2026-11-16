@@ -1,0 +1,632 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "money",
+ "hook": {
+  "screen": "Their future money",
+  "text": "What if, for ten minutes, you saw everyone's secret money?",
+  "shots": [
+   {
+    "bg": "sunset",
+    "cam": "pull",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.52,
+       0.585
+      ],
+      "size": 0.26,
+      "color": "#3d8bfd"
+     },
+     {
+      "art": "1f4b0",
+      "at": [
+       0.52,
+       0.43
+      ],
+      "size": 0.17,
+      "glow": "#ffcf40",
+      "bob": 0.4,
+      "size_to": 0.21
+     },
+     {
+      "art": "person",
+      "at": [
+       0.72,
+       0.575
+      ],
+      "size": 0.22,
+      "color": "#ff6b6b",
+      "flip": true
+     },
+     {
+      "art": "1fa99",
+      "at": [
+       0.72,
+       0.46
+      ],
+      "size": 0.06,
+      "glow": "#ffcf40",
+      "bob": 0.4
+     },
+     {
+      "art": "person",
+      "at": [
+       0.86,
+       0.565
+      ],
+      "size": 0.2,
+      "color": "#2ecc71",
+      "pose": "run",
+      "to": [
+       0.8,
+       0.565
+      ],
+      "flip": true
+     },
+     {
+      "art": "1f4b5",
+      "at": [
+       0.83,
+       0.455
+      ],
+      "size": 0.1,
+      "glow": "#ffcf40",
+      "bob": 0.4,
+      "size_to": 0.12
+     },
+     {
+      "art": "person",
+      "at": [
+       0.22,
+       0.62
+      ],
+      "size": 0.44,
+      "color": "#ffd21a",
+      "pose": "arms_up"
+     },
+     {
+      "art": "2728",
+      "at": [
+       0.6,
+       0.36
+      ],
+      "size": 0.05,
+      "count": 5,
+      "spread": 0.3,
+      "spin": 40
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Minute one. A number glows over every head: the money they'll have one day. The loud kid with the fancy car? Almost nothing.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "pop": "9 MINUTES LEFT",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.6
+       ],
+       "size": 0.24,
+       "color": "#8a94a6",
+       "pose": "run",
+       "to": [
+        0.38,
+        0.6
+       ]
+      },
+      {
+       "art": "1f4b5",
+       "at": [
+        0.34,
+        0.46
+       ],
+       "size": 0.1,
+       "glow": "#ffcf40",
+       "enter": "pop"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.58,
+        0.59
+       ],
+       "size": 0.22,
+       "color": "#a26bff"
+      },
+      {
+       "art": "1f4b0",
+       "at": [
+        0.58,
+        0.455
+       ],
+       "size": 0.13,
+       "glow": "#ffcf40",
+       "enter": "pop",
+       "size_to": 0.16
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.6
+       ],
+       "size": 0.24,
+       "color": "#2ecc71",
+       "flip": true
+      },
+      {
+       "art": "1fa99",
+       "at": [
+        0.84,
+        0.47
+       ],
+       "size": 0.07,
+       "glow": "#ffcf40",
+       "enter": "pop"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.1,
+        0.63
+       ],
+       "size": 0.4,
+       "color": "#ffd21a"
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "pop": "ONLY $12",
+     "actors": [
+      {
+       "art": "1f3ce",
+       "at": [
+        -0.3,
+        0.58
+       ],
+       "size": 0.46,
+       "to": [
+        0.36,
+        0.58
+       ],
+       "ease": "out",
+       "over": 0.3,
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.58
+       ],
+       "size": 0.26,
+       "color": "#ff6b6b",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1fa99",
+       "at": [
+        0.72,
+        0.43
+       ],
+       "size": 0.06,
+       "glow": "#ffcf40",
+       "bob": 0.5
+      },
+      {
+       "art": "person",
+       "at": [
+        0.9,
+        0.63
+       ],
+       "size": 0.34,
+       "color": "#ffd21a",
+       "flip": true
+      }
+     ],
+     "fx": [
+      "speedlines"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Minute three gets strange. The quiet girl who draws all day shows ten million. Nobody knows it but you.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "tilt_up",
+     "counter": {
+      "from": 0,
+      "to": 10000000,
+      "unit": "dollars"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.62,
+        0.6
+       ],
+       "size": 0.28,
+       "color": "#a26bff"
+      },
+      {
+       "art": "1f3a8",
+       "at": [
+        0.76,
+        0.56
+       ],
+       "size": 0.12,
+       "spin": 30,
+       "bob": 0.3
+      },
+      {
+       "art": "1f4b0",
+       "at": [
+        0.62,
+        0.4
+       ],
+       "size": 0.12,
+       "glow": "#ffcf40",
+       "size_to": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.63
+       ],
+       "size": 0.38,
+       "color": "#ffd21a",
+       "to": [
+        0.28,
+        0.63
+       ]
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "sunset",
+     "cam": "static",
+     "w": 0.8,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.59
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "pose": "run",
+       "to": [
+        0.12,
+        0.59
+       ],
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.59
+       ],
+       "size": 0.2,
+       "color": "#2ecc71",
+       "pose": "run",
+       "to": [
+        0.95,
+        0.59
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.6,
+        0.6
+       ],
+       "size": 0.26,
+       "color": "#a26bff"
+      },
+      {
+       "art": "1f4b0",
+       "at": [
+        0.6,
+        0.4
+       ],
+       "size": 0.26,
+       "glow": "#ffcf40",
+       "bob": 0.3
+      },
+      {
+       "art": "1fa99",
+       "at": [
+        0.6,
+        -0.1
+       ],
+       "size": 0.07,
+       "to": [
+        0.6,
+        0.5
+       ],
+       "count": 8,
+       "spread": 0.3,
+       "spin": 200,
+       "ease": "in"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.36,
+        0.62
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      }
+     ],
+     "fx": []
+    }
+   ]
+  },
+  {
+   "text": "Minute six, you spot the trick. The numbers keep moving. Every time someone learns a skill or helps a friend, their money ticks up.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_l",
+     "pop": "IT CHANGES",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.7,
+        0.59
+       ],
+       "size": 0.24,
+       "color": "#3d8bfd"
+      },
+      {
+       "art": "1f4da",
+       "at": [
+        0.88,
+        0.7
+       ],
+       "size": 0.12,
+       "to": [
+        0.88,
+        0.5
+       ],
+       "spin": 20,
+       "ease": "out",
+       "over": 0.5
+      },
+      {
+       "art": "1f4b5",
+       "at": [
+        0.7,
+        0.44
+       ],
+       "size": 0.08,
+       "glow": "#ffcf40",
+       "size_to": 0.18
+      },
+      {
+       "art": "person",
+       "at": [
+        0.25,
+        0.63
+       ],
+       "size": 0.4,
+       "color": "#ffd21a"
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "sky_day",
+     "cam": "tilt_up",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.68,
+        0.62
+       ],
+       "size": 0.24,
+       "color": "#ff6b6b",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.62
+       ],
+       "size": 0.22,
+       "color": "#2ecc71",
+       "flip": true
+      },
+      {
+       "art": "1f4c8",
+       "at": [
+        0.76,
+        0.36
+       ],
+       "size": 0.2,
+       "size_to": 0.3,
+       "glow": "#ffcf40"
+      },
+      {
+       "art": "1fa99",
+       "at": [
+        0.5,
+        0.7
+       ],
+       "size": 0.07,
+       "to": [
+        0.5,
+        0.15
+       ],
+       "count": 10,
+       "spread": 0.4,
+       "spin": 160,
+       "ease": "out"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.26,
+        0.63
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      }
+     ],
+     "fx": []
+    }
+   ]
+  },
+  {
+   "text": "Minute ten, you find a mirror. Your own number is blank, still waiting for you to fill it in. So ask yourself again:",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "pull",
+     "pop": "YOURS: ???",
+     "actors": [
+      {
+       "art": "1fa9e",
+       "at": [
+        0.68,
+        0.52
+       ],
+       "size": 0.34,
+       "glow": "#7fd1ff",
+       "size_to": 0.38
+      },
+      {
+       "art": "2753",
+       "at": [
+        0.36,
+        0.36
+       ],
+       "size": 0.12,
+       "glow": "#ffcf40",
+       "bob": 0.5,
+       "size_to": 0.16
+      },
+      {
+       "art": "person",
+       "at": [
+        0.36,
+        0.63
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "to": [
+        0.42,
+        0.63
+       ],
+       "ease": "out"
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "ground",
+     "cam": "push",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.74,
+        0.585
+       ],
+       "size": 0.24,
+       "color": "#3d8bfd"
+      },
+      {
+       "art": "1f4b0",
+       "at": [
+        0.74,
+        0.45
+       ],
+       "size": 0.14,
+       "glow": "#ffcf40",
+       "bob": 0.4
+      },
+      {
+       "art": "2753",
+       "at": [
+        0.3,
+        0.36
+       ],
+       "size": 0.12,
+       "glow": "#ffcf40",
+       "bob": 0.5,
+       "size_to": 0.17
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.62
+       ],
+       "size": 0.44,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.85
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you peek at your own number?",
+ "youtube": {
+  "title": "What If You Could See Everyone's Future Wealth? #shorts",
+  "description": "What if you could see everyone's future money floating over their heads for ten minutes? New What If every day.\nWould you peek at your own number?\n#whatif #whatifyou #money #superpower #shorts",
+  "tags": [
+   "money",
+   "what if",
+   "what if you",
+   "future wealth",
+   "what if you could see",
+   "superpower",
+   "hypothetical",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
