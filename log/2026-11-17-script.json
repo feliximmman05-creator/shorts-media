@@ -1,0 +1,539 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "ice",
+ "hook": {
+  "screen": "Ice age. Day one.",
+  "text": "What if you woke twenty thousand years ago, no phone?",
+  "shots": [
+   {
+    "bg": "ice",
+    "cam": "push",
+    "focus": [
+     0.45,
+     0.55
+    ],
+    "actors": [
+     {
+      "art": "1f9a3",
+      "at": [
+       0.86,
+       0.5
+      ],
+      "to": [
+       0.68,
+       0.5
+      ],
+      "size": 0.46,
+      "flip": true,
+      "ease": "out",
+      "over": 0.6
+     },
+     {
+      "art": "person",
+      "at": [
+       0.86,
+       0.6
+      ],
+      "size": 0.18,
+      "color": "#8b5a2b",
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.94,
+       0.61
+      ],
+      "size": 0.16,
+      "color": "#6d4c41",
+      "flip": true
+     },
+     {
+      "art": "1f4f1",
+      "at": [
+       0.3,
+       0.38
+      ],
+      "size": 0.1,
+      "spin": 120,
+      "to": [
+       0.1,
+       0.1
+      ],
+      "vanish": 0.7
+     },
+     {
+      "art": "person",
+      "at": [
+       0.3,
+       0.63
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "arms_up",
+      "shake": 0.3
+     }
+    ],
+    "fx": [
+     {
+      "name": "snow",
+      "t": -0.5
+     },
+     {
+      "name": "freeze",
+      "t": 0.0
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "You open your eyes on solid ice. The whole planet is about six degrees colder, and a mammoth just walked past you.",
+   "shots": [
+    {
+     "bg": "storm",
+     "cam": "pan_l",
+     "counter": {
+      "from": 0,
+      "to": -6,
+      "unit": "°C"
+     },
+     "actors": [
+      {
+       "art": "2744",
+       "at": [
+        0.5,
+        -0.1
+       ],
+       "to": [
+        0.5,
+        0.7
+       ],
+       "size": 0.08,
+       "count": 10,
+       "spread": 0.45,
+       "spin": 90
+      },
+      {
+       "art": "person",
+       "at": [
+        0.28,
+        0.6
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "fall",
+       "shake": 0.5
+      }
+     ],
+     "fx": [
+      "snow"
+     ]
+    },
+    {
+     "bg": "ice",
+     "cam": "pan_r",
+     "actors": [
+      {
+       "art": "1f9a3",
+       "at": [
+        -0.3,
+        0.46
+       ],
+       "to": [
+        0.68,
+        0.46
+       ],
+       "size": 0.55,
+       "ease": "linear",
+       "shake": 0.2
+      },
+      {
+       "art": "person",
+       "at": [
+        0.18,
+        0.64
+       ],
+       "size": 0.32,
+       "color": "#ffd21a",
+       "pose": "run",
+       "to": [
+        0.1,
+        0.64
+       ]
+      }
+     ],
+     "fx": [
+      "quake"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "You walk south. But most of Canada is buried under ice, up to three kilometres thick.",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "tilt_up",
+     "counter": {
+      "from": 0,
+      "to": 3,
+      "unit": "km of ice"
+     },
+     "actors": [
+      {
+       "art": "1f3d4",
+       "at": [
+        0.6,
+        0.55
+       ],
+       "size": 0.4,
+       "size_to": 0.95,
+       "glow": "#bfe9ff"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.15,
+        0.68
+       ],
+       "size": 0.26,
+       "color": "#ffd21a",
+       "pose": "run",
+       "to": [
+        0.28,
+        0.68
+       ]
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "city_day",
+     "cam": "pull",
+     "pop": "ALL FROZEN",
+     "actors": [
+      {
+       "art": "1f9ca",
+       "at": [
+        0.5,
+        -0.2
+       ],
+       "to": [
+        0.5,
+        0.55
+       ],
+       "size": 0.14,
+       "count": 8,
+       "spread": 0.5,
+       "spin": 60,
+       "ease": "in"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.64
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "flip": true,
+       "shake": 0.3
+      }
+     ],
+     "fx": [
+      {
+       "name": "freeze",
+       "t": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then it gets strange. So much water is locked in ice that the sea is a hundred and twenty metres lower.",
+   "shots": [
+    {
+     "bg": "ocean",
+     "cam": "tilt_down",
+     "counter": {
+      "from": 0,
+      "to": 120,
+      "unit": "m lower"
+     },
+     "actors": [
+      {
+       "art": "1f9ca",
+       "at": [
+        0.5,
+        0.85
+       ],
+       "to": [
+        0.5,
+        0.1
+       ],
+       "size": 0.1,
+       "count": 9,
+       "spread": 0.5,
+       "spin": 80,
+       "ease": "out"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.22,
+        0.62
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      }
+     ],
+     "fx": [
+      "bubbles"
+     ]
+    },
+    {
+     "bg": "ground",
+     "cam": "pan_r",
+     "pop": "NO BOAT NEEDED",
+     "actors": [
+      {
+       "art": "1f3dd",
+       "at": [
+        0.8,
+        0.52
+       ],
+       "size": 0.36,
+       "bob": 0.2
+      },
+      {
+       "art": "1f463",
+       "at": [
+        0.15,
+        0.75
+       ],
+       "to": [
+        0.6,
+        0.72
+       ],
+       "size": 0.06,
+       "count": 5,
+       "spread": 0.2
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.64
+       ],
+       "size": 0.34,
+       "color": "#ffd21a",
+       "pose": "run",
+       "to": [
+        0.58,
+        0.64
+       ]
+      }
+     ],
+     "fx": []
+    }
+   ]
+  },
+  {
+   "text": "You find a family by a fire. You know about phones and pizza, but you can't build either one. You fall asleep by the fire, and",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "actors": [
+      {
+       "art": "1f525",
+       "at": [
+        0.55,
+        0.62
+       ],
+       "size": 0.18,
+       "size_to": 0.24,
+       "bob": 0.2
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.62
+       ],
+       "size": 0.22,
+       "color": "#8b5a2b",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.63
+       ],
+       "size": 0.18,
+       "color": "#6d4c41",
+       "flip": true
+      },
+      {
+       "art": "1f9e5",
+       "at": [
+        0.7,
+        0.4
+       ],
+       "to": [
+        0.3,
+        0.5
+       ],
+       "size": 0.12,
+       "spin": 40,
+       "delay": 0.4,
+       "over": 0.4
+      },
+      {
+       "art": "person",
+       "at": [
+        0.1,
+        0.64
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "run",
+       "to": [
+        0.3,
+        0.64
+       ],
+       "over": 0.4
+      }
+     ],
+     "fx": [
+      "embers"
+     ]
+    },
+    {
+     "bg": "sky_night",
+     "cam": "static",
+     "pop": "ZERO TECH",
+     "actors": [
+      {
+       "art": "1f4f1",
+       "at": [
+        0.3,
+        0.34
+       ],
+       "size": 0.14,
+       "bob": 0.4,
+       "enter": "pop"
+      },
+      {
+       "art": "1f355",
+       "at": [
+        0.62,
+        0.32
+       ],
+       "size": 0.14,
+       "bob": 0.4,
+       "enter": "pop"
+      },
+      {
+       "art": "274c",
+       "at": [
+        0.46,
+        0.33
+       ],
+       "size": 0.08,
+       "size_to": 0.3,
+       "appear": 0.45,
+       "enter": "pop"
+      },
+      {
+       "art": "1f525",
+       "at": [
+        0.75,
+        0.66
+       ],
+       "size": 0.16,
+       "bob": 0.2
+      },
+      {
+       "art": "person",
+       "at": [
+        0.42,
+        0.65
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "shake": 0.2
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "ice",
+     "cam": "pull",
+     "w": 0.7,
+     "actors": [
+      {
+       "art": "1f525",
+       "at": [
+        0.7,
+        0.64
+       ],
+       "size": 0.16,
+       "size_to": 0.05
+      },
+      {
+       "art": "1f4a4",
+       "at": [
+        0.42,
+        0.52
+       ],
+       "to": [
+        0.5,
+        0.3
+       ],
+       "size": 0.1,
+       "count": 3,
+       "spread": 0.1
+      },
+      {
+       "art": "person",
+       "at": [
+        0.4,
+        0.66
+       ],
+       "size": 0.34,
+       "color": "#ffd21a",
+       "rot": -90
+      }
+     ],
+     "fx": [
+      {
+       "name": "dark",
+       "t": 0.3
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you survive the first week?",
+ "youtube": {
+  "title": "What If You Woke Up 20,000 Years Ago? #shorts",
+  "description": "What if you woke up 20,000 years ago in the ice age, with no phone? New What If every day.\nWould you survive the first week?\n#whatif #whatifyou #iceage #survival #shorts",
+  "tags": [
+   "ice age",
+   "what if",
+   "what if you",
+   "20000 years ago",
+   "what if you woke up",
+   "survival",
+   "hypothetical",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
