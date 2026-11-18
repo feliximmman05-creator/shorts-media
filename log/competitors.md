@@ -12,3 +12,4 @@ The daily run adds new ones here when it finds channels with fast-growing Shorts
 - @StefanBurns | space-weather/solar-storm explainers, live during every storm week ("8 Minutes Until Complete Blackout", 2026-11-08) | added 2026-11-13
 - @JeremyBearimyTheory | "What IF You..." personal-power scenarios (crush 1.9M, infinite money 1.0M, luck 790K); mostly long-form but exact lane match | added 2026-11-15
 - 2026-11-17 check: no new channel added; the "woke up 20,000 years ago" uploads came from channels whose names/views were not visible in search.
+- 2026-11-18 check: no new channel added; web searches surfaced no specific What If You Shorts with visible view counts.
