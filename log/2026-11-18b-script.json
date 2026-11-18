@@ -1,0 +1,459 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "teleport",
+ "hook": {
+  "screen": "3 JUMPS. EVER.",
+  "text": "What if you could teleport anywhere, but only three times?",
+  "shots": [
+   {
+    "bg": "city_night",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.14,
+       0.76
+      ],
+      "size": 0.2,
+      "color": "#3d8bfd",
+      "pose": "arms_up"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.86,
+       0.76
+      ],
+      "size": 0.2,
+      "color": "#ff6b6b",
+      "pose": "arms_up",
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.66,
+       0.78
+      ],
+      "size": 0.17,
+      "color": "#2ecc71",
+      "pose": "stand",
+      "flip": true
+     },
+     {
+      "art": "2728",
+      "at": [
+       0.36,
+       0.6
+      ],
+      "size": 0.08,
+      "count": 6,
+      "spread": 0.16,
+      "spin": 180
+     },
+     {
+      "art": "person",
+      "at": [
+       0.36,
+       0.64
+      ],
+      "size": 0.4,
+      "color": "#ffd21a",
+      "pose": "arms_up",
+      "glow": "#9fe8ff",
+      "vanish": 0.55
+     },
+     {
+      "art": "person",
+      "at": [
+       0.6,
+       0.5
+      ],
+      "size": 0.4,
+      "color": "#ffd21a",
+      "pose": "float",
+      "glow": "#9fe8ff",
+      "appear": 0.6,
+      "enter": "pop"
+     }
+    ],
+    "fx": [
+     {
+      "name": "freeze",
+      "t": 0.0,
+      "amount": 0.3
+     },
+     {
+      "name": "shockwave",
+      "t": 0.55,
+      "at": [
+       0.6,
+       0.5
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Jump one. You go as far as possible: the other side of Earth, twenty thousand kilometres away, in one blink.",
+   "shots": [
+    {
+     "bg": "space",
+     "cam": "pull",
+     "counter": {
+      "from": 0,
+      "to": 20000,
+      "unit": "km"
+     },
+     "actors": [
+      {
+       "art": "earth",
+       "at": [
+        0.5,
+        0.55
+       ],
+       "size": 0.8,
+       "rot_speed": 1.0
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.22
+       ],
+       "size": 0.28,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "glow": "#9fe8ff",
+       "vanish": 0.45
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.8
+       ],
+       "size": 0.28,
+       "color": "#ffd21a",
+       "pose": "float",
+       "glow": "#9fe8ff",
+       "appear": 0.55,
+       "enter": "pop"
+      }
+     ],
+     "fx": [
+      "stars_streak"
+     ]
+    },
+    {
+     "bg": "ocean_night",
+     "cam": "tilt_down",
+     "pop": "2 JUMPS LEFT",
+     "actors": [
+      {
+       "art": "2728",
+       "at": [
+        0.5,
+        0.45
+       ],
+       "size": 0.08,
+       "count": 6,
+       "spread": 0.15,
+       "spin": 200
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.2
+       ],
+       "to": [
+        0.5,
+        0.55
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "fall",
+       "ease": "out",
+       "over": 0.4
+      }
+     ],
+     "fx": []
+    }
+   ]
+  },
+  {
+   "text": "But it's the middle of the night there, about twelve hours ahead. Everything is shut, and you forgot a jacket.",
+   "shots": [
+    {
+     "bg": "sky_night",
+     "cam": "pan_l",
+     "counter": {
+      "from": 0,
+      "to": 12,
+      "unit": "h"
+     },
+     "actors": [
+      {
+       "art": "moon",
+       "at": [
+        0.75,
+        0.18
+       ],
+       "size": 0.25
+      },
+      {
+       "art": "1f55b",
+       "at": [
+        0.25,
+        0.3
+       ],
+       "size": 0.18,
+       "spin": 120
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.62
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "bob": 0.3
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "storm",
+     "cam": "push",
+     "pop": "WRONG CALL",
+     "actors": [
+      {
+       "art": "1f512",
+       "at": [
+        0.25,
+        0.6
+       ],
+       "size": 0.18,
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.6,
+        0.66
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "shake": 0.5
+      }
+     ],
+     "fx": [
+      "rain",
+      {
+       "name": "lightning",
+       "t": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Jump two. You panic and teleport straight home. Two jumps, gone in ten minutes.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "pop": "BACK ALREADY?",
+     "actors": [
+      {
+       "art": "1f3e0",
+       "at": [
+        0.3,
+        0.62
+       ],
+       "size": 0.3
+      },
+      {
+       "art": "2728",
+       "at": [
+        0.65,
+        0.6
+       ],
+       "size": 0.08,
+       "count": 6,
+       "spread": 0.15,
+       "spin": 200,
+       "vanish": 0.7
+      },
+      {
+       "art": "person",
+       "at": [
+        0.65,
+        0.64
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "glow": "#9fe8ff",
+       "appear": 0.2,
+       "enter": "pop"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.2,
+       "at": [
+        0.65,
+        0.6
+       ]
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "pull",
+     "counter": {
+      "from": 2,
+      "to": 1,
+      "unit": "jump left"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.66
+       ],
+       "size": 0.38,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "size_to": 0.3
+      }
+     ],
+     "fx": [
+      "dust"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then it gets strange. You save the last teleport for something perfect, wait your whole life, and never use it. Because",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "tilt_up",
+     "pop": "NOT YET...",
+     "actors": [
+      {
+       "art": "1f4c5",
+       "at": [
+        1.1,
+        0.25
+       ],
+       "to": [
+        -0.1,
+        0.3
+       ],
+       "size": 0.14,
+       "count": 5,
+       "spread": 0.2,
+       "spin": 90,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.64
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "bob": 0.4
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "pop": "STILL WAITING",
+     "w": 1.2,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.14,
+        0.76
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "pose": "stand",
+       "to": [
+        0.3,
+        0.76
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.86,
+        0.76
+       ],
+       "size": 0.2,
+       "color": "#ff6b6b",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.36,
+        0.64
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "glow": "#9fe8ff"
+      }
+     ],
+     "fx": [
+      {
+       "name": "dark",
+       "t": 0.2,
+       "amount": 0.4
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you ever use jump three?",
+ "youtube": {
+  "title": "What If You Could Teleport Only 3 Times? #shorts",
+  "description": "What if you could teleport anywhere, but only three times? New What If every day.\nWould you ever use jump three?\n#whatif #whatifyou #teleport #superpower #shorts",
+  "tags": [
+   "teleport",
+   "what if",
+   "what if you",
+   "what if you could teleport",
+   "teleportation",
+   "superpower",
+   "hypothetical",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
