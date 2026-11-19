@@ -1,0 +1,802 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "walls",
+ "hook": {
+  "screen": "24 HOURS. NO WALLS.",
+  "text": "What if, for only 24 hours, you walked through walls?",
+  "shots": [
+   {
+    "bg": "city_day",
+    "cam": "pan_r",
+    "focus": [
+     0.5,
+     0.6
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.12,
+       0.74
+      ],
+      "size": 0.22,
+      "color": "#3d8bfd",
+      "pose": "arms_up"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.9,
+       0.74
+      ],
+      "size": 0.22,
+      "color": "#ff6b6b",
+      "pose": "arms_up",
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.78,
+       0.78
+      ],
+      "size": 0.17,
+      "color": "#2ecc71",
+      "pose": "stand",
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.4,
+       0.64
+      ],
+      "size": 0.4,
+      "color": "#ffd21a",
+      "pose": "run",
+      "to": [
+       0.74,
+       0.64
+      ],
+      "ease": "linear",
+      "glow": "#9fe8ff"
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.47,
+       0.42
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.57,
+       0.42
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.52,
+       0.475
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.62,
+       0.475
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.47,
+       0.53
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.57,
+       0.53
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.52,
+       0.585
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.62,
+       0.585
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.47,
+       0.64
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.57,
+       0.64
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.52,
+       0.695
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.62,
+       0.695
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.47,
+       0.75
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.57,
+       0.75
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.52,
+       0.805
+      ],
+      "size": 0.1
+     },
+     {
+      "art": "1f9f1",
+      "at": [
+       0.62,
+       0.805
+      ],
+      "size": 0.1
+     }
+    ],
+    "fx": [
+     {
+      "name": "freeze",
+      "t": 0.0,
+      "amount": 0.2
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Minute one. No doors. You walk through ten buildings to work. Then your phone falls through your hand.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "push",
+     "pop": "SKIP THE LINE",
+     "actors": [
+      {
+       "art": "1f6aa",
+       "at": [
+        0.62,
+        0.6
+       ],
+       "size": 0.38
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.7
+       ],
+       "size": 0.17,
+       "color": "#8e44ad",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.92,
+        0.7
+       ],
+       "size": 0.17,
+       "color": "#3d8bfd",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.15,
+        0.66
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "run",
+       "to": [
+        0.95,
+        0.66
+       ],
+       "ease": "linear",
+       "glow": "#9fe8ff"
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "sky_day",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "pop": "CAN'T HOLD IT",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.6
+       ],
+       "size": 0.45,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1f4f1",
+       "at": [
+        0.62,
+        0.45
+       ],
+       "to": [
+        0.6,
+        1.15
+       ],
+       "size": 0.16,
+       "spin": 160,
+       "ease": "in",
+       "delay": 0.15
+      }
+     ],
+     "fx": []
+    }
+   ]
+  },
+  {
+   "text": "Hour three. Floors are walls too. You sink through your floor, then the next, then the next.",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "tilt_down",
+     "pop": "GOING DOWN",
+     "actors": [
+      {
+       "art": "1f9f1",
+       "at": [
+        0.08,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.18,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.28,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.38,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.48,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.58,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.68,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.78,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.88,
+        0.38
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.08,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.18,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.28,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.38,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.48,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.58,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.68,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.78,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.88,
+        0.62
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.08,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.18,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.28,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.38,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.48,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.58,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.68,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.78,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "1f9f1",
+       "at": [
+        0.88,
+        0.86
+       ],
+       "size": 0.1
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.12
+       ],
+       "size": 0.32,
+       "color": "#ffd21a",
+       "pose": "fall",
+       "to": [
+        0.5,
+        0.95
+       ],
+       "ease": "in",
+       "glow": "#9fe8ff"
+      }
+     ],
+     "fx": []
+    },
+    {
+     "bg": "ground",
+     "cam": "static",
+     "counter": {
+      "from": 0,
+      "to": 12,
+      "unit": "floors"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.15,
+        0.7
+       ],
+       "size": 0.18,
+       "color": "#2ecc71",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.85,
+        0.7
+       ],
+       "size": 0.18,
+       "color": "#8e44ad",
+       "pose": "arms_up",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.62
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "to": [
+        0.5,
+        1.05
+       ],
+       "ease": "in",
+       "delay": 0.15
+      }
+     ],
+     "fx": [
+      {
+       "name": "crack",
+       "t": 0.1,
+       "at": [
+        0.5,
+        0.72
+       ]
+      },
+      {
+       "name": "quake",
+       "t": 0.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then the ground itself. You're falling toward Earth's center, more than six thousand kilometres down.",
+   "shots": [
+    {
+     "bg": "lava",
+     "cam": "tilt_down",
+     "counter": {
+      "from": 0,
+      "to": 6371,
+      "unit": "km"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.05
+       ],
+       "size": 0.34,
+       "color": "#ffd21a",
+       "pose": "fall",
+       "to": [
+        0.5,
+        0.8
+       ],
+       "ease": "in",
+       "glow": "#ffffff",
+       "spin": 40
+      }
+     ],
+     "fx": [
+      "embers",
+      "heat"
+     ]
+    },
+    {
+     "bg": "space",
+     "cam": "pull",
+     "pop": "HALFWAY",
+     "actors": [
+      {
+       "art": "earth",
+       "at": [
+        0.5,
+        0.52
+       ],
+       "size": 0.9,
+       "rot_speed": 1.0
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.05
+       ],
+       "size": 0.25,
+       "color": "#ffd21a",
+       "pose": "fall",
+       "to": [
+        0.5,
+        0.5
+       ],
+       "ease": "inout",
+       "glow": "#9fe8ff"
+      }
+     ],
+     "fx": [
+      "stars_streak"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "About thirty eight minutes later, you pop out the other side of the planet. Still wondering",
+   "shots": [
+    {
+     "bg": "sky_night",
+     "cam": "tilt_up",
+     "counter": {
+      "from": 0,
+      "to": 38,
+      "unit": "min"
+     },
+     "actors": [
+      {
+       "art": "moon",
+       "at": [
+        0.78,
+        0.16
+       ],
+       "size": 0.22
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        1.15
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "to": [
+        0.5,
+        0.42
+       ],
+       "ease": "out",
+       "over": 0.5,
+       "glow": "#9fe8ff"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.2,
+       "at": [
+        0.5,
+        0.9
+       ]
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "push",
+     "w": 0.8,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.14,
+        0.74
+       ],
+       "size": 0.22,
+       "color": "#2ecc71",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.74
+       ],
+       "size": 0.22,
+       "color": "#ff6b6b",
+       "pose": "arms_up",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.2
+       ],
+       "size": 0.38,
+       "color": "#ffd21a",
+       "pose": "float",
+       "to": [
+        0.5,
+        0.64
+       ],
+       "ease": "out",
+       "over": 0.6,
+       "glow": "#9fe8ff"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.15,
+       "at": [
+        0.5,
+        0.75
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you take it? YES or NO",
+ "youtube": {
+  "title": "What If You Could Walk Through Walls for 24 Hours? #shorts",
+  "description": "Would you take it? YES or NO\nWhat if, for only 24 hours, you could walk through walls, even floors? New What If every day.\n#whatif #whatifyou #superpower #walls #shorts",
+  "tags": [
+   "walk through walls",
+   "what if",
+   "what if you",
+   "what if you could walk through walls",
+   "superpower",
+   "walls",
+   "hypothetical",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}

@@ -1,4 +1,4 @@
-two_per_day: yes
+two_per_day: no
 # Learnings (updated every Sunday by the weekly report; last: 2026-11-15)
 
 - two_per_day stays `yes` because the owner turned it on by hand on 2026-11-14. The weekly test (engaged views ÷ views ≥ 65%) could NOT be run on 2026-11-15: no per-video stats from Metricool, vidIQ at 0 credits until 2026-11-25. Revisit next Sunday.
