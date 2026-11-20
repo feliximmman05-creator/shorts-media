@@ -15,3 +15,4 @@ The daily run adds new ones here when it finds channels with fast-growing Shorts
 - 2026-11-18 check: no new channel added; web searches surfaced no specific What If You Shorts with visible view counts.
 - @GuyvsLife (Guy vs Life) | 10 s 'What If You Could Actually Walk On Walls' 1.21M in 2 days, exact What If You lane | added 2026-11-19
 - Daily 3D | 'What If You Could Walk Through Walls?' 145K + 807 comments in 1 day; 3D story Shorts in the lane | added 2026-11-19
+- Jie GamingStudio | 'If You Could See Who Was Lying' 150K in ~7 h (22K vph); 4.2M-sub channel making What If You style Shorts | added 2026-11-20

@@ -1,0 +1,855 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "lie",
+ "hook": {
+  "screen": "LIARS GLOW RED",
+  "text": "What if, for only 24 hours, you saw every lie?",
+  "shots": [
+   {
+    "bg": "ground",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.6
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.14,
+       0.76
+      ],
+      "size": 0.22,
+      "color": "#3d8bfd",
+      "pose": "stand"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.66,
+       0.74
+      ],
+      "size": 0.24,
+      "color": "#ff6b6b",
+      "pose": "stand",
+      "flip": true,
+      "glow": "#ff2020",
+      "shake": 0.3
+     },
+     {
+      "art": "person",
+      "at": [
+       0.88,
+       0.77
+      ],
+      "size": 0.2,
+      "color": "#2ecc71",
+      "pose": "stand",
+      "flip": true,
+      "glow": "#ff2020",
+      "shake": 0.3
+     },
+     {
+      "art": "person",
+      "at": [
+       0.36,
+       0.66
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "arms_up",
+      "to": [
+       0.4,
+       0.66
+      ],
+      "ease": "out"
+     },
+     {
+      "art": "1f925",
+      "at": [
+       0.66,
+       0.5
+      ],
+      "to": [
+       0.66,
+       0.44
+      ],
+      "size": 0.16,
+      "bob": 1
+     },
+     {
+      "art": "1f925",
+      "at": [
+       0.88,
+       0.56
+      ],
+      "to": [
+       0.88,
+       0.5
+      ],
+      "size": 0.13,
+      "bob": 1
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.6,
+      "amount": 0.2,
+      "color": "#ff3030"
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Every lie now glows red. Your best friend loves your new haircut. Red.",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "pan_r",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.68
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "2702",
+       "at": [
+        0.18,
+        0.4
+       ],
+       "to": [
+        0.42,
+        0.36
+       ],
+       "size": 0.14,
+       "spin": 160
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.7
+       ],
+       "size": 0.36,
+       "color": "#3d8bfd",
+       "pose": "arms_up",
+       "flip": true
+      },
+      {
+       "art": "1f44d",
+       "at": [
+        0.72,
+        0.6
+       ],
+       "to": [
+        0.72,
+        0.4
+       ],
+       "size": 0.16,
+       "enter": "pop",
+       "ease": "out"
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "focus": [
+      0.65,
+      0.6
+     ],
+     "pop": "BUSTED",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.24,
+        0.72
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.66,
+        0.68
+       ],
+       "size": 0.38,
+       "size_to": 0.44,
+       "color": "#3d8bfd",
+       "pose": "stand",
+       "flip": true,
+       "glow": "#ff2020",
+       "shake": 0.5
+      },
+      {
+       "art": "1f925",
+       "at": [
+        0.66,
+        0.45
+       ],
+       "size": 0.12,
+       "size_to": 0.22,
+       "enter": "pop",
+       "appear": 0.2
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.2,
+       "amount": 0.4,
+       "color": "#ff3030"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "One study found people tell about two lies a day. So one busy street flashes red all day long.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_l",
+     "counter": {
+      "from": 0,
+      "to": 2,
+      "unit": "lies a day"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        1.1,
+        0.8
+       ],
+       "to": [
+        -0.2,
+        0.8
+       ],
+       "size": 0.19,
+       "color": "#8e44ad",
+       "pose": "run",
+       "flip": true,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        1.35,
+        0.78
+       ],
+       "to": [
+        -0.2,
+        0.78
+       ],
+       "size": 0.18,
+       "color": "#3d8bfd",
+       "pose": "run",
+       "flip": true,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        -0.15,
+        0.82
+       ],
+       "to": [
+        1.2,
+        0.82
+       ],
+       "size": 0.2,
+       "color": "#2ecc71",
+       "pose": "run",
+       "flip": false,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        -0.4,
+        0.79
+       ],
+       "to": [
+        1.2,
+        0.79
+       ],
+       "size": 0.17,
+       "color": "#ff6b6b",
+       "pose": "run",
+       "flip": false,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.66
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f925",
+       "at": [
+        0.25,
+        0.52
+       ],
+       "size": 0.12,
+       "enter": "pop",
+       "appear": 0.35,
+       "vanish": 0.6
+      },
+      {
+       "art": "1f925",
+       "at": [
+        0.78,
+        0.5
+       ],
+       "size": 0.12,
+       "enter": "pop",
+       "appear": 0.6
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "tilt_down",
+     "pop": "NONSTOP",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.1,
+        0.8
+       ],
+       "size": 0.18,
+       "color": "#8e44ad",
+       "pose": "arms_up",
+       "glow": "#ff2020",
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.26,
+        0.8200000000000001
+       ],
+       "size": 0.18,
+       "color": "#3d8bfd",
+       "pose": "stand",
+       "glow": "#ff2020",
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.42,
+        0.8
+       ],
+       "size": 0.18,
+       "color": "#2ecc71",
+       "pose": "arms_up",
+       "glow": "#ff2020",
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.58,
+        0.8200000000000001
+       ],
+       "size": 0.18,
+       "color": "#ff6b6b",
+       "pose": "stand",
+       "glow": "#ff2020",
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.74,
+        0.8
+       ],
+       "size": 0.18,
+       "color": "#e67e22",
+       "pose": "arms_up",
+       "glow": "#ff2020",
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.9,
+        0.8200000000000001
+       ],
+       "size": 0.18,
+       "color": "#1abc9c",
+       "pose": "stand",
+       "glow": "#ff2020",
+       "shake": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.68
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1f6a8",
+       "at": [
+        0.2,
+        0.3
+       ],
+       "size": 0.16,
+       "spin": 220
+      },
+      {
+       "art": "1f6a8",
+       "at": [
+        0.8,
+        0.3
+       ],
+       "size": 0.16,
+       "spin": -220
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.15,
+       "amount": 0.35,
+       "color": "#ff3030"
+      },
+      {
+       "name": "flash",
+       "t": 0.55,
+       "amount": 0.35,
+       "color": "#ff3030"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "But it's not everyone. Half of all lies come from just one in twenty people. Now you know exactly who.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pull",
+     "pop": "1 IN 20",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.52
+       ],
+       "size": 0.11,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.31,
+        0.52
+       ],
+       "size": 0.11,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.52
+       ],
+       "size": 0.11,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.69,
+        0.52
+       ],
+       "size": 0.11,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.52
+       ],
+       "size": 0.11,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.62
+       ],
+       "size": 0.12,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.31,
+        0.62
+       ],
+       "size": 0.12,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.62
+       ],
+       "size": 0.12,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.62
+       ],
+       "size": 0.12,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.72
+       ],
+       "size": 0.13,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.31,
+        0.72
+       ],
+       "size": 0.13,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.72
+       ],
+       "size": 0.13,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.69,
+        0.72
+       ],
+       "size": 0.13,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.72
+       ],
+       "size": 0.13,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.82
+       ],
+       "size": 0.14,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.31,
+        0.82
+       ],
+       "size": 0.14,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.82
+       ],
+       "size": 0.14,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.69,
+        0.82
+       ],
+       "size": 0.14,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.82
+       ],
+       "size": 0.14,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.69,
+        0.62
+       ],
+       "size": 0.12,
+       "size_to": 0.2,
+       "color": "#ff6b6b",
+       "pose": "arms_up",
+       "glow": "#ff2020",
+       "shake": 0.6,
+       "delay": 0.3
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.35,
+       "at": [
+        0.7,
+        0.62
+       ],
+       "color": "#ff3030"
+      }
+     ]
+    },
+    {
+     "bg": "sky_night",
+     "cam": "push",
+     "focus": [
+      0.6,
+      0.6
+     ],
+     "pop": "FOUND THEM",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.26,
+        0.7
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.74,
+        0.72
+       ],
+       "size": 0.3,
+       "color": "#ff6b6b",
+       "pose": "fall",
+       "flip": true,
+       "glow": "#ff2020"
+      },
+      {
+       "art": "1f50d",
+       "at": [
+        0.4,
+        0.4
+       ],
+       "to": [
+        0.7,
+        0.55
+       ],
+       "size": 0.14,
+       "size_to": 0.3,
+       "ease": "inout"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then you tell the mirror, I'm fine. And you glow the brightest red of all.",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "pan_r",
+     "actors": [
+      {
+       "art": "1fa9e",
+       "at": [
+        0.7,
+        0.58
+       ],
+       "size": 0.42
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.7
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f4ac",
+       "at": [
+        0.32,
+        0.5
+       ],
+       "to": [
+        0.45,
+        0.46
+       ],
+       "size": 0.18,
+       "enter": "pop",
+       "appear": 0.25
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.75,
+       "amount": 0.3,
+       "color": "#ff3030"
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.62
+     ],
+     "w": 0.9,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.14,
+        0.76
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.86,
+        0.76
+       ],
+       "size": 0.2,
+       "color": "#2ecc71",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.66
+       ],
+       "size": 0.32,
+       "size_to": 0.44,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "glow": "#ff0000",
+       "shake": 0.6
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.25,
+       "at": [
+        0.5,
+        0.62
+       ],
+       "color": "#ff3030"
+      },
+      {
+       "name": "flash",
+       "t": 0.3,
+       "amount": 0.4,
+       "color": "#ff2020"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you want this power? YES or NO",
+ "youtube": {
+  "title": "What If You Could See Every Lie for 24 Hours? #shorts",
+  "description": "Would you want this power? YES or NO\nWhat if, for only 24 hours, every lie around you glowed red? New What If every day.\n#whatif #whatifyou #superpower #lie #shorts",
+  "tags": [
+   "see every lie",
+   "what if",
+   "what if you",
+   "what if you could see lies",
+   "lie detector power",
+   "superpower",
+   "lie",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
