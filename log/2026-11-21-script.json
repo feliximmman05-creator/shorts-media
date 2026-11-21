@@ -1,0 +1,565 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "rewind",
+ "hook": {
+  "screen": "DROP. UNDO.",
+  "text": "What if only you could rewind time ten seconds?",
+  "shots": [
+   {
+    "bg": "sunset",
+    "cam": "push",
+    "focus": [
+     0.45,
+     0.62
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.9,
+       0.74
+      ],
+      "size": 0.24,
+      "color": "#3d8bfd",
+      "pose": "run",
+      "to": [
+       0.72,
+       0.74
+      ],
+      "ease": "linear"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.1,
+       0.75
+      ],
+      "size": 0.22,
+      "color": "#2ecc71",
+      "pose": "run",
+      "to": [
+       0.24,
+       0.75
+      ],
+      "ease": "linear",
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.47,
+       0.6
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "arms_up"
+     },
+     {
+      "art": "1f4f1",
+      "at": [
+       0.62,
+       0.62
+      ],
+      "size": 0.2,
+      "to": [
+       0.52,
+       0.42
+      ],
+      "spin": -360,
+      "ease": "out",
+      "over": 0.75,
+      "glow": "#bfe3ff"
+     },
+     {
+      "art": "23ea",
+      "at": [
+       0.78,
+       0.3
+      ],
+      "size": 0.18,
+      "size_to": 0.24,
+      "bob": 1
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.05,
+      "amount": 0.2,
+      "color": "#bfe3ff"
+     },
+     {
+      "name": "speedlines",
+      "t": 0.0
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Spill your drink? Rewind. Say something dumb? Rewind. Nobody notices a thing.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.4,
+        0.68
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f4a6",
+       "at": [
+        0.5,
+        0.9
+       ],
+       "size": 0.22,
+       "size_to": 0.05,
+       "over": 0.6
+      },
+      {
+       "art": "1f964",
+       "at": [
+        0.52,
+        0.88
+       ],
+       "size": 0.15,
+       "to": [
+        0.48,
+        0.52
+       ],
+       "spin": -200,
+       "ease": "out",
+       "over": 0.7
+      },
+      {
+       "art": "23ea",
+       "at": [
+        0.8,
+        0.25
+       ],
+       "size": 0.14,
+       "spin": 0,
+       "bob": 1
+      }
+     ]
+    },
+    {
+     "bg": "ground",
+     "cam": "pull",
+     "pop": "DELETED",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.28,
+        0.7
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.74,
+        0.72
+       ],
+       "size": 0.3,
+       "color": "#e84393",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "1f4ac",
+       "at": [
+        0.6,
+        0.45
+       ],
+       "size": 0.2,
+       "to": [
+        0.32,
+        0.5
+       ],
+       "size_to": 0.04,
+       "ease": "in",
+       "over": 0.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then you get greedy. Lose a game? Rewind. You never lose again.",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "tilt_up",
+     "pop": "UNDEFEATED",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.7
+       ],
+       "size": 0.38,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.75,
+        0.74
+       ],
+       "size": 0.26,
+       "color": "#2ecc71",
+       "pose": "fall",
+       "flip": true
+      },
+      {
+       "art": "1f3b2",
+       "at": [
+        0.55,
+        0.35
+       ],
+       "size": 0.15,
+       "to": [
+        0.52,
+        0.62
+       ],
+       "spin": 420,
+       "ease": "out"
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.68
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1f3c6",
+       "at": [
+        0.5,
+        -0.1
+       ],
+       "size": 0.16,
+       "to": [
+        0.5,
+        0.85
+       ],
+       "count": 6,
+       "spread": 0.35,
+       "spin": 120,
+       "ease": "in"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.12,
+        0.82
+       ],
+       "size": 0.16,
+       "color": "#3d8bfd",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.88,
+        0.82
+       ],
+       "size": 0.16,
+       "color": "#e67e22",
+       "pose": "arms_up"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.3,
+       "at": [
+        0.5,
+        0.6
+       ],
+       "color": "#ffd21a"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "But only you remember. Rewind three hundred sixty times, and you've lived an extra hour nobody else did.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pan_l",
+     "counter": {
+      "from": 0,
+      "to": 360,
+      "unit": "rewinds"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.15,
+        0.78
+       ],
+       "size": 0.16,
+       "color": "#95a5a6",
+       "pose": "run"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.85,
+        0.78
+       ],
+       "size": 0.16,
+       "color": "#95a5a6",
+       "pose": "run",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.32,
+        0.76
+       ],
+       "size": 0.15,
+       "color": "#95a5a6",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.68,
+        0.76
+       ],
+       "size": 0.15,
+       "color": "#95a5a6",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.66
+       ],
+       "size": 0.38,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "23f0",
+       "at": [
+        0.5,
+        0.32
+       ],
+       "size": 0.18,
+       "spin": -540
+      }
+     ],
+     "fx": [
+      {
+       "name": "freeze",
+       "t": 0.0,
+       "amount": 0.5
+      }
+     ]
+    },
+    {
+     "bg": "sky_night",
+     "cam": "pull",
+     "pop": "+1 HOUR",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.7
+       ],
+       "size": 0.34,
+       "color": "#ffd21a",
+       "pose": "float",
+       "bob": 1
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.72,
+        0.55
+       ],
+       "size": 0.16,
+       "size_to": 0.3,
+       "spin": 180
+      },
+      {
+       "art": "2728",
+       "at": [
+        0.3,
+        0.4
+       ],
+       "size": 0.1,
+       "count": 5,
+       "spread": 0.3,
+       "spin": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then your best friend drops her phone, and it jumps back into her hand. She can rewind too.",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "pan_r",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.28,
+        0.68
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.7,
+        0.68
+       ],
+       "size": 0.36,
+       "color": "#e84393",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "1f4f1",
+       "at": [
+        0.68,
+        0.9
+       ],
+       "size": 0.12,
+       "to": [
+        0.68,
+        0.52
+       ],
+       "spin": 320,
+       "ease": "out",
+       "delay": 0.35,
+       "over": 0.45
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.75,
+       "amount": 0.25,
+       "color": "#bfe3ff"
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.6
+     ],
+     "w": 0.9,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.68
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "shake": 0.4
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.68
+       ],
+       "size": 0.36,
+       "color": "#e84393",
+       "pose": "stand",
+       "flip": true,
+       "glow": "#9ad0ff"
+      },
+      {
+       "art": "23ea",
+       "at": [
+        0.72,
+        0.36
+       ],
+       "size": 0.1,
+       "size_to": 0.2,
+       "enter": "pop",
+       "appear": 0.2
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.25,
+       "at": [
+        0.72,
+        0.55
+       ],
+       "color": "#9ad0ff"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you use it or hide it?",
+ "youtube": {
+  "title": "What If Only You Could Rewind Time 10 Seconds? #shorts",
+  "description": "Would you use it or hide it?\nWhat if only you could rewind time ten seconds, any time you want? New What If every day.\n#whatif #whatifyou #superpower #rewind #shorts",
+  "tags": [
+   "rewind time",
+   "what if",
+   "what if you",
+   "what if you could rewind time",
+   "rewind 10 seconds",
+   "superpower",
+   "rewind",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
