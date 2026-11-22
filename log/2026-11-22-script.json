@@ -1,0 +1,544 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "underwater",
+ "hook": {
+  "screen": "NO AIR TANK",
+  "text": "What if you breathed underwater, but only for 24 hours?",
+  "shots": [
+   {
+    "bg": "deep",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "actors": [
+     {
+      "art": "1f41f",
+      "at": [
+       -0.1,
+       0.3
+      ],
+      "to": [
+       1.1,
+       0.34
+      ],
+      "size": 0.12,
+      "count": 6,
+      "spread": 0.18,
+      "ease": "linear"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.2,
+       0.22
+      ],
+      "size": 0.2,
+      "color": "#e84393",
+      "pose": "arms_up",
+      "shake": 0.5
+     },
+     {
+      "art": "person",
+      "at": [
+       0.82,
+       0.24
+      ],
+      "size": 0.2,
+      "color": "#3d8bfd",
+      "pose": "arms_up",
+      "shake": 0.5,
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.5,
+       0.62
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "float",
+      "bob": 1
+     },
+     {
+      "art": "1fae7",
+      "at": [
+       0.55,
+       0.44
+      ],
+      "to": [
+       0.6,
+       -0.1
+      ],
+      "size": 0.07,
+      "count": 5,
+      "spread": 0.06,
+      "ease": "linear"
+     }
+    ],
+    "fx": [
+     {
+      "name": "dark",
+      "t": 0.0,
+      "amount": 0.12
+     },
+     {
+      "name": "bubbles",
+      "t": 0.0
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Your friends scream. You just wave from the bottom of the pool.",
+   "shots": [
+    {
+     "bg": "ocean",
+     "cam": "pan_r",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.25,
+        0.6
+       ],
+       "size": 0.26,
+       "color": "#e84393",
+       "pose": "arms_up",
+       "shake": 0.6
+      },
+      {
+       "art": "person",
+       "at": [
+        0.75,
+        0.6
+       ],
+       "size": 0.26,
+       "color": "#3d8bfd",
+       "pose": "arms_up",
+       "shake": 0.6,
+       "flip": true
+      },
+      {
+       "art": "1f6df",
+       "at": [
+        0.8,
+        0.1
+       ],
+       "to": [
+        0.5,
+        0.78
+       ],
+       "size": 0.16,
+       "spin": 300,
+       "ease": "in",
+       "over": 0.6
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.6,
+       "at": [
+        0.5,
+        0.78
+       ],
+       "color": "#ffffff"
+      }
+     ]
+    },
+    {
+     "bg": "deep",
+     "cam": "tilt_down",
+     "pop": "ALL GOOD",
+     "actors": [
+      {
+       "art": "1f6df",
+       "at": [
+        0.5,
+        0.12
+       ],
+       "size": 0.14,
+       "bob": 1
+      },
+      {
+       "art": "person",
+       "at": [
+        0.42,
+        0.62
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "bob": 1
+      },
+      {
+       "art": "1f44b",
+       "at": [
+        0.65,
+        0.42
+       ],
+       "size": 0.14,
+       "rot": -20,
+       "spin": 60,
+       "enter": "pop"
+      }
+     ],
+     "fx": [
+      "bubbles"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "So you head for the ocean. Seventy-one percent of Earth is water, and today, all of it is yours.",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "pull",
+     "actors": [
+      {
+       "art": "1f334",
+       "at": [
+        0.12,
+        0.7
+       ],
+       "size": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.72
+       ],
+       "to": [
+        0.78,
+        0.86
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "run",
+       "ease": "in"
+      },
+      {
+       "art": "1f30a",
+       "at": [
+        0.85,
+        0.85
+       ],
+       "size": 0.3,
+       "size_to": 0.42,
+       "bob": 1
+      }
+     ],
+     "fx": [
+      {
+       "name": "speedlines",
+       "t": 0.2
+      }
+     ]
+    },
+    {
+     "bg": "space",
+     "cam": "push",
+     "counter": {
+      "from": 0,
+      "to": 71,
+      "unit": "% water"
+     },
+     "actors": [
+      {
+       "art": "earth",
+       "at": [
+        0.5,
+        0.55
+       ],
+       "size": 0.75,
+       "size_to": 0.85,
+       "state": "flooded",
+       "rot_speed": 2
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.3
+       ],
+       "size": 0.16,
+       "color": "#ffd21a",
+       "pose": "float",
+       "bob": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "You ride with whales. You find a shipwreck nobody has touched. More than eighty percent of the ocean is unexplored, and you see it first.",
+   "shots": [
+    {
+     "bg": "ocean",
+     "cam": "pan_l",
+     "actors": [
+      {
+       "art": "1f40b",
+       "at": [
+        1.2,
+        0.66
+       ],
+       "to": [
+        -0.2,
+        0.64
+       ],
+       "size": 0.45,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        1.25,
+        0.52
+       ],
+       "to": [
+        -0.15,
+        0.5
+       ],
+       "size": 0.25,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "ease": "linear"
+      },
+      {
+       "art": "1f41f",
+       "at": [
+        0.1,
+        0.85
+       ],
+       "to": [
+        0.9,
+        0.82
+       ],
+       "size": 0.07,
+       "count": 6,
+       "spread": 0.15
+      }
+     ],
+     "fx": [
+      {
+       "name": "speedlines",
+       "t": 0.1
+      }
+     ]
+    },
+    {
+     "bg": "deep",
+     "cam": "tilt_down",
+     "actors": [
+      {
+       "art": "1f6a2",
+       "at": [
+        0.55,
+        0.66
+       ],
+       "size": 0.42,
+       "rot": 25
+      },
+      {
+       "art": "person",
+       "at": [
+        0.25,
+        0.45
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "float",
+       "glow": "#ffe680"
+      },
+      {
+       "art": "1fa99",
+       "at": [
+        0.6,
+        0.7
+       ],
+       "to": [
+        0.5,
+        0.4
+       ],
+       "size": 0.07,
+       "count": 5,
+       "spread": 0.12,
+       "spin": 120,
+       "glow": "#ffd21a",
+       "ease": "out"
+      }
+     ],
+     "fx": [
+      {
+       "name": "dark",
+       "t": 0.0,
+       "amount": 0.35
+      },
+      {
+       "name": "flash",
+       "t": 0.5,
+       "amount": 0.2,
+       "color": "#ffe680"
+      }
+     ]
+    },
+    {
+     "bg": "ocean_night",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.7
+     ],
+     "counter": {
+      "from": 0,
+      "to": 80,
+      "unit": "% unseen"
+     },
+     "actors": [
+      {
+       "art": "1f991",
+       "at": [
+        0.8,
+        0.95
+       ],
+       "to": [
+        0.72,
+        0.72
+       ],
+       "size": 0.22,
+       "ease": "out",
+       "glow": "#9ad0ff"
+      },
+      {
+       "art": "1f419",
+       "at": [
+        0.15,
+        0.95
+       ],
+       "to": [
+        0.25,
+        0.74
+       ],
+       "size": 0.18,
+       "ease": "out",
+       "glow": "#ff9ad0"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.5
+       ],
+       "to": [
+        0.5,
+        0.68
+       ],
+       "size": 0.28,
+       "color": "#ffd21a",
+       "pose": "float",
+       "glow": "#ffe680"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then you check the clock. Twenty-three hours gone, the beach is two hundred kilometres away, and you realise",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "pop": "1 HOUR LEFT",
+     "actors": [
+      {
+       "art": "23f0",
+       "at": [
+        0.5,
+        0.3
+       ],
+       "size": 0.2,
+       "size_to": 0.32,
+       "shake": 0.6
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.6
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "shake": 0.5
+      }
+     ]
+    },
+    {
+     "bg": "sky_day",
+     "cam": "pull",
+     "pop": "200 KM",
+     "actors": [
+      {
+       "art": "1f3dd",
+       "at": [
+        0.15,
+        0.55
+       ],
+       "size": 0.16
+      },
+      {
+       "art": "1f30a",
+       "at": [
+        0.5,
+        0.66
+       ],
+       "size": 0.2,
+       "count": 4,
+       "spread": 0.4,
+       "bob": 1
+      },
+      {
+       "art": "person",
+       "at": [
+        0.85,
+        0.6
+       ],
+       "to": [
+        0.78,
+        0.6
+       ],
+       "size": 0.25,
+       "color": "#ffd21a",
+       "pose": "run",
+       "flip": true
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you go deep or go far?",
+ "youtube": {
+  "title": "What If You Could Breathe Underwater for 24 Hours? #shorts",
+  "description": "Would you go deep or go far?\nWhat if you could breathe underwater, but only for 24 hours, no tank? New What If every day.\n#whatif #whatifyou #superpower #underwater #shorts",
+  "tags": [
+   "breathe underwater",
+   "what if",
+   "what if you",
+   "what if you could breathe underwater",
+   "underwater",
+   "superpower",
+   "ocean",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
