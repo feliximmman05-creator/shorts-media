@@ -18,3 +18,4 @@ The daily run adds new ones here when it finds channels with fast-growing Shorts
 - Jie GamingStudio | 'If You Could See Who Was Lying' 150K in ~7 h (22K vph); 4.2M-sub channel making What If You style Shorts | added 2026-11-20
 - 2026-11-21 check: no new channel added; rewind/invisible Shorts found had no visible channel names or views.
 - 2026-11-22 check: no new channel added; searches returned no What If You Shorts with visible channels/views.
+- 2026-11-23 check: no new channel added; searches returned no What If You Shorts with visible channels/views.
