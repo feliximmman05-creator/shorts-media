@@ -1,0 +1,613 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "copy",
+ "hook": {
+  "screen": "TWO OF YOU",
+  "text": "What if, for only 24 hours, there were two of you?",
+  "shots": [
+   {
+    "bg": "city_day",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.14,
+       0.62
+      ],
+      "size": 0.22,
+      "color": "#3d8bfd",
+      "pose": "arms_up",
+      "shake": 0.2
+     },
+     {
+      "art": "person",
+      "at": [
+       0.88,
+       0.63
+      ],
+      "size": 0.2,
+      "color": "#e8425a",
+      "pose": "arms_up",
+      "shake": 0.2
+     },
+     {
+      "art": "person",
+      "at": [
+       0.44,
+       0.55
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "stand",
+      "to": [
+       0.32,
+       0.55
+      ],
+      "over": 0.6,
+      "ease": "out"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.56,
+       0.55
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "arms_up",
+      "to": [
+       0.68,
+       0.55
+      ],
+      "over": 0.6,
+      "ease": "out",
+      "glow": "#fff3a0"
+     },
+     {
+      "art": "2753",
+      "at": [
+       0.14,
+       0.4
+      ],
+      "size": 0.1,
+      "size_to": 0.14,
+      "bob": 1
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.02,
+      "amount": 0.15,
+      "color": "#fff6c0"
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Hour one. Your copy takes the test. You sleep till noon.",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "pan_r",
+     "pop": "STRAIGHT A",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.62
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "run",
+       "to": [
+        0.6,
+        0.62
+       ],
+       "ease": "linear"
+      },
+      {
+       "art": "1f4dd",
+       "at": [
+        0.12,
+        0.45
+       ],
+       "size": 0.22,
+       "to": [
+        0.72,
+        0.42
+       ],
+       "spin": 120,
+       "ease": "linear"
+      },
+      {
+       "art": "1f4af",
+       "at": [
+        0.8,
+        0.3
+       ],
+       "size": 0.06,
+       "size_to": 0.2,
+       "appear": 0.45,
+       "enter": "pop"
+      }
+     ]
+    },
+    {
+     "bg": "sky_night",
+     "cam": "tilt_down",
+     "pop": "ZERO ALARMS",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.56
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "bob": 0.3,
+       "rot": 90
+      },
+      {
+       "art": "1f4a4",
+       "at": [
+        0.56,
+        0.44
+       ],
+       "size": 0.08,
+       "to": [
+        0.7,
+        0.2
+       ],
+       "size_to": 0.16,
+       "count": 3,
+       "spread": 0.12,
+       "ease": "out"
+      },
+      {
+       "art": "23f0",
+       "at": [
+        0.2,
+        0.75
+       ],
+       "size": 0.14,
+       "shake": 0.4,
+       "spin": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Hour six. Your friends like your copy better. It's funnier than you.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pull",
+     "pop": "NEW FAVORITE",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.55
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        -0.1,
+        0.66
+       ],
+       "to": [
+        0.2,
+        0.66
+       ],
+       "size": 0.22,
+       "color": "#3d8bfd",
+       "pose": "arms_up",
+       "over": 0.5,
+       "ease": "out"
+      },
+      {
+       "art": "person",
+       "at": [
+        1.1,
+        0.66
+       ],
+       "to": [
+        0.8,
+        0.66
+       ],
+       "size": 0.22,
+       "color": "#e8425a",
+       "pose": "arms_up",
+       "over": 0.5,
+       "ease": "out"
+      },
+      {
+       "art": "person",
+       "at": [
+        1.2,
+        0.7
+       ],
+       "to": [
+        0.68,
+        0.7
+       ],
+       "size": 0.2,
+       "color": "#29c38a",
+       "pose": "arms_up",
+       "over": 0.6,
+       "ease": "out"
+      },
+      {
+       "art": "1f602",
+       "at": [
+        0.5,
+        0.45
+       ],
+       "size": 0.08,
+       "size_to": 0.15,
+       "to": [
+        0.5,
+        0.32
+       ],
+       "count": 4,
+       "spread": 0.3,
+       "enter": "pop",
+       "appear": 0.3
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "pan_l",
+     "pop": "LEFT OUT",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.75,
+        0.6
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.34,
+        0.6
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "to": [
+        0.22,
+        0.6
+       ]
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.66
+       ],
+       "size": 0.2,
+       "color": "#3d8bfd",
+       "pose": "run",
+       "to": [
+        0.36,
+        0.66
+       ],
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.6,
+        0.68
+       ],
+       "size": 0.19,
+       "color": "#e8425a",
+       "pose": "run",
+       "to": [
+        0.44,
+        0.68
+       ],
+       "flip": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Hour fifteen. Your copy is texting your crush, as you. And it's going well.",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.5
+     ],
+     "pop": "DELIVERED",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.32,
+        0.56
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f4f1",
+       "at": [
+        0.42,
+        0.5
+       ],
+       "size": 0.14,
+       "shake": 0.1
+      },
+      {
+       "art": "1f4ac",
+       "at": [
+        0.45,
+        0.45
+       ],
+       "size": 0.08,
+       "to": [
+        0.78,
+        0.2
+       ],
+       "size_to": 0.16,
+       "count": 3,
+       "spread": 0.1,
+       "ease": "out"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.8,
+        0.3
+       ],
+       "size": 0.06,
+       "size_to": 0.18,
+       "appear": 0.5,
+       "enter": "pop"
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "tilt_up",
+     "pop": "THEY REPLIED",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.58
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "shake": 0.3
+      },
+      {
+       "art": "1f631",
+       "at": [
+        0.5,
+        0.36
+       ],
+       "size": 0.16,
+       "size_to": 0.22,
+       "enter": "pop"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.5,
+        1.1
+       ],
+       "size": 0.1,
+       "to": [
+        0.5,
+        0.3
+       ],
+       "count": 7,
+       "spread": 0.4,
+       "ease": "out"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shake",
+       "t": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Hour twenty three. One of you has to go back. Your copy looks at you and asks, which one of us is the real one? So,",
+   "shots": [
+    {
+     "bg": "sky_night",
+     "cam": "pull",
+     "counter": {
+      "from": 23,
+      "to": 24,
+      "unit": "hours"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.6
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.7,
+        0.6
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "flip": true
+      },
+      {
+       "art": "23f3",
+       "at": [
+        0.5,
+        0.36
+       ],
+       "size": 0.18,
+       "spin": 90
+      }
+     ],
+     "fx": [
+      "stars_streak"
+     ]
+    },
+    {
+     "bg": "ice",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "pop": "ONLY ONE STAYS",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.58
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "to": [
+        0.38,
+        0.58
+       ],
+       "over": 0.6
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.58
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "to": [
+        0.62,
+        0.58
+       ],
+       "over": 0.6
+      }
+     ],
+     "fx": [
+      {
+       "name": "freeze",
+       "t": 0.2
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "static",
+     "w": 1.3,
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.36,
+        0.55
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.64,
+        0.55
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "shake": 0.15
+      },
+      {
+       "art": "2753",
+       "at": [
+        0.36,
+        0.3
+       ],
+       "size": 0.06,
+       "size_to": 0.13,
+       "enter": "pop",
+       "appear": 0.15
+      },
+      {
+       "art": "2753",
+       "at": [
+        0.64,
+        0.3
+       ],
+       "size": 0.06,
+       "size_to": 0.13,
+       "enter": "pop",
+       "appear": 0.25
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you make a copy of you? YES or NO",
+ "youtube": {
+  "title": "What If You Could Be in Two Places at Once? #shorts",
+  "description": "Would you make a copy of you? YES or NO\nWhat if, for only 24 hours, there were two of you, and your copy was better at being you? New What If every day.\n#whatif #whatifyou #superpower #clone #shorts",
+  "tags": [
+   "two of you",
+   "what if",
+   "what if you",
+   "what if there were two of you",
+   "clone yourself",
+   "copy of you",
+   "superpower",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
