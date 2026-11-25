@@ -1,0 +1,511 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "hour",
+ "hook": {
+  "screen": "EVERYONE'S GONE",
+  "text": "What if, for only 24 hours, everyone but you vanished?",
+  "shots": [
+   {
+    "bg": "city_night",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.58
+    ],
+    "actors": [
+     {
+      "art": "1f697",
+      "at": [
+       0.12,
+       0.8
+      ],
+      "to": [
+       0.4,
+       0.8
+      ],
+      "size": 0.2,
+      "ease": "out",
+      "flip": true
+     },
+     {
+      "art": "person",
+      "at": [
+       0.16,
+       0.6
+      ],
+      "size": 0.24,
+      "size_to": 0.0,
+      "color": "#3d8bfd",
+      "pose": "arms_up",
+      "glow": "#cfe8ff",
+      "over": 0.55,
+      "ease": "in"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.84,
+       0.6
+      ],
+      "size": 0.22,
+      "size_to": 0.0,
+      "color": "#e8425a",
+      "pose": "arms_up",
+      "glow": "#ffd0d8",
+      "delay": 0.08,
+      "over": 0.5,
+      "ease": "in"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.3,
+       0.5
+      ],
+      "size": 0.18,
+      "size_to": 0.0,
+      "color": "#40c977",
+      "pose": "stand",
+      "glow": "#d6ffe4",
+      "delay": 0.15,
+      "over": 0.45,
+      "ease": "in"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.72,
+       0.5
+      ],
+      "size": 0.17,
+      "size_to": 0.0,
+      "color": "#b06cff",
+      "pose": "stand",
+      "glow": "#eadcff",
+      "delay": 0.2,
+      "over": 0.45,
+      "ease": "in"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.5,
+       0.6
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "stand",
+      "shake": 0.1
+     },
+     {
+      "art": "2753",
+      "at": [
+       0.5,
+       0.36
+      ],
+      "size": 0.06,
+      "size_to": 0.13,
+      "appear": 0.55,
+      "enter": "pop",
+      "bob": 0.6
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.02,
+      "amount": 0.15,
+      "color": "#e8f4ff"
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Hour one. Every shop is yours. Free snacks, and any car you want.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "pop": "$0 TOTAL",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.62
+       ],
+       "to": [
+        0.62,
+        0.62
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "run",
+       "ease": "linear"
+      },
+      {
+       "art": "1f354",
+       "at": [
+        0.9,
+        0.2
+       ],
+       "to": [
+        0.55,
+        0.5
+       ],
+       "size": 0.16,
+       "spin": 160,
+       "ease": "in"
+      },
+      {
+       "art": "1f369",
+       "at": [
+        0.1,
+        0.15
+       ],
+       "to": [
+        0.6,
+        0.48
+       ],
+       "size": 0.14,
+       "spin": -140,
+       "delay": 0.15,
+       "ease": "in"
+      },
+      {
+       "art": "1f37f",
+       "at": [
+        0.8,
+        -0.1
+       ],
+       "to": [
+        0.66,
+        0.45
+       ],
+       "size": 0.15,
+       "spin": 90,
+       "delay": 0.3,
+       "ease": "in"
+      }
+     ]
+    },
+    {
+     "bg": "desert",
+     "cam": "pan_l",
+     "pop": "NO TRAFFIC",
+     "actors": [
+      {
+       "art": "1f3ce",
+       "at": [
+        1.2,
+        0.72
+       ],
+       "to": [
+        -0.2,
+        0.72
+       ],
+       "size": 0.36,
+       "ease": "in",
+       "trail": "smoke",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.56
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "bob": 0.4
+      }
+     ],
+     "fx": [
+      "dust",
+      "speedlines"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Hour eight. Nobody runs the power plants. The city goes dark, and your phone dies.",
+   "shots": [
+    {
+     "bg": "city_night",
+     "cam": "pull",
+     "pop": "BLACKOUT",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.56
+       ],
+       "size": 0.32,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f4a1",
+       "at": [
+        0.5,
+        0.3
+       ],
+       "size": 0.2,
+       "size_to": 0.1,
+       "shake": 0.3,
+       "vanish": 0.7
+      }
+     ],
+     "fx": [
+      {
+       "name": "lights_out",
+       "t": 0.15
+      },
+      {
+       "name": "dark",
+       "t": 0.3
+      }
+     ]
+    },
+    {
+     "bg": "sky_night",
+     "cam": "push",
+     "pop": "0%",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.4,
+        0.6
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f4f1",
+       "at": [
+        0.64,
+        0.46
+       ],
+       "size": 0.18,
+       "shake": 0.2,
+       "vanish": 0.55
+      },
+      {
+       "art": "1faab",
+       "at": [
+        0.64,
+        0.46
+       ],
+       "size": 0.08,
+       "size_to": 0.2,
+       "appear": 0.55,
+       "enter": "pop"
+      }
+     ],
+     "fx": [
+      "stars_streak"
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Hour fifteen. The animals move in. Deer on the highway, and birds follow you everywhere.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pan_r",
+     "pop": "NEW NEIGHBOURS",
+     "actors": [
+      {
+       "art": "1f98c",
+       "at": [
+        0.05,
+        0.5
+       ],
+       "to": [
+        0.6,
+        0.52
+       ],
+       "size": 0.24,
+       "count": 4,
+       "spread": 0.12,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.8,
+        0.58
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "shake": 0.15
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "tilt_up",
+     "pop": "100 FOLLOWERS",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.64
+       ],
+       "to": [
+        0.75,
+        0.64
+       ],
+       "size": 0.38,
+       "color": "#ffd21a",
+       "pose": "run",
+       "ease": "linear"
+      },
+      {
+       "art": "1f54a",
+       "at": [
+        -0.15,
+        0.32
+       ],
+       "to": [
+        0.55,
+        0.4
+       ],
+       "size": 0.13,
+       "count": 10,
+       "spread": 0.18,
+       "ease": "linear"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Hour twenty three. A phone rings in the empty street. You answer, and a voice whispers,",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "tilt_down",
+     "pop": "UNKNOWN CALLER",
+     "actors": [
+      {
+       "art": "1f4f1",
+       "at": [
+        0.74,
+        0.58
+       ],
+       "size": 0.2,
+       "shake": 0.6,
+       "glow": "#ffffff"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.15,
+        0.62
+       ],
+       "to": [
+        0.5,
+        0.6
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "run",
+       "ease": "out"
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "focus": [
+      0.5,
+      0.55
+     ],
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.58
+       ],
+       "size": 0.44,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "1f4f1",
+       "at": [
+        0.6,
+        0.44
+       ],
+       "size": 0.12,
+       "rot": -20
+      },
+      {
+       "art": "person",
+       "at": [
+        0.16,
+        0.6
+       ],
+       "size": 0.0,
+       "size_to": 0.24,
+       "color": "#3d8bfd",
+       "pose": "arms_up",
+       "glow": "#cfe8ff",
+       "delay": 0.6,
+       "over": 0.4,
+       "ease": "out"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.6
+       ],
+       "size": 0.0,
+       "size_to": 0.22,
+       "color": "#e8425a",
+       "pose": "arms_up",
+       "glow": "#ffd0d8",
+       "delay": 0.65,
+       "over": 0.35,
+       "ease": "out"
+      }
+     ],
+     "fx": [
+      {
+       "name": "dark",
+       "t": 0.0
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you take 24 hours alone? YES or NO",
+ "youtube": {
+  "title": "What If You Were Alone on Earth for 24 Hours? #shorts",
+  "description": "Would you take 24 hours alone? YES or NO\nWhat if, for only 24 hours, everyone but you vanished? Free snacks, empty roads, and then the lights go out. New What If every day.\n#whatif #whatifyou #lastpersononearth #alone #shorts",
+  "tags": [
+   "what if",
+   "what if you",
+   "last person on earth",
+   "alone on earth",
+   "everyone vanished",
+   "24 hours",
+   "what if everyone disappeared",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
