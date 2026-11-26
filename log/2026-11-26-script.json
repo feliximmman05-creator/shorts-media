@@ -1,0 +1,529 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "fly",
+ "hook": {
+  "screen": "YOU'RE LIFTING OFF",
+  "text": "What if you could fly, but only for 60 seconds?",
+  "shots": [
+   {
+    "bg": "ground",
+    "cam": "tilt_up",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.14,
+       0.74
+      ],
+      "size": 0.2,
+      "color": "#3d8bfd",
+      "pose": "arms_up",
+      "shake": 0.05
+     },
+     {
+      "art": "person",
+      "at": [
+       0.86,
+       0.74
+      ],
+      "size": 0.19,
+      "color": "#e8425a",
+      "pose": "arms_up",
+      "shake": 0.05
+     },
+     {
+      "art": "person",
+      "at": [
+       0.3,
+       0.8
+      ],
+      "size": 0.17,
+      "color": "#40c977",
+      "pose": "stand"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.7,
+       0.8
+      ],
+      "size": 0.17,
+      "color": "#b06cff",
+      "pose": "stand"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.5,
+       0.5
+      ],
+      "to": [
+       0.5,
+       0.34
+      ],
+      "size": 0.42,
+      "color": "#ffd21a",
+      "pose": "arms_up",
+      "ease": "out",
+      "glow": "#fff3b0"
+     }
+    ],
+    "fx": [
+     {
+      "name": "flash",
+      "t": 0.02,
+      "amount": 0.15,
+      "color": "#fff8d8"
+     },
+     "speedlines"
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Second ten. You're above the rooftops, and the whole street is filming you.",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "tilt_up",
+     "pop": "LOOK DOWN",
+     "actors": [
+      {
+       "art": "1f3e2",
+       "at": [
+        0.2,
+        0.78
+       ],
+       "to": [
+        0.2,
+        1.23
+       ],
+       "size": 0.3,
+       "ease": "linear"
+      },
+      {
+       "art": "1f3e2",
+       "at": [
+        0.52,
+        0.86
+       ],
+       "to": [
+        0.52,
+        1.31
+       ],
+       "size": 0.34,
+       "ease": "linear"
+      },
+      {
+       "art": "1f3e2",
+       "at": [
+        0.82,
+        0.76
+       ],
+       "to": [
+        0.82,
+        1.21
+       ],
+       "size": 0.28,
+       "ease": "linear"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.45
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "float",
+       "bob": 0.5
+      }
+     ],
+     "fx": [
+      "speedlines"
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "push",
+     "pop": "LIVE",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.78,
+        0.2
+       ],
+       "to": [
+        0.82,
+        0.12
+       ],
+       "size": 0.25,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.15,
+        0.8
+       ],
+       "size": 0.17,
+       "color": "#3d8bfd",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.38,
+        0.8
+       ],
+       "size": 0.17,
+       "color": "#e8425a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.62,
+        0.8
+       ],
+       "size": 0.17,
+       "color": "#40c977",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.85,
+        0.8
+       ],
+       "size": 0.17,
+       "color": "#b06cff",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1f4f1",
+       "at": [
+        0.5,
+        0.68
+       ],
+       "size": 0.12,
+       "size_to": 0.16,
+       "count": 6,
+       "spread": 0.32,
+       "bob": 0.4
+      }
+     ],
+     "fx": [
+      {
+       "name": "flash",
+       "t": 0.5,
+       "amount": 0.25
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Second thirty. Five kilometres up, it's about minus seventeen, and birds fly right beside you.",
+   "shots": [
+    {
+     "bg": "storm",
+     "cam": "pan_r",
+     "counter": {
+      "from": 15,
+      "to": -17,
+      "unit": "°C"
+     },
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.5
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "float",
+       "shake": 0.15
+      },
+      {
+       "art": "2744",
+       "at": [
+        0.2,
+        0.2
+       ],
+       "to": [
+        0.7,
+        0.8
+       ],
+       "size": 0.1,
+       "count": 7,
+       "spread": 0.35,
+       "spin": 120,
+       "ease": "linear"
+      }
+     ],
+     "fx": [
+      "snow",
+      {
+       "name": "freeze",
+       "t": 0.3
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "pan_l",
+     "pop": "FLIGHT BUDDIES",
+     "actors": [
+      {
+       "art": "1f985",
+       "at": [
+        1.2,
+        0.35
+       ],
+       "to": [
+        0.3,
+        0.4
+       ],
+       "size": 0.16,
+       "count": 5,
+       "spread": 0.15,
+       "ease": "out",
+       "flip": true
+      },
+      {
+       "art": "person",
+       "at": [
+        0.6,
+        0.5
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "float",
+       "bob": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Second fifty. A plane passes so close, the passengers wave at you.",
+   "shots": [
+    {
+     "bg": "sky_day",
+     "cam": "pan_l",
+     "pop": "TOO CLOSE",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.4,
+        0.62
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "shake": 0.2
+      },
+      {
+       "art": "2708",
+       "at": [
+        1.3,
+        0.3
+       ],
+       "to": [
+        -0.3,
+        0.38
+       ],
+       "size": 0.45,
+       "ease": "linear",
+       "trail": "smoke",
+       "rot": 45,
+       "flip": true
+      }
+     ],
+     "fx": [
+      "speedlines",
+      {
+       "name": "shake",
+       "t": 0.4
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "pop": "HI!",
+     "actors": [
+      {
+       "art": "2708",
+       "at": [
+        0.9,
+        0.3
+       ],
+       "to": [
+        0.2,
+        0.28
+       ],
+       "size": 0.4,
+       "ease": "linear",
+       "rot": 45,
+       "flip": true
+      },
+      {
+       "art": "1f44b",
+       "at": [
+        0.75,
+        0.2
+       ],
+       "to": [
+        0.15,
+        0.2
+       ],
+       "size": 0.13,
+       "count": 4,
+       "spread": 0.1,
+       "ease": "linear",
+       "bob": 0.6
+      },
+      {
+       "art": "person",
+       "at": [
+        0.55,
+        0.64
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "bob": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Second sixty. You land back home. Your video hits ten million views, and every comment asks,",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pull",
+     "pop": "TOUCHDOWN",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.1
+       ],
+       "to": [
+        0.5,
+        0.6
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "ease": "out",
+       "over": 0.6
+      },
+      {
+       "art": "person",
+       "at": [
+        0.16,
+        0.76
+       ],
+       "size": 0.18,
+       "color": "#e8425a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.84,
+        0.76
+       ],
+       "size": 0.18,
+       "color": "#40c977",
+       "pose": "arms_up"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shockwave",
+       "t": 0.6,
+       "at": [
+        0.5,
+        0.78
+       ]
+      },
+      {
+       "name": "shake",
+       "t": 0.6
+      }
+     ]
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "actors": [
+      {
+       "art": "1f4ac",
+       "at": [
+        0.5,
+        1.1
+       ],
+       "to": [
+        0.5,
+        0.25
+       ],
+       "size": 0.14,
+       "count": 9,
+       "spread": 0.38,
+       "ease": "out"
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.5,
+        1.1
+       ],
+       "to": [
+        0.5,
+        0.35
+       ],
+       "size": 0.1,
+       "count": 6,
+       "spread": 0.35,
+       "ease": "out",
+       "delay": 0.2
+      }
+     ],
+     "pop": "VIRAL"
+    }
+   ]
+  }
+ ],
+ "ask": "Would you fly for 60 seconds? YES or NO",
+ "youtube": {
+  "title": "What If You Could Fly for Only 60 Seconds? #shorts",
+  "description": "Would you fly for 60 seconds? YES or NO\nWhat if you could fly, but only for 60 seconds? Rooftops, frozen clouds, and a plane full of waving passengers. New What If every day.\n#whatif #whatifyou #superpower #flying #shorts",
+  "tags": [
+   "what if",
+   "what if you",
+   "what if you could fly",
+   "fly",
+   "flying",
+   "superpower",
+   "60 seconds",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
