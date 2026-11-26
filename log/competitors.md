@@ -19,3 +19,4 @@ The daily run adds new ones here when it finds channels with fast-growing Shorts
 - 2026-11-21 check: no new channel added; rewind/invisible Shorts found had no visible channel names or views.
 - 2026-11-22 check: no new channel added; searches returned no What If You Shorts with visible channels/views.
 - 2026-11-23 check: no new channel added; searches returned no What If You Shorts with visible channels/views.
+- 2026-11-26 check: no new channel added; vidIQ "what if you could" list was all different one-off channels (eiei.edit2 invisible 1.28M, Doozy Animation folded paper 167K, Boat Films reflection 36K); none repeated.
