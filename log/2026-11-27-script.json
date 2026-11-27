@@ -1,0 +1,531 @@
+{
+ "format": "what-if-scenes",
+ "keyword": "red flags",
+ "hook": {
+  "screen": "FLAGS ON EVERYONE",
+  "text": "What if, for only 24 hours, you could see red flags?",
+  "shots": [
+   {
+    "bg": "city_day",
+    "cam": "push",
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "actors": [
+     {
+      "art": "person",
+      "at": [
+       0.13,
+       0.644
+      ],
+      "size": 0.2,
+      "color": "#3d8bfd",
+      "pose": "run",
+      "to": [
+       0.3,
+       0.644
+      ],
+      "ease": "linear"
+     },
+     {
+      "art": "1f6a9",
+      "at": [
+       0.13,
+       0.553
+      ],
+      "size": 0.11,
+      "to": [
+       0.3,
+       0.553
+      ],
+      "ease": "linear",
+      "bob": 0.3
+     },
+     {
+      "art": "person",
+      "at": [
+       0.85,
+       0.641
+      ],
+      "size": 0.21,
+      "color": "#e8425a",
+      "pose": "stand"
+     },
+     {
+      "art": "1f6a9",
+      "at": [
+       0.85,
+       0.548
+      ],
+      "size": 0.12,
+      "bob": 0.3
+     },
+     {
+      "art": "1f6a9",
+      "at": [
+       0.93,
+       0.518
+      ],
+      "size": 0.1,
+      "bob": 0.4,
+      "appear": 0.25,
+      "enter": "pop"
+     },
+     {
+      "art": "person",
+      "at": [
+       0.68,
+       0.647
+      ],
+      "size": 0.19,
+      "color": "#40c977",
+      "pose": "stand"
+     },
+     {
+      "art": "1f6a9",
+      "at": [
+       0.68,
+       0.559
+      ],
+      "size": 0.11,
+      "appear": 0.4,
+      "enter": "pop",
+      "bob": 0.3
+     },
+     {
+      "art": "person",
+      "at": [
+       0.46,
+       0.588
+      ],
+      "size": 0.4,
+      "color": "#ffd21a",
+      "pose": "run",
+      "to": [
+       0.52,
+       0.588
+      ],
+      "ease": "linear"
+     }
+    ],
+    "fx": [
+     {
+      "name": "shake",
+      "t": 0.3,
+      "amount": 0.3
+     }
+    ]
+   }
+  ]
+ },
+ "beats": [
+  {
+   "text": "Your crush walks right past you. Zero red flags. Not one. Perfect.",
+   "shots": [
+    {
+     "bg": "ground",
+     "cam": "pan_l",
+     "pop": "HEART RACING",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.25,
+        0.599
+       ],
+       "size": 0.36,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "shake": 0.08
+      },
+      {
+       "art": "person",
+       "at": [
+        1.15,
+        0.616
+       ],
+       "size": 0.3,
+       "color": "#ff6fae",
+       "pose": "run",
+       "to": [
+        0.66,
+        0.616
+       ],
+       "ease": "out",
+       "over": 0.7
+      },
+      {
+       "art": "2728",
+       "at": [
+        1.15,
+        0.42
+       ],
+       "to": [
+        0.66,
+        0.42
+       ],
+       "size": 0.1,
+       "count": 4,
+       "spread": 0.08,
+       "ease": "out",
+       "over": 0.7,
+       "spin": 60
+      }
+     ]
+    },
+    {
+     "bg": "sunset",
+     "cam": "push",
+     "pop": "SPOTLESS",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.6
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "arms_up",
+       "bob": 0.3
+      },
+      {
+       "art": "2764",
+       "at": [
+        0.5,
+        0.7
+       ],
+       "to": [
+        0.5,
+        0.15
+       ],
+       "size": 0.1,
+       "size_to": 0.14,
+       "count": 8,
+       "spread": 0.3,
+       "ease": "out"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "So you ask them out, and they say yes! Then their best friend shows up, covered in red flags.",
+   "shots": [
+    {
+     "bg": "city_day",
+     "cam": "pan_r",
+     "pop": "DATE NIGHT",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.36,
+        0.605
+       ],
+       "size": 0.34,
+       "color": "#ffd21a",
+       "pose": "arms_up"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.62,
+        0.616
+       ],
+       "size": 0.3,
+       "color": "#ff6fae",
+       "pose": "arms_up"
+      },
+      {
+       "art": "1f496",
+       "at": [
+        0.5,
+        0.55
+       ],
+       "to": [
+        0.5,
+        0.2
+       ],
+       "size": 0.1,
+       "size_to": 0.15,
+       "count": 6,
+       "spread": 0.28,
+       "ease": "out"
+      }
+     ],
+     "w": 0.9
+    },
+    {
+     "bg": "city_night",
+     "cam": "push",
+     "pop": "UH OH",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.25,
+        0.61
+       ],
+       "size": 0.32,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "shake": 0.2
+      },
+      {
+       "art": "person",
+       "at": [
+        1.2,
+        0.616
+       ],
+       "size": 0.3,
+       "color": "#b06cff",
+       "pose": "run",
+       "to": [
+        0.7,
+        0.616
+       ],
+       "ease": "out",
+       "over": 0.5
+      },
+      {
+       "art": "1f6a9",
+       "at": [
+        1.2,
+        0.42
+       ],
+       "to": [
+        0.7,
+        0.45
+       ],
+       "size": 0.09,
+       "count": 9,
+       "spread": 0.12,
+       "ease": "out",
+       "over": 0.5,
+       "bob": 0.4
+      }
+     ],
+     "fx": [
+      {
+       "name": "shake",
+       "t": 0.5
+      }
+     ],
+     "w": 1.1
+    }
+   ]
+  },
+  {
+   "text": "At dinner, the waiter has fifty. You open the menu. Even the fish has one.",
+   "shots": [
+    {
+     "bg": "sunset",
+     "cam": "pan_l",
+     "pop": "TABLE FOR TWO",
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.22,
+        0.6
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.72,
+        0.56
+       ],
+       "size": 0.34,
+       "color": "#f2f2f2",
+       "pose": "stand"
+      },
+      {
+       "art": "1f37d",
+       "at": [
+        0.45,
+        0.66
+       ],
+       "size": 0.16
+      },
+      {
+       "art": "1f6a9",
+       "at": [
+        0.72,
+        -0.1
+       ],
+       "to": [
+        0.72,
+        0.36
+       ],
+       "size": 0.08,
+       "count": 14,
+       "spread": 0.13,
+       "ease": "out"
+      }
+     ]
+    },
+    {
+     "bg": "ocean",
+     "cam": "pan_r",
+     "pop": "SERIOUSLY?",
+     "actors": [
+      {
+       "art": "1f41f",
+       "at": [
+        1.2,
+        0.55
+       ],
+       "to": [
+        0.45,
+        0.55
+       ],
+       "size": 0.3,
+       "ease": "out",
+       "flip": true,
+       "over": 0.6
+      },
+      {
+       "art": "1f6a9",
+       "at": [
+        1.2,
+        0.45
+       ],
+       "to": [
+        0.45,
+        0.45
+       ],
+       "size": 0.09,
+       "ease": "out",
+       "over": 0.6,
+       "bob": 0.3
+      },
+      {
+       "art": "person",
+       "at": [
+        0.2,
+        0.62
+       ],
+       "size": 0.25,
+       "color": "#ffd21a",
+       "pose": "float",
+       "bob": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "text": "Then you catch your reflection in the window. Over your own head, one hundred red flags.",
+   "shots": [
+    {
+     "bg": "sky_night",
+     "cam": "static",
+     "pop": "WAIT...",
+     "actors": [
+      {
+       "art": "1fa9e",
+       "at": [
+        0.66,
+        0.5
+       ],
+       "size": 0.55
+      },
+      {
+       "art": "person",
+       "at": [
+        0.3,
+        0.55
+       ],
+       "size": 0.4,
+       "color": "#ffd21a",
+       "pose": "stand"
+      },
+      {
+       "art": "person",
+       "at": [
+        0.66,
+        0.5
+       ],
+       "size": 0.3,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "flip": true,
+       "size_to": 0.33
+      }
+     ],
+     "fx": [
+      {
+       "name": "dark",
+       "t": 0.3,
+       "amount": 0.3
+      }
+     ]
+    },
+    {
+     "bg": "city_day",
+     "cam": "pull",
+     "focus": [
+      0.5,
+      0.45
+     ],
+     "actors": [
+      {
+       "art": "person",
+       "at": [
+        0.5,
+        0.582
+       ],
+       "size": 0.42,
+       "color": "#ffd21a",
+       "pose": "stand",
+       "shake": 0.15
+      },
+      {
+       "art": "1f6a9",
+       "at": [
+        0.5,
+        -0.15
+       ],
+       "to": [
+        0.5,
+        0.42
+       ],
+       "size": 0.09,
+       "count": 20,
+       "spread": 0.14,
+       "ease": "out"
+      }
+     ],
+     "fx": [
+      {
+       "name": "shake",
+       "t": 0.55
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "ask": "Would you want this power? YES or NO",
+ "youtube": {
+  "title": "What If You Could See Red Flags for 24 Hours? #shorts",
+  "description": "Would you want this power? YES or NO\nWhat if, for only 24 hours, you could see everyone's red flags? Your crush, the waiter, even the fish. New What If every day.\n#whatif #whatifyou #redflags #superpower #shorts",
+  "tags": [
+   "what if",
+   "what if you",
+   "red flags",
+   "what if you could see red flags",
+   "superpower",
+   "red flag",
+   "24 hours",
+   "shorts"
+  ],
+  "category": "ENTERTAINMENT"
+ }
+}
